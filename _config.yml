@@ -1,0 +1,42 @@
+# Base Site Info
+logo: "Bailey Martin - Technical Artist"
+title: Bailey3D
+description: >
+  This is the description!
+permalink: ':title/'
+baseurl: ""
+url: ""
+
+
+# Author settings
+author-pic: B3D_Pic.png
+author-name: Bailey Martin
+about-author: About Me - Bailey Martin
+email: contact@bailey3d.com
+phone: 0
+website: https://www.bailey3d.com
+
+# Social link
+linkedin_url: https://www.linkedin.com/in/bailey-bob-martin
+twitter_url:   https://twitter.com/MrBhmbob
+github_url: https://github.com/BhMbOb
+
+# Tracker
+analytics:
+
+# Paginate
+paginate: 12
+paginate_path: /page:num/
+
+# Build settings
+markdown: kramdown
+plugins_dir:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
