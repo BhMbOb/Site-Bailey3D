@@ -4331,7 +4331,7 @@ cite {
 
 .post header img {
   width: 100%;
-  max-height: 500px;
+  height:56%;
   vertical-align: middle;
 }
 
@@ -5028,4 +5028,6 @@ cite {
 .center-image{
   margin: 0 auto;
   display: block;
+  max-height: 500px;
+  vertical-align: middle;
 }

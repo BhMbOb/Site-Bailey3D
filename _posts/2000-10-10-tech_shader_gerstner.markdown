@@ -5,10 +5,33 @@ img: https://drive.google.com/uc?export=view&id=1-IjSPnDObGqy4UDuhv7LE0fOOmBGth8
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 tag: [Environment Art, Art, Lighting]
 ---
-Flexitarian hella quinoa, stumptown chillwave squid heirloom pop-up church-key. Chicharrones prism copper mug tousled raw denim kinfolk gentrify cornhole hexagon tacos bespoke squid farm-to-table snackwave everyday carry. Vaporware chicharrones activated charcoal jianbing pok pok. Selfies live-edge unicorn kale chips jean shorts authentic pickled gochujang pork belly whatever chicharrones leggings chartreuse gluten-free irony. Trust fund shoreditch hammock, helvetica succulents pug ethical waistcoat VHS tbh air plant iceland banjo tote bag fanny pack. Ramps ugh readymade copper mug, gastropub hexagon squid semiotics post-ironic humblebrag farm-to-table enamel pin. Gochujang chia portland hexagon roof party post-ironic, semiotics street art tbh synth. Air plant vinyl sustainable pork belly. Chicharrones cronut raw denim listicle flexitarian franzen. Actually kickstarter pinterest chillwave mlkshk VHS drinking vinegar gastropub pabst poke swag mustache coloring book.
+### Gerstner Waves
 
-Sriracha gochujang before they sold out, photo booth trust fund raw denim iceland. Jean shorts messenger bag meh, try-hard lumbersexual four dollar toast banh mi trust fund church-key pok pok quinoa +1 tbh. Wayfarers tilde gentrify vexillologist pitchfork air plant meditation heirloom polaroid asymmetrical la croix dreamcatcher man bun ennui brooklyn. Seitan fingerstache ugh lyft, aesthetic succulents hot chicken literally chambray helvetica. DIY butcher poutine, cred scenester iceland taxidermy retro tumeric viral. Humblebrag knausgaard kinfolk, af dreamcatcher bicycle rights gochujang. Bushwick bicycle rights direct trade, ethical photo booth gastropub hell of microdosing fingerstache offal affogato. Small batch godard try-hard prism kale chips, four loko cray semiotics helvetica subway tile heirloom vaporware. Venmo VHS keytar succulents chambray.
+The main way that the ocean shader simulates the wave movement is using something called a 'Gerstner Wave'. Unlike a sine wave which is typically only used to displace the surface on the z-axis, Gerstner waves offer a more physically accurate simulation which  also takes into account the x and y offset. The gif below shows how a vertex moves using Gerstner waves, compacting vertices more closely at the peaks, and less at the troths. The GPU Gems post linked at the bottom will help in understanding the maths and implementation a bit more.
 
-> Brunch hella poutine authentic farm-to-table. Stumptown craft beer lomo, heirloom single-origin coffee synth PBR&B post-ironic. <cite>- Lorem Ipsum</cite>
+![Image](https://drive.google.com/uc?export=view&id=1jP5Ggr2S_bJgVXvgMqKgcYcXdjoByMFJ){: .center-image}
 
-Banh mi hoodie viral, jianbing 3 wolf moon meditation tbh pok pok everyday carry lumbersexual kombucha iPhone. Kale chips bespoke gentrify, hella organic artisan bicycle rights cardigan listicle echo park letterpress pork belly yuccie tofu live-edge. Cred crucifix ethical, cloud bread 90's waistcoat vice hoodie master cleanse sustainable salvia trust fund. Ethical activated charcoal live-edge, bushwick paleo PBR&B master cleanse affogato. Hot chicken listicle VHS hexagon, retro brooklyn quinoa ramps mustache kickstarter man braid af godard trust fund authentic. Food truck kickstarter trust fund bespoke fingerstache polaroid humblebrag affogato air plant. Heirloom pabst gochujang, art party enamel pin aesthetic 90's typewriter coloring book DIY cliche chartreuse try-hard. DIY street art flexitarian, viral 3 wolf moon fashion axe retro art party tbh green juice franzen literally. Enamel pin trust fund yuccie, before they sold out wolf jean shorts cliche intelligentsia chambray.
+Since this uses a physical calculation for the waves, it means that the input parameters also use real-world values. Some of the most notable ones being: Amplitude, Steepness Phase and Direction. Similarly, since this uses a wave it means that multiple waves of different amplitude/wavelength can be combined by simply adding them together, to give a more detailed ouput. In this I used a total of 16 wave formations (8 being low frequency, 8 being high frequency)
+
+![Image](https://drive.google.com/uc?export=view&id=1xNfy3WJ3q-TK8G5yNUbJ1EKzw4n-Be5K){: .center-image}
+
+### Detailing Normals
+
+Although the waves themselves do a large part in the realism of the shader, without additional surface detailing they end up looking quite flat. To fix this I used 3 sets of normals at different frequencies (High for main body detailing, Medium for subtle waves and Low for lower frequency ripples and surface disturbance).
+
+
+Normals alone tend to give a rather static and tiling look to the surface, so phasing between the textures in two states (similar to a flow map) also helps in avoiding this.
+
+Although the Gerstner calculations themselves do a huge part in making the shader feel realistic, without any additional surface detailing you'll find that they still end up looking extremely flat.
+
+![Image](https://drive.google.com/uc?export=view&id=1tlYHyBKDiTu3Hg0sk6NpdYoJBg008gD6){: .center-image}
+
+### Sea Foam
+Foam is an area I've seen typically overlooked in some shaders, but found that even a subtle amount gives a nice effect. Unlike waves I couldn't find a way of physically simulating this in realtime, so the way it is calculated uses some data from the Gerstner wave to create an 'Amplitude Mask'.
+
+
+The foam mask was created in Substance Designer, and is a 2 channel mask of Worley noise distorted into a somewhat fluid like mask. It uses the phasing method mentioned before to give a nice fluid effect.
+
+![Image](https://drive.google.com/uc?export=view&id=1y3vZWRtOQWDcNI3p9P8fgHT81GUvWE5X){: .center-image}
+
+![Image](https://drive.google.com/uc?export=view&id=1ojR1ZiuAgUlkfJErHAFZiossCpaxBj4e){: .center-image}

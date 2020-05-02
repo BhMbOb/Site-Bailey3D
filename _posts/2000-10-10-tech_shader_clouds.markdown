@@ -5,10 +5,45 @@ img: https://drive.google.com/uc?export=view&id=1nQE3nFVEpLp7YBNaVChLp2VbstP5zpk
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 tag: [Environment Art, Art, Lighting]
 ---
-Flexitarian hella quinoa, stumptown chillwave squid heirloom pop-up church-key. Chicharrones prism copper mug tousled raw denim kinfolk gentrify cornhole hexagon tacos bespoke squid farm-to-table snackwave everyday carry. Vaporware chicharrones activated charcoal jianbing pok pok. Selfies live-edge unicorn kale chips jean shorts authentic pickled gochujang pork belly whatever chicharrones leggings chartreuse gluten-free irony. Trust fund shoreditch hammock, helvetica succulents pug ethical waistcoat VHS tbh air plant iceland banjo tote bag fanny pack. Ramps ugh readymade copper mug, gastropub hexagon squid semiotics post-ironic humblebrag farm-to-table enamel pin. Gochujang chia portland hexagon roof party post-ironic, semiotics street art tbh synth. Air plant vinyl sustainable pork belly. Chicharrones cronut raw denim listicle flexitarian franzen. Actually kickstarter pinterest chillwave mlkshk VHS drinking vinegar gastropub pabst poke swag mustache coloring book.
+ Software & Tools Used: Substance Designer, Unreal Engine, HLSL
 
-Sriracha gochujang before they sold out, photo booth trust fund raw denim iceland. Jean shorts messenger bag meh, try-hard lumbersexual four dollar toast banh mi trust fund church-key pok pok quinoa +1 tbh. Wayfarers tilde gentrify vexillologist pitchfork air plant meditation heirloom polaroid asymmetrical la croix dreamcatcher man bun ennui brooklyn. Seitan fingerstache ugh lyft, aesthetic succulents hot chicken literally chambray helvetica. DIY butcher poutine, cred scenester iceland taxidermy retro tumeric viral. Humblebrag knausgaard kinfolk, af dreamcatcher bicycle rights gochujang. Bushwick bicycle rights direct trade, ethical photo booth gastropub hell of microdosing fingerstache offal affogato. Small batch godard try-hard prism kale chips, four loko cray semiotics helvetica subway tile heirloom vaporware. Venmo VHS keytar succulents chambray.
 
-> Brunch hella poutine authentic farm-to-table. Stumptown craft beer lomo, heirloom single-origin coffee synth PBR&B post-ironic. <cite>- Lorem Ipsum</cite>
+This is project I worked on to create a drag-and-drop cloud system within Unreal. It uses 3D Noise textures and volumetric raymarching to render a volume shader to simulate clouds. The system covers a few different areas, such as:
 
-Banh mi hoodie viral, jianbing 3 wolf moon meditation tbh pok pok everyday carry lumbersexual kombucha iPhone. Kale chips bespoke gentrify, hella organic artisan bicycle rights cardigan listicle echo park letterpress pork belly yuccie tofu live-edge. Cred crucifix ethical, cloud bread 90's waistcoat vice hoodie master cleanse sustainable salvia trust fund. Ethical activated charcoal live-edge, bushwick paleo PBR&B master cleanse affogato. Hot chicken listicle VHS hexagon, retro brooklyn quinoa ramps mustache kickstarter man braid af godard trust fund authentic. Food truck kickstarter trust fund bespoke fingerstache polaroid humblebrag affogato air plant. Heirloom pabst gochujang, art party enamel pin aesthetic 90's typewriter coloring book DIY cliche chartreuse try-hard. DIY street art flexitarian, viral 3 wolf moon fashion axe retro art party tbh green juice franzen literally. Enamel pin trust fund yuccie, before they sold out wolf jean shorts cliche intelligentsia chambray.
+- Directional lighting
+- Wind movement
+- Controllable density, coverage, lighting and steps count
+- Time-of-day
+
+The majority of the shader was calculated in HLSL, but pieced together in the material editor.
+
+![Image](https://drive.google.com/uc?export=view&id=1mhukbfvFKbfS0IwOG-SmGT2ib36Bcj_5){: .center-image}
+
+![Image](https://drive.google.com/uc?export=view&id=1Wv6-vH--JEDtn1vC8Zn10-8GZjUdv924){: .center-image}
+
+3D Texture Sampling
+
+This system uses 'pseudo-volume textures'  to render the 3D volume textures, which is essentially a low fidelity 3D texture baked out into a flipbook texture. Since Unreal has no 3D texturing support built in, I created a HLSL function to simulate a TextureSample3D 
+
+{% gist 008fa85282f1d5bcd348ee770c84dc90 %}
+
+The raymarching code is quite specific to this project, so I won't post it here due to lack of context. But it is packed into a material function in Unreal for further control, and takes inputs such as: UVW_Scale, WindVector, Steps, StepsMultiplier and more.
+
+Directional Lighting
+
+The clouds are lit by a single directional source vector which is passed in as a global value, allowing for fully dynamic sun lighting. This is actually tied to the scenes directional light source to allow for dynamic time-of-day updates. Extinction tinting was also something that helped a lot in bumping the final colour.
+
+![Image](https://drive.google.com/uc?export=view&id=1LQSe83sLxrgyB7o_VgRT4eQwxW1Hbzk6){: .center-image}
+
+Blueprint System
+
+The whole system is packed into a Blueprint Actor to allow for easy setup within any scene. This can be tied into things such as Wind, Weather and Lighting systems to allow for dynamic time and weather systems.
+
+You can see some of the main parameters for the clouds below.
+
+![Image](https://drive.google.com/uc?export=view&id=1_R8sWcWD23ffdO1Teglm5u6PsTpEn79I){: .center-image}
+
+ Links/Resources: 
+
+- https://shaderbits.com/blog/creating-volumetric-ray-marcher
+- https://www.alanzucconi.com/2016/07/01/raymarching/

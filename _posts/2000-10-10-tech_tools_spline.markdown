@@ -1,14 +1,47 @@
 ---
 layout: post
 title: "Spline Tools"
-img: https://drive.google.com/uc?export=view&id=1jdNNlb7KgrZq--AYXUum9BJUR5j9Dnfa # Add image post (optional)
+img:  https://drive.google.com/uc?export=view&id=1GSv2FmnCMEfAXdscHIzCwqzGsX0SEhK_# Add image post (optional)
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 tag: [Environment Art, Art, Lighting]
 ---
-Flexitarian hella quinoa, stumptown chillwave squid heirloom pop-up church-key. Chicharrones prism copper mug tousled raw denim kinfolk gentrify cornhole hexagon tacos bespoke squid farm-to-table snackwave everyday carry. Vaporware chicharrones activated charcoal jianbing pok pok. Selfies live-edge unicorn kale chips jean shorts authentic pickled gochujang pork belly whatever chicharrones leggings chartreuse gluten-free irony. Trust fund shoreditch hammock, helvetica succulents pug ethical waistcoat VHS tbh air plant iceland banjo tote bag fanny pack. Ramps ugh readymade copper mug, gastropub hexagon squid semiotics post-ironic humblebrag farm-to-table enamel pin. Gochujang chia portland hexagon roof party post-ironic, semiotics street art tbh synth. Air plant vinyl sustainable pork belly. Chicharrones cronut raw denim listicle flexitarian franzen. Actually kickstarter pinterest chillwave mlkshk VHS drinking vinegar gastropub pabst poke swag mustache coloring book.
+Splines are a great feature in most 3D packages for creating procedural and modular assets, and I've found that setting up assets in a way that splines can be utilized  helps to save a lot of time when laying out environments, not to mention the performance and memory benefits.
 
-Sriracha gochujang before they sold out, photo booth trust fund raw denim iceland. Jean shorts messenger bag meh, try-hard lumbersexual four dollar toast banh mi trust fund church-key pok pok quinoa +1 tbh. Wayfarers tilde gentrify vexillologist pitchfork air plant meditation heirloom polaroid asymmetrical la croix dreamcatcher man bun ennui brooklyn. Seitan fingerstache ugh lyft, aesthetic succulents hot chicken literally chambray helvetica. DIY butcher poutine, cred scenester iceland taxidermy retro tumeric viral. Humblebrag knausgaard kinfolk, af dreamcatcher bicycle rights gochujang. Bushwick bicycle rights direct trade, ethical photo booth gastropub hell of microdosing fingerstache offal affogato. Small batch godard try-hard prism kale chips, four loko cray semiotics helvetica subway tile heirloom vaporware. Venmo VHS keytar succulents chambray.
+These spline systems were all created in Unreal through either Blueprints or C++, and require a bit of forward thinking in terms of which assets are used and how they're made.
 
-> Brunch hella poutine authentic farm-to-table. Stumptown craft beer lomo, heirloom single-origin coffee synth PBR&B post-ironic. <cite>- Lorem Ipsum</cite>
+The biggest benefit to using splines is that the amount of unique meshes is cut down significantly, most of the examples here use only two simple meshes each. 
 
-Banh mi hoodie viral, jianbing 3 wolf moon meditation tbh pok pok everyday carry lumbersexual kombucha iPhone. Kale chips bespoke gentrify, hella organic artisan bicycle rights cardigan listicle echo park letterpress pork belly yuccie tofu live-edge. Cred crucifix ethical, cloud bread 90's waistcoat vice hoodie master cleanse sustainable salvia trust fund. Ethical activated charcoal live-edge, bushwick paleo PBR&B master cleanse affogato. Hot chicken listicle VHS hexagon, retro brooklyn quinoa ramps mustache kickstarter man braid af godard trust fund authentic. Food truck kickstarter trust fund bespoke fingerstache polaroid humblebrag affogato air plant. Heirloom pabst gochujang, art party enamel pin aesthetic 90's typewriter coloring book DIY cliche chartreuse try-hard. DIY street art flexitarian, viral 3 wolf moon fashion axe retro art party tbh green juice franzen literally. Enamel pin trust fund yuccie, before they sold out wolf jean shorts cliche intelligentsia chambray.
+
+When using meshes that aren't deforming it's also useful to use mesh instancing, this will mean that each instance of a unique mesh takes up only a single draw call (Making the assets more efficient than multiple unique meshes).
+
+------
+
+![Image](https://drive.google.com/uc?export=view&id=1jdNNlb7KgrZq--AYXUum9BJUR5j9Dnfa){: .center-image}
+
+This rail-bed system uses two unique assets (Planks & Rail) to allow for easy modular placement of rails within an environment. The height and tangents of the spline can easily be tweaked to conform to the environment without need for many different track variations.
+
+------
+
+![Image](https://drive.google.com/uc?export=view&id=1JccX7pjQEnh6m0dsE_cUnZ9Qxtxuzjx9){: .center-image}
+
+These follow a spline along a path which they're randomly placed, it allows for the books to easily be placed on surfaces (such as windows or bookshelves). Like the previous example, these use instanced meshes and some shader maths to give unique colours and titles, which can be extremely useful for environments like libraries where you can have upwards of 100k book meshes.
+
+This is something I covered in another post but since it's also using splines I thought it'd be useful to include it here.
+
+------
+
+![Image](https://drive.google.com/uc?export=view&id=1uJBVsiD473HJOmE6_Q0yDbqicCz9zgtD){: .center-image}
+
+This pipe spline uses a control spline to dynamically create spline meshes for easy creation of pipes.
+
+The pipes themselves are made up of only 2 assets (Pipe Body & Connector), compared to dozens of variations for a typical spline system.
+
+------
+
+![Image](https://drive.google.com/uc?export=view&id=1JMxTsHQRc2-Bdy8MhmrB21d9mKmi-wBC){: .center-image}
+
+The example above is similar to the rail-bed, except it's spawning instances of the top/bottom meshes stretched to each angle change, and filling the inside with wooden beams to create a dynamic fence.
+
+Other things can be parametrized for systems like this one, such as the spacing of the inside pillars, pillar/rail thickness and height to give a unique look to the fencing.
+
+![Image](https://drive.google.com/uc?export=view&id=1ShwRIOZCydtAHK-UkRwiqcAXIhXjqjDA){: .center-image}
