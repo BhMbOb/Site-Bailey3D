@@ -2,7 +2,7 @@
 layout: post
 title: "Spline Tools"
 img:  https://drive.google.com/uc?export=view&id=1GSv2FmnCMEfAXdscHIzCwqzGsX0SEhK_# Add image post (optional)
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: Some examples of how I've used spline tools within my work for procedural and dynamic asset creation.
 tag: [Environment Art, Art, Lighting]
 ---
 Splines are a great feature in most 3D packages for creating procedural and modular assets, and I've found that setting up assets in a way that splines can be utilized  helps to save a lot of time when laying out environments, not to mention the performance and memory benefits.

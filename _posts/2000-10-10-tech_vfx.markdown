@@ -2,7 +2,7 @@
 layout: post
 title: "VFX / Shaders"
 img: https://drive.google.com/uc?export=view&id=1ICy-Cqt3cWycRTF7gCeAT2CVhsF_Htvr # Add image post (optional)
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: A collection of various VFX systems and shaders I've created which don't warrant a post of their own. # Add post description (optional)
 tag: [Environment Art, Art, Lighting]
 ---
 

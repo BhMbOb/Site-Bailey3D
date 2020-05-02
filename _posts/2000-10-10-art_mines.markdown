@@ -2,7 +2,7 @@
 layout: post
 title: "Environment - Soviet Mines"
 img: https://drive.google.com/uc?export=view&id=18KtP1clDA4-gXvx5TAqGMq-mi9yDySkW # Add image post (optional)
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: Soviet Era Mineshaft 3D Environment.
 tag: [Environment Art, Art, Lighting]
 ---
 Soviet Era Mineshaft 3D Environment.

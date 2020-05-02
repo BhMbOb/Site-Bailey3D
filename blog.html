@@ -1,14 +1,23 @@
 ---
 layout: default
 ---
-  {% include header.html %}
+<main class="page-content">
+{% include header.html %}
 
-  {% for post in paginator.posts %}
-  <div class="chapter">
-    <a href="{{post.url | prepend: site.baseurl}}">
-        <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
+  <div class="leftcolumn">
+
+    {% for post in site.posts %}
+    <a  href="{{post.url}}" style="text-decoration: none;">
+      <div class="card" href="www.google.com">
+        <img src="{{post.img}}" class="fakeimg"></img>
+        <h4 style="color:black;">{{post.title}}</h4>
+        <a>{{post.description}}</a>
+      </div>
     </a>
-  </div>
-{% endfor %}
 
-  {% include footer.html %}
+    {% endfor %}
+
+  </div>
+  
+{% include footer.html %}
+</main>

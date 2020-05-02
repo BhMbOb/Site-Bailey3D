@@ -2,7 +2,7 @@
 layout: post
 title: "Environment - Oak Forest"
 img: https://drive.google.com/uc?export=view&id=15iBuEpWKjQGwJ_sAa633s5Xjk7UIUfIe # Add image post (optional)
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: Riverside camp in an Oak Forest, created in just over a week. Focusing on a more natural/non-hard surface environment for this piece.
 tag: [Environment Art, Art, Lighting]
 ---
 Riverside camp in an Oak Forest, created in just over a week. 

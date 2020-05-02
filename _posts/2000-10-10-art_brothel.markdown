@@ -3,7 +3,9 @@ layout: post
 title: "Environment - Victorian Brothel"
 img: https://drive.google.com/uc?export=view&id=1eWD63K8NsFFxEWv6W2laFf-mbpRMCrjl # Add image post (optional)
 date: 2017-07-03 12:55:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: "
+3D Environment of a Victorian era London Brothel. 
+Utilizes both modular assets and tiling materials for the majority of scene layout."
 tag: [Environment Art, Art, Lighting]
 ---
 3D Environment of a Victorian era London Brothel. Utilizes both modular assets and tiling materials for the majority of scene layout. 

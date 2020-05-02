@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Environment - Soviet Mines"
-img: ../blog/environment_mines/thumb.png # Add image post (optional)
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+title: "Environment - Library"
+img: https://drive.google.com/uc?export=view&id=1tMVX9G_BkXdrnSYWUUWGaJ5DjnpzGJjS # Add image post (optional)
+description: Group environment based on multiple different libraries. My responsibilities covered both the assets and technical side (Renders, lighting, procedural asset placement, shaders)
 tag: [Environment Art, Art, Lighting]
 ---
 Group environment based on multiple different libraries. My responsibilities covered both the assets and technical side (Renders, lighting, procedural asset placement, shaders)

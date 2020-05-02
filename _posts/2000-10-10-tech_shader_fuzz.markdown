@@ -2,7 +2,7 @@
 layout: post
 title: "Shader - Microfibre Surfaces"
 img: https://drive.google.com/uc?export=view&id=1JavYvTuMGmo0aDWB6yTVEns_wxWxLE8_ # Add image post (optional)
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: Breakdown of a surface shader for simulating microfibre materials, such as Moss and Cloth.
 tag: [Environment Art, Art, Lighting]
 ---
 Microfibre Surfaces such as moss and cloth differ to regular surfaces due to the fact the surface is built up of thousands of tiny fibres which have the ability to occlude other fibres and also self occlude. In a real world surface this would result in the tips of each fibre catching more light than the roots, which is what this shader aims to simulate.

@@ -2,7 +2,7 @@
 layout: post
 title: "Procedural Terrain Generation"
 img: https://drive.google.com/uc?export=view&id=1AWXSwbbssAqEzC5Q4Q-wZG12BH36Yc44 # Add image post (optional)
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: System for creating terrain in Substance designer and rendering in realtime, allowing for realtime terrain tweaking.
 tag: [Environment Art, Art, Lighting]
 ---
 A procedural terrain system created in Substance Designer with procedural texturing/material layering in Unreal Engine.

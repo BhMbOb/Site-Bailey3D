@@ -2,7 +2,7 @@
 layout: post
 title: "Procedural Asset Placement"
 img: https://drive.google.com/uc?export=view&id=1JccX7pjQEnh6m0dsE_cUnZ9Qxtxuzjx9 # Add image post (optional)
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: Some examples of tools created for procedural placement of assets - includes randomness, modularity, proceduralism ...
 tag: [Environment Art, Art, Lighting]
 ---
 Setting up systems for different types of procedural assets is something that I have done for multiple projects, and can be used for things such as saving time, minimizing art fatigue and giving more realistic outputs. This post is going to cover some of the different procedural assets I've created for multiple projects.

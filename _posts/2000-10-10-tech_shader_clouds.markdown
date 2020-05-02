@@ -2,7 +2,7 @@
 layout: post
 title: "Shader - Volumetric Clouds"
 img: https://drive.google.com/uc?export=view&id=1nQE3nFVEpLp7YBNaVChLp2VbstP5zpkx # Add image post (optional)
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: System created in Unreal Engine, using HLSL and Raymarching techniques to create volumetric clouds.
 tag: [Environment Art, Art, Lighting]
 ---
  Software & Tools Used: Substance Designer, Unreal Engine, HLSL

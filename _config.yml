@@ -1,8 +1,7 @@
 # Base Site Info
 logo: "Bailey Martin - Technical Artist"
 title: Bailey3D
-description: >
-  This is the description!
+description: ""
 permalink: ':title/'
 baseurl: ""
 url: ""
@@ -11,9 +10,11 @@ url: ""
 # Author settings
 author-pic: B3D_Pic.png
 author-name: Bailey Martin
-about-author: About Me - Bailey Martin
+about-author: "
+Technical artist @ Codemasters.\n
+Specialising in Shaders, Tools and Proceduralism.\n
+Feel free to get in touch with me through Email, Twitter or LinkedIn!"
 email: contact@bailey3d.com
-phone: 0
 website: https://www.bailey3d.com
 
 # Social link

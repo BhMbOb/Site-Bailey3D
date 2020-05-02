@@ -2,7 +2,7 @@
 layout: post
 title: "Shader - Iridescense"
 img: https://drive.google.com/uc?export=view&id=1UuWWTNQHHzaLGBqukGXgtzit7zrOb2HW # Add image post (optional)
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: Shader simulating an iridescent surface, similar to that seen in Oil and Beetle shells.
 tag: [Environment Art, Art, Lighting]
 ---
 Surface shader created in Unreal Engine, simulating the specular lighting effect commonly seen on iridescent surfaces (Beetles, Oil, etc.), with an additional light-wrap effect for visual flair.
