@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Environment - Victorian Brothel"
-img: https://drive.google.com/uc?export=view&id=1eWD63K8NsFFxEWv6W2laFf-mbpRMCrjl # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=1WO6BB2c1-wSOaEavW-AvPv0ni9GChP0C # Add image post (optional)
 date: 2017-07-03 12:55:00 +0300
 description: "
 3D Environment of a Victorian era London Brothel. 
@@ -13,12 +13,10 @@ tag: [Environment Art, Art, Lighting]
 Based on a concept by Morgan Yon. Concept can be found here.
 
 
-![Image](https://drive.google.com/uc?export=view&id=1CZrAJYEUCEyBA49OPsoOT0kxz5ok3DGC){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1KYs3Y0XKCCKHadcKHimHnsebWjClnK1k){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1wsiemkGGceAOLmXDojqVOFu1MkTgg6Q_){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1OwLQq1AArq9tzqnpU8qf9H6MaeHhpNa0){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1AjPNy6OqjoQgE8uxiH6m2jCRyw9DMGsw){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1BvmPmsbvXQC3rHX9Gi4-kERHE3WYOhVU){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=159mXqgKGg274Eviitiil6jTseqiqCqo-){: .center-image}
-
-![Image](https://drive.google.com/uc?export=view&id=1kliIXvJ3b6NnFaGl9S3pqtnsuf0hjTB_){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1-9nuea9b2arIvzjt2nU1yd_FdK05vJ1U){: .center-image}
