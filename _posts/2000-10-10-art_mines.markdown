@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Environment - Soviet Mines"
-img: https://drive.google.com/uc?export=view&id=18KtP1clDA4-gXvx5TAqGMq-mi9yDySkW # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=1wEJw3lXQyrSMu1d5fdM_gHNmZM9WTluD # Add image post (optional)
 description: Soviet Era Mineshaft 3D Environment.
 tag: [Environment Art, Art, Lighting]
 ---
@@ -17,16 +17,16 @@ Similar to the concept, I made sure to keep the obvious symbolism to a more subt
 
 Spline tools were a great help in creating multiple areas of the environment. The rail-tracks and pipes were all created using instanced meshes to increase performance and iteration time.
 
-![Image](https://drive.google.com/uc?export=view&id=1772lwq7jssRDQEv8SxeM70HBhShi-ilG){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1cQI9iEkf6NFPQy5w3m8jDHgv8E9MZtbl){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1J9Tp_5hzeQ3DTWj29t5HD7FVFR5Oy6c4){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1gkzDNTyocp9APykiHFGGR6qRcCn4WvtC){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1y0NEPslrQQqXrktotNkhwmyuUDbTMj0O){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1526wCdLtAAeADaB4k1kCQeE96WUtuSDJ){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1Lb_W17N6ux7TCK3ukTpLWEamTbOjUrc9){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1UH4uBr1si86wDiiRxot_4xw3rUxIfqqu){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1GakImGOdTAHl2klYtubN9gIxZjnjZJeu){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1luWUxaIga06JHyOvzBUDOJW_xhqwXw3a){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1fmNrAXxDHQJmnhy6My0fGfdq2tNxwHSN){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1RNA2YKuKfKvU8xjZcl1ArBKBe7mIVOTW){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=19j24WUtyGk9YNyavJz9u9MbSddTXqPwZ){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1JOYr32m8s9kHUZkwdDX6z87Y3M5l9MMJ){: .center-image}
