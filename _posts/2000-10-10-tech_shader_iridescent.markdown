@@ -1,20 +1,21 @@
 ---
 layout: post
 title: "Shader - Iridescense"
-img: https://drive.google.com/uc?export=view&id=1UuWWTNQHHzaLGBqukGXgtzit7zrOb2HW # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=1zuBD6LTtom6ZnoEp-5oYTmHbjT9vR57u # Add image post (optional)
 description: Shader simulating an iridescent surface, similar to that seen in Oil and Beetle shells.
 tag: [Environment Art, Art, Lighting]
 ---
 Surface shader created in Unreal Engine, simulating the specular lighting effect commonly seen on iridescent surfaces (Beetles, Oil, etc.), with an additional light-wrap effect for visual flair.
 
-![Image](https://drive.google.com/uc?export=view&id=1UPD_pxPcF1GneYpu9Hjk4p8h5mJKxzJ0){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=15rn_kBf56X8SlUabkGmVzFf2PaGkOI_j){: .center-image}
 
 ------
 
-I originally worked on a similar shader in a team a few months back, but more recently decided to rework it to be more realistic looking and suitable for in game use along with more optimized. 
+The shader simulates the iridescent effect found on many different surfaces throughout nature (such as oil , beetle shells and more). 
 
+It tends to be a more difficult effect to simulate with deferred rendering, since the amount of lighting information available is minimal.
 
-The shader simulates the iridescent effect found on many different surfaces throughout nature (such as oil , beetle shells and more). It tends to be a more difficult effect to simulate with deferred rendering, since the amount of lighting information available is minimal. Instead this shader uses 1 light sample (in this case the sun) to calculate the specular reflection that iridescence relies on.
+To keep the shader deferred we are using 1 light sample (in this case the sun) to calculate the specular reflection that iridescence relies on.
 
 ------
 
@@ -37,4 +38,4 @@ Lighting and UV distortion are the two main areas that give the effect.
 
 {% gist 9faef956ecade207a7fed1d4d5020a70 %}
 
-![Image](https://drive.google.com/uc?export=view&id=15h6zTFsgzTHx-h5qtJQR9vmkRxHCgTLt){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1w_CdadZ9ntcA-wmJjGLPSC3S_inp6iNw){: .center-image}

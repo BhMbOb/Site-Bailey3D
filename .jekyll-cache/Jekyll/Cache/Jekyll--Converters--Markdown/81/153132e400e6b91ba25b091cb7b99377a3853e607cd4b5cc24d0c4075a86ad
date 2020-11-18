@@ -1,0 +1,22 @@
+I"I<p>Cubemap shader made to fake an exterior environment without the need for a fully rendered external scene.</p>
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1FskZKUXgQ_RF5Y-edZIJv8mA8-BZqrzv" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<p>Dripping water particle system - a flipbook ripple shader is rendered wherever a water droplet collides with an upward facing surface.</p>
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1JOYr32m8s9kHUZkwdDX6z87Y3M5l9MMJ" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<p>Fake volumetric effect which uses parallax mapping and a noise mask to give a 3D affect with a single texture read.</p>
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1fsvg_V_GceKH0Kgnbs0NOZY-kTMxapEu" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<p>All books in this are rendered using the same shader - a pseudo randomness calculation is used to change the book names, styles and colours.</p>
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1jKHck-A-GnyH_8Im09S-izCSObWq6u47" alt="Image" class="center-image" /></p>
+:ET

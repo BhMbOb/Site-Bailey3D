@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shader - Volumetric Clouds"
-img: https://drive.google.com/uc?export=view&id=1nQE3nFVEpLp7YBNaVChLp2VbstP5zpkx # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=1EU1EWRCN0E4Cv4UfRgE0S06F4EZK-stQ # Add image post (optional)
 description: System created in Unreal Engine, using HLSL and Raymarching techniques to create volumetric clouds.
 tag: [Environment Art, Art, Lighting]
 ---
@@ -17,9 +17,7 @@ This is project I worked on to create a drag-and-drop cloud system within Unreal
 
 The majority of the shader was calculated in HLSL, but pieced together in the material editor.
 
-![Image](https://drive.google.com/uc?export=view&id=1mhukbfvFKbfS0IwOG-SmGT2ib36Bcj_5){: .center-image}
-
-![Image](https://drive.google.com/uc?export=view&id=1Wv6-vH--JEDtn1vC8Zn10-8GZjUdv924){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1NXEuv7MVT3zv1vBA6wETz3b0kA81qF1_){: .center-image}
 
 3D Texture Sampling
 
@@ -33,7 +31,7 @@ Directional Lighting
 
 The clouds are lit by a single directional source vector which is passed in as a global value, allowing for fully dynamic sun lighting. This is actually tied to the scenes directional light source to allow for dynamic time-of-day updates. Extinction tinting was also something that helped a lot in bumping the final colour.
 
-![Image](https://drive.google.com/uc?export=view&id=1LQSe83sLxrgyB7o_VgRT4eQwxW1Hbzk6){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1Zjphvxo4bhM_sNVoPGTYjbPHOrVyBd1a){: .center-image}
 
 Blueprint System
 
@@ -41,7 +39,7 @@ The whole system is packed into a Blueprint Actor to allow for easy setup within
 
 You can see some of the main parameters for the clouds below.
 
-![Image](https://drive.google.com/uc?export=view&id=1_R8sWcWD23ffdO1Teglm5u6PsTpEn79I){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1EaZCKPdpa6AhAaG8H-95q7NsWeWxYq81){: .center-image}
 
  Links/Resources: 
 
