@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Procedural Terrain Generation"
-img: https://drive.google.com/uc?export=view&id=1P8UyUsCS6_tIWEiQaofz8zd5hfWvsWyA # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=15EFnDyBj4xX6gk_dALCu67T0HA-r2n-N # Add image post (optional)
 description: System for creating terrain in Substance designer and rendering in realtime, allowing for realtime terrain tweaking.
 tag: [Environment Art, Art, Lighting]
 ---

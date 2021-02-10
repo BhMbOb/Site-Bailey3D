@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shader - Ocean Waves"
-img: https://drive.google.com/uc?export=view&id=1x13YqKEwnpaI6UQ2n6Gz-QokzoVYqebp # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=1KzGQbvWD3G94fyMGG20iUi9RJM4pM_gw # Add image post (optional)
 description: Ocean shader system utilizing Gerstner waves for wave simulation and foam calculation.
 tag: [Environment Art, Art, Lighting]
 

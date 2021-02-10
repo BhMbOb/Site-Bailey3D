@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spline Tools"
-img:  https://drive.google.com/uc?export=view&id=1PSDJGoJ6gbbU-aCB2YtT3k_VscYSbKQ6
+img:  https://drive.google.com/uc?export=view&id=1M4-i-47mE6sFGRTiQUgiU9jcOOQAlg_9
 description: Some examples of how I've used spline tools within my work for procedural and dynamic asset creation.
 tag: [Environment Art, Art, Lighting]
 ---

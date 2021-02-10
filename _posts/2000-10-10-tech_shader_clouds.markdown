@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shader - Volumetric Clouds"
-img: https://drive.google.com/uc?export=view&id=1EU1EWRCN0E4Cv4UfRgE0S06F4EZK-stQ # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=1LjwRO6jMFjwYVvqxw9BK408r02HRgaY0 # Add image post (optional)
 description: System created in Unreal Engine, using HLSL and Raymarching techniques to create volumetric clouds.
 tag: [Environment Art, Art, Lighting]
 ---

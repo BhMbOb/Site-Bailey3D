@@ -5005,7 +5005,10 @@ cite {
 
 .image_cell img{
   display: block;
-  width:100%;
+  width: 100%;
+  object-position: center;
+  margin: 0;
+  padding: 0;
 }
 
 .image_cell:hover img{

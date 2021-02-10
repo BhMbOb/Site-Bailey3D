@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Desert Tech Environment"
-img: https://drive.google.com/uc?export=view&id=1nLtmK9lVVZGpuyl-igpM6CZxycxsIXjr # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=1abXDTO1qtY6KGTnVR5cjJTZqPfuV6gI8 # Add image post (optional)
 description: A Desert Tech-Environment created in Unreal Engine. Focuses on a few unique systems such as stylized rendering, houdini proceduralism, procedural texturing.
 tag: [Environment Art, Art, Lighting]
 ---

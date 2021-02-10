@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Environment - Library"
-img: https://drive.google.com/uc?export=view&id=1O3QeMmY0YxiLK22gre5zkuKIJsfSIuRL # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=1HVlUsBsY3j5D4QFQe8NpWHmowOjrfki_ # Add image post (optional)
 description: Group environment based on multiple different libraries. My responsibilities covered both the assets and technical side (Renders, lighting, procedural asset placement, shaders)
 tag: [Environment Art, Art, Lighting]
 ---

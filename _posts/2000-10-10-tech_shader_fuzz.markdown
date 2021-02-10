@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shader - Microfibre Surfaces"
-img: https://drive.google.com/uc?export=view&id=1OciWhmJ8HM4g1M0eV1A-HZZsHoRAW6_2 # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=1GBW6eXZFaRNyCTDbxGa1-V7Ladtel6LJ # Add image post (optional)
 description: Breakdown of a surface shader for simulating microfibre materials, such as Moss and Cloth.
 tag: [Environment Art, Art, Lighting]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Procedural Asset Placement"
-img: https://drive.google.com/uc?export=view&id=1jKHck-A-GnyH_8Im09S-izCSObWq6u47 # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=1mAeN8qpLeqQiVgt2BVyGek4BIzNVO1-f # Add image post (optional)
 description: Some examples of tools created for procedural placement of assets - includes randomness, modularity, proceduralism ...
 tag: [Environment Art, Art, Lighting]
 ---
