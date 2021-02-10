@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Procedural Asset Placement - Bailey3D</title>
-	<meta name="description" content="Some examples of tools created for procedural placement of assets - includes randomness, modularity, proceduralism ...">
+	<title>Procedural Asset Creation - Bailey3D</title>
+	<meta name="description" content="Some examples of tools created for procedural placement and generation of assets - includes randomness, modularity, proceduralism ...">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
@@ -51,17 +51,38 @@
   <article class="post">
     <header>
       <div class="post_image">
-        <img src=https://drive.google.com/uc?export=view&id=1mAeN8qpLeqQiVgt2BVyGek4BIzNVO1-f alt="Procedural Asset Placement">
+        <img src=https://drive.google.com/uc?export=view&id=1mAeN8qpLeqQiVgt2BVyGek4BIzNVO1-f alt="Procedural Asset Creation">
       </div>
       <div class="post_description">
-        <h1 class="post_title">Procedural Asset Placement</h1>
+        <h1 class="post_title">Procedural Asset Creation</h1>
       </div>
     </header> <!-- End Header -->
 
     <div class="entry_content">
-      <p>Setting up systems for different types of procedural assets is something that I have done for multiple projects, and can be used for things such as saving time, minimizing art fatigue and giving more realistic outputs. This post is going to cover some of the different procedural assets I’ve created for multiple projects.</p>
+      <p>These are a series of tools in unreal focused around procedural creation and placement of geometry and environmental details. 
+They were all created using a mix of Blueprint and C++.</p>
 
-<p>In the top image - Procedural book placement system with tinting. Uses the mesh bounding box and some maths to give random height, thickness, rotation and offsets. Every mesh in this gif uses a single instanced mesh, and single shader with pseudo-random tinting.</p>
+<p>The main benefit to interactive procedural tools like this is the time cost saving it creates, taking processes which would typically be full tasks and turning them into simple-to-do processes.</p>
+
+<hr />
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1OjGdXKF8vshJGc6RcV4akFOWIUE2gSSF" alt="Image" class="center-image" /></p>
+
+<p>This rail-bed system uses two unique assets (Planks &amp; Rail) to allow for easy modular placement of rails within an environment. The height and tangents of the spline can easily be tweaked to conform to the environment without need for many different track variations.</p>
+
+<hr />
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1PSDJGoJ6gbbU-aCB2YtT3k_VscYSbKQ6" alt="Image" class="center-image" /></p>
+
+<p>These follow a spline along a path which they’re randomly placed, it allows for the books to easily be placed on surfaces (such as windows or bookshelves). Like the previous example, these use instanced meshes and some shader maths to give unique colours and titles, which can be extremely useful for environments like libraries where you can have upwards of 100k book meshes.</p>
+
+<hr />
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=16MlrCf6lkIDp7rogGSXy05ltYygWxc4W" alt="Image" class="center-image" /></p>
+
+<p>This pipe spline uses a control spline to dynamically create spline meshes for easy creation of pipes.</p>
+
+<p>The pipes themselves are made up of only 2 assets (Pipe Body &amp; Connector), compared to dozens of variations for a typical spline system.</p>
 
 <hr />
 
@@ -77,7 +98,7 @@
       <footer class="post_footer cf">
         <div class="post_share">
           <span>Share:</span>
-          <a href="https://twitter.com/intent/tweet?text=Procedural Asset Placement&url=http://localhost:4000/tech_tools_procedural_placement/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/intent/tweet?text=Procedural Asset Creation&url=http://localhost:4000/tech_tools_procedural_placement/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
           <a href="https://facebook.com/sharer.php?u=http://localhost:4000/tech_tools_procedural_placement/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
           <a href="https://plus.google.com/share?url=http://localhost:4000/tech_tools_procedural_placement/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
         </div>

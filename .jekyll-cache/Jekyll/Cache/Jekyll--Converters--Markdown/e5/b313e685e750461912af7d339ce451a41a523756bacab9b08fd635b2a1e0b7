@@ -1,0 +1,48 @@
+I"�<p>These are a series of tools in unreal focused around procedural creation and placement of geometry and environmental details. 
+They were all created using a mix of Blueprint and C++.</p>
+
+<p>The main benefit to interactive procedural tools like this is the time cost saving it creates, taking processes which would typically be full tasks and turning them into simple-to-do processes.</p>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="https://drive.google.com/uc?export=view&amp;id=1ka6PYor62_ojeZPS6Sa696SENFjtlidJ" alt="Image" class="center-image" /></td>
+      <td style="text-align: center"><img src="https://drive.google.com/uc?export=view&amp;id=1gFGZYYooGn8XjJjLPgESCRoTh_Ijetqe" alt="Image" class="center-image" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1ka6PYor62_ojeZPS6Sa696SENFjtlidJ" alt="Image" class="center-image" /></p>
+
+<p>Procedural and modular bookcase system. Again all unique meshes are instanced, and a single shader is used for all pieces. The system uses 8 unique bookcase pieces along with the shelf and door, meaning the whole system uses 10 draw calls. System is parameterized with settings such as: RowsCount, ColumsCount and bUseDrawers. This system helped to save a lot of time and avoid art fatigue within the library scene along with improving the scenes overall performance.</p>
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1gFGZYYooGn8XjJjLPgESCRoTh_Ijetqe" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1OjGdXKF8vshJGc6RcV4akFOWIUE2gSSF" alt="Image" class="center-image" /></p>
+
+<p>This rail-bed system uses two unique assets (Planks &amp; Rail) to allow for easy modular placement of rails within an environment. The height and tangents of the spline can easily be tweaked to conform to the environment without need for many different track variations.</p>
+
+<hr />
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1PSDJGoJ6gbbU-aCB2YtT3k_VscYSbKQ6" alt="Image" class="center-image" /></p>
+
+<p>These follow a spline along a path which they’re randomly placed, it allows for the books to easily be placed on surfaces (such as windows or bookshelves). Like the previous example, these use instanced meshes and some shader maths to give unique colours and titles, which can be extremely useful for environments like libraries where you can have upwards of 100k book meshes.</p>
+
+<hr />
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=16MlrCf6lkIDp7rogGSXy05ltYygWxc4W" alt="Image" class="center-image" /></p>
+
+<p>This pipe spline uses a control spline to dynamically create spline meshes for easy creation of pipes.</p>
+
+<p>The pipes themselves are made up of only 2 assets (Pipe Body &amp; Connector), compared to dozens of variations for a typical spline system.</p>
+:ET
