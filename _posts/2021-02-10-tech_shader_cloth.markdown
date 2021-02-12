@@ -28,7 +28,7 @@ The maps used - Normals are generated from the Fibres and Pattern map in realtim
 
 ------
 
-![Image](https://drive.google.com/uc?export=view&id=119XuaQilX_PJEgCgpuBTCxDglur2WC_o){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1gLkEkNybXjgR-HwKKM6vx2_Rjz5TcJIG){: .center-image}
 
 ------
 
