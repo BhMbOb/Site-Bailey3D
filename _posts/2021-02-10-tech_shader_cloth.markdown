@@ -12,7 +12,9 @@ The shader is using a few effects, such as single layer pom/shadowing for the fu
 The examples here are each using a fiber height map and fuzz mask map, both of which are generating normals within the shader.
 These textures can be swapped out for completely different effects depending on the surface look.
 
+![Image](https://drive.google.com/uc?export=view&id=1iaLP86Y038ebFxaf1G2YowuwGj4AVcLe){: .center-image}
 ------
+
 
 ![Image](https://drive.google.com/uc?export=view&id=1VqixDjcA-BEK2gsl5sKVvqYcUj_X3Rdi){: .center-image}
 
