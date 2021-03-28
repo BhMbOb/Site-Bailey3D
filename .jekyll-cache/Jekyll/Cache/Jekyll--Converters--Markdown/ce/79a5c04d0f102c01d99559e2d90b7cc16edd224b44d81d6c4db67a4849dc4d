@@ -1,11 +1,11 @@
-I"œ<p>An experiment in cloth shading. This uses a few different methods to go from a standard surface / cloth brdf to something more reminiscent of an actual fibrous surface.</p>
+I"<p>An experiment in cloth shading. This uses a few different methods to go from a standard surface / cloth brdf to something more reminiscent of an actual fibrous surface.</p>
 
 <p>The shader is using a few effects, such as single layer pom/shadowing for the fuzz layer, procedural curvature aware masking for fuzz breakup at the edges of the surface, and specular / fibre occlusion, just to list the main ones.</p>
 
 <p>The examples here are each using a fiber height map and fuzz mask map, both of which are generating normals within the shader.
 These textures can be swapped out for completely different effects depending on the surface look.</p>
 
-<hr />
+<h2><img src="https://drive.google.com/uc?export=view&amp;id=1iaLP86Y038ebFxaf1G2YowuwGj4AVcLe" alt="Image" class="center-image" /></h2>
 
 <p><img src="https://drive.google.com/uc?export=view&amp;id=1VqixDjcA-BEK2gsl5sKVvqYcUj_X3Rdi" alt="Image" class="center-image" /></p>
 
@@ -19,7 +19,7 @@ These textures can be swapped out for completely different effects depending on 
 
 <hr />
 
-<p><img src="https://drive.google.com/uc?export=view&amp;id=119XuaQilX_PJEgCgpuBTCxDglur2WC_o" alt="Image" class="center-image" /></p>
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1gLkEkNybXjgR-HwKKM6vx2_Rjz5TcJIG" alt="Image" class="center-image" /></p>
 
 <hr />
 

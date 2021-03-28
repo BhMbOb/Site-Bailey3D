@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shader - Volumetric Clouds"
-img: https://drive.google.com/uc?export=view&id=1LjwRO6jMFjwYVvqxw9BK408r02HRgaY0 # Add image post (optional)
+img: https://drive.google.com/uc?export=view&id=1Zjphvxo4bhM_sNVoPGTYjbPHOrVyBd1a # Add image post (optional)
 description: System created in Unreal Engine, using HLSL and Raymarching techniques to create volumetric clouds.
 tag: [Environment Art, Art, Lighting]
 ---
@@ -31,7 +31,7 @@ Directional Lighting
 
 The clouds are lit by a single directional source vector which is passed in as a global value, allowing for fully dynamic sun lighting. This is actually tied to the scenes directional light source to allow for dynamic time-of-day updates. Extinction tinting was also something that helped a lot in bumping the final colour.
 
-![Image](https://drive.google.com/uc?export=view&id=1Zjphvxo4bhM_sNVoPGTYjbPHOrVyBd1a){: .center-image}
+![Image](https://drive.google.com/uc?export=view&id=1EU1EWRCN0E4Cv4UfRgE0S06F4EZK-stQ){: .center-image}
 
 Blueprint System
 
