@@ -1,4 +1,5 @@
-I"ð	<p>Software &amp; Tools Used: Substance Designer, Unreal Engine, HLSL</p>
+I"
+<p>Software &amp; Tools Used: Substance Designer, Unreal Engine, HLSL</p>
 
 <p>This is project I worked on to create a drag-and-drop cloud system within Unreal. It uses 3D Noise textures and volumetric raymarching to render a volume shader to simulate clouds. The system covers a few different areas, such as:</p>
 
@@ -11,7 +12,7 @@
 
 <p>The majority of the shader was calculated in HLSL, but pieced together in the material editor.</p>
 
-<p><img src="https://drive.google.com/uc?export=view&amp;id=1NXEuv7MVT3zv1vBA6wETz3b0kA81qF1_" alt="Image" class="center-image" /></p>
+<p><img src="https://www.dropbox.com/s/wl7upjckvsxyafs/bailey-martin-volumeclouds-render-01.jpg?raw=1" alt="Image" class="center-image" /></p>
 
 <p>3D Texture Sampling</p>
 
@@ -26,7 +27,7 @@
 
 <p>The clouds are lit by a single directional source vector which is passed in as a global value, allowing for fully dynamic sun lighting. This is actually tied to the scenes directional light source to allow for dynamic time-of-day updates. Extinction tinting was also something that helped a lot in bumping the final colour.</p>
 
-<p><img src="https://drive.google.com/uc?export=view&amp;id=1Zjphvxo4bhM_sNVoPGTYjbPHOrVyBd1a" alt="Image" class="center-image" /></p>
+<p><img src="https://www.dropbox.com/s/dq0y83rgr762ul7/bailey-martin-volumeclouds-render-02.jpg?raw=1" alt="Image" class="center-image" /></p>
 
 <p>Blueprint System</p>
 
@@ -34,7 +35,7 @@
 
 <p>You can see some of the main parameters for the clouds below.</p>
 
-<p><img src="https://drive.google.com/uc?export=view&amp;id=1EaZCKPdpa6AhAaG8H-95q7NsWeWxYq81" alt="Image" class="center-image" /></p>
+<p><img src="https://www.dropbox.com/s/ddl90ibrh9mvm50/bailey-martin-ezgif-com-resize.jpg?raw=1" alt="Image" class="center-image" /></p>
 
 <p>Links/Resources:</p>
 

@@ -1,14 +1,14 @@
-I"é<p>Surface shader created in Unreal Engine, simulating the specular lighting effect commonly seen on iridescent surfaces (Beetles, Oil, etc.), with an additional light-wrap effect for visual flair.</p>
+I"å<p>Surface shader created in Unreal Engine, simulating the specular lighting effect commonly seen on iridescent surfaces (Beetles, Oil, etc.), with an additional light-wrap effect for visual flair.</p>
 
-<p><img src="https://drive.google.com/uc?export=view&amp;id=15rn_kBf56X8SlUabkGmVzFf2PaGkOI_j" alt="Image" class="center-image" /></p>
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1Qtmo7vb9_lzeB_DSRa0o7ILZV2Svf77U" alt="Image" class="center-image" /></p>
 
 <hr />
 
-<p>The shader simulates the iridescent effect found on many different surfaces throughout nature (such as oil , beetle shells and more).</p>
+<p>In this project I aimed to create a minimal dependency Iridescent effect shader.</p>
 
-<p>It tends to be a more difficult effect to simulate with deferred rendering, since the amount of lighting information available is minimal.</p>
+<p>Iridescent surfaces are found on lots of different surfaces in nature (Eg, Oil, Beetle Shells, Titanium)</p>
 
-<p>To keep the shader deferred we are using 1 light sample (in this case the sun) to calculate the specular reflection that iridescence relies on.</p>
+<p>The shader uses a custom lightwrap based on a world space 3D noise, and doesnâ€™t depend on any light positions. This has the advantage of working on virtually any surface, but the disadvantage of not being physically correct.</p>
 
 <hr />
 

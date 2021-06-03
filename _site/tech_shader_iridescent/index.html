@@ -51,7 +51,7 @@
   <article class="post">
     <header>
       <div class="post_image">
-        <img src=https://drive.google.com/uc?export=view&id=14lWW-bjMLun1B9nfgudqaTUJoGlULkDh alt="Shader - Iridescense">
+        <img src=https://www.dropbox.com/s/z5x9nyt6cp2i06s/thumb.png?raw=1 alt="Shader - Iridescense">
       </div>
       <div class="post_description">
         <h1 class="post_title">Shader - Iridescense</h1>
@@ -61,45 +61,31 @@
     <div class="entry_content">
       <p>Surface shader created in Unreal Engine, simulating the specular lighting effect commonly seen on iridescent surfaces (Beetles, Oil, etc.), with an additional light-wrap effect for visual flair.</p>
 
-<p><img src="https://drive.google.com/uc?export=view&amp;id=15rn_kBf56X8SlUabkGmVzFf2PaGkOI_j" alt="Image" class="center-image" /></p>
+<p><img src="https://www.dropbox.com/s/79nq4xkenul1k2k/materials.png?raw=1" alt="Image" class="center-image" /></p>
 
 <hr />
 
-<p>The shader simulates the iridescent effect found on many different surfaces throughout nature (such as oil , beetle shells and more).</p>
+<p>In this project I aimed to create a minimal dependency Iridescent effect shader.</p>
 
-<p>It tends to be a more difficult effect to simulate with deferred rendering, since the amount of lighting information available is minimal.</p>
+<p>Iridescent surfaces are found on lots of different surfaces in nature (Eg, Oil, Beetle Shells, Titanium)</p>
 
-<p>To keep the shader deferred we are using 1 light sample (in this case the sun) to calculate the specular reflection that iridescence relies on.</p>
+<p>The shader uses a custom lightwrap based on a world space 3D noise, and doesn’t depend on any light positions. This has the advantage of working on virtually any surface, but the disadvantage of not being physically correct.</p>
 
 <hr />
 
 <h2 id="quick-breakdown">Quick Breakdown</h2>
 
-<p>The effect is applied to a full material using material attributes and packed into a material function, making it super easy to use and set up.</p>
-
+<p><strong>Input Values:</strong></p>
 <ul>
-  <li>
-    <p>Required Inputs - include: Iridescent Roughness Normals Influence and UV Scale.</p>
-  </li>
-  <li>
-    <p>Optional Inputs - include: Directional Light Vector Hue Shift Strength and Colour Ramp Texture.</p>
-  </li>
+  <li>Iridescent Tint: The base tint of the iridescent effect</li>
+  <li>Range: The overall colour range the iridescent gradient extends over (1.0 = full RGB range, 0.5 = base tint -&gt; base tint + 0.5 hue)</li>
+  <li>Scale: The overall scale of the 3D noise used with the lightwrap function</li>
+  <li>Fresnel Strength: An additional colour bump when viewed at grazing angles</li>
 </ul>
 
-<p>Lighting and UV distortion are the two main areas that give the effect.</p>
+<p>The Noise map is a low resolution 3D Perlin Noise texture, which is combined with a custom lightwrap UV function to simulate the iridescent effect when moving around the surface.</p>
 
-<ul>
-  <li>
-    <p>Lighting - is calculated pretty simply using surface normals and directional light vector (NDotL)</p>
-  </li>
-  <li>UV Distortion - is the main thing giving the effect and is using a grayscale noise texture in -1 to 1 range combined with a Reflection Vector to give a distortion effect that changes depending on the view angle in relation to the lighting.  (See below)</li>
-  <li>Hue Shift - is effected by the cameras position relative to the directional light vector. It gives a nice lightwrap effect that effects the hue more at extreme angles than at direct angles. The maths for this is pretty simple you can see the code below and an example of the mask:</li>
-</ul>
-
-<noscript><pre>400: Invalid request</pre></noscript>
-<script src="https://gist.github.com/9faef956ecade207a7fed1d4d5020a70.js"> </script>
-
-<p><img src="https://drive.google.com/uc?export=view&amp;id=1w_CdadZ9ntcA-wmJjGLPSC3S_inp6iNw" alt="Image" class="center-image" /></p>
+<p><img src="https://www.dropbox.com/s/laayahsdc03y6gy/iridescent_gif.gif?raw=1" alt="Image" class="center-image" /></p>
 
     </div>
     

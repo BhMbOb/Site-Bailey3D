@@ -1,0 +1,29 @@
+I"\<p>Surface shader created in Unreal Engine, simulating the specular lighting effect commonly seen on iridescent surfaces (Beetles, Oil, etc.), with an additional light-wrap effect for visual flair.</p>
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1Qtmo7vb9_lzeB_DSRa0o7ILZV2Svf77U" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<p>In this project I aimed to create a minimal dependency Iridescent effect shader.</p>
+
+<p>Iridescent surfaces are found on lots of different surfaces in nature (Eg, Oil, Beetle Shells, Titanium)</p>
+
+<p>The shader uses a custom lightwrap based on a world space 3D noise, and doesn’t depend on any light positions. This has the advantage of working on virtually any surface, but the disadvantage of not being physically correct.</p>
+
+<hr />
+
+<h2 id="quick-breakdown">Quick Breakdown</h2>
+
+<p><strong>Input Values:</strong></p>
+<ul>
+  <li>Iridescent Tint: The base tint of the iridescent effect</li>
+  <li>Range: The overall colour range the iridescent gradient extends over (1.0 = full RGB range, 0.5 = base tint -&gt; base tint + 0.5 hue)</li>
+  <li>Scale: The overall scale of the 3D noise used with the lightwrap function</li>
+  <li>Fresnel Strength: An additional colour bump when viewed at grazing angles</li>
+</ul>
+
+<p>The Noise map is a low resolution 3D Perlin Noise texture, which is combined with a custom lightwrap UV function to simulate the iridescent effect when moving around the surface.</p>
+
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1bTW-iGryz1bG_zlosgky2zX_9KJ-pZYO" alt="Image" class="center-image" />
+1f1FxnexBTtmK-EZvXkJbjPL6DabOsXp_</p>
+:ET
