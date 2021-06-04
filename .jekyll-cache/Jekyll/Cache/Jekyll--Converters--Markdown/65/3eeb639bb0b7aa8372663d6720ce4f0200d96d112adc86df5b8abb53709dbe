@@ -1,0 +1,49 @@
+I"
+<p>This is a shader function which can be added to any PBR surface to add an interactive iridescent effect (with colours changing depending on view angle).</p>
+
+<p>It was designed to be as minimal as possible, meaning it can be applied to pretty much any surface. This has the advantage of being plug and play, and works within a regular deferred pass, but the disadvantage ob being only a simulation meaning we’re not calculating physically accurate diffraction.</p>
+
+<p><img src="https://www.dropbox.com/s/79nq4xkenul1k2k/materials.png?raw=1" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<h2 id="parameters">Parameters</h2>
+
+<p>The effect is fully parameterized so we can add it to any surface, the parameters are listed below:</p>
+
+<ul>
+  <li>
+    <p>Scale: This controls the overall scale of the 3D noise used for the light wrapping and breakup affect</p>
+  </li>
+  <li>
+    <p>Colour Range: A [0..1] value which is used for the maximum hue shift allowed by the effect. 1.0 will result in a full colour spectrum (starting at the input tint), whereas 0.0 will result in only the tint being used.</p>
+  </li>
+  <li>
+    <p>Tint: The starting tint for the colour of the iridescent effect (Note, this also controls the overall saturation and lightness of the colours)</p>
+  </li>
+  <li>
+    <p>Fresnel Effect Strength: When viewed from grazing angles the iridescent hue shift is always bumped up to max. This controls how visible the fresnel effect is.</p>
+  </li>
+  <li>
+    <p>Noise Texture 3D: A 3D Texture sample used for the lightwrap and breakup effect. This defaults to a low-res 3D perlin noise texture, which works for most cases.</p>
+  </li>
+</ul>
+
+<p><img src="https://www.dropbox.com/s/esvxqsza7v9ahd9/iridescent_parameters.png?raw=1" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<h2 id="quick-breakdown">Quick Breakdown</h2>
+
+<p><strong>Input Values:</strong></p>
+<ul>
+  <li>Iridescent Tint: The base tint of the iridescent effect</li>
+  <li>Range: The overall colour range the iridescent gradient extends over (1.0 = full RGB range, 0.5 = base tint -&gt; base tint + 0.5 hue)</li>
+  <li>Scale: The overall scale of the 3D noise used with the lightwrap function</li>
+  <li>Fresnel Strength: An additional colour bump when viewed at grazing angles</li>
+</ul>
+
+<p>The Noise map is a low resolution 3D Perlin Noise texture, which is combined with a custom lightwrap UV function to simulate the iridescent effect when moving around the surface.</p>
+
+<p><img src="https://www.dropbox.com/s/laayahsdc03y6gy/iridescent_gif.gif?raw=1" alt="Image" class="center-image" /></p>
+:ET

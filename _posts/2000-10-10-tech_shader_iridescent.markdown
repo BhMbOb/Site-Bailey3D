@@ -5,29 +5,31 @@ img: https://www.dropbox.com/s/z5x9nyt6cp2i06s/thumb.png?raw=1 # Add image post 
 description: Shader simulating an iridescent surface, similar to that seen in Oil and Beetle shells.
 tag: [Environment Art, Art, Lighting]
 ---
-Surface shader created in Unreal Engine, simulating the specular lighting effect commonly seen on iridescent surfaces (Beetles, Oil, etc.), with an additional light-wrap effect for visual flair.
+
+This is a shader function which can be added to any PBR surface to add an interactive iridescent effect (with colours changing depending on view angle).
+
+It was designed to be as minimal as possible, meaning it can be applied to pretty much any surface. This has the advantage of being plug and play, and works within a regular deferred pass, but the disadvantage ob being only a simulation meaning we're not calculating physically accurate diffraction.
 
 ![Image](https://www.dropbox.com/s/79nq4xkenul1k2k/materials.png?raw=1){: .center-image}
 
 ------
 
-In this project I aimed to create a minimal dependency Iridescent effect shader.
+## Parameters
 
-Iridescent surfaces are found on lots of different surfaces in nature (Eg, Oil, Beetle Shells, Titanium)
+The effect is fully parameterized so we can add it to any surface, the parameters are listed below:
 
-The shader uses a custom lightwrap based on a world space 3D noise, and doesn't depend on any light positions. This has the advantage of working on virtually any surface, but the disadvantage of not being physically correct.
+- __Scale:__ This controls the overall scale of the 3D noise used for the light wrapping and breakup affect
+
+- __Colour Range:__ A [0..1] value which is used for the maximum hue shift allowed by the effect. 1.0 will result in a full colour spectrum (starting at the input tint), whereas 0.0 will result in only the tint being used.
+
+- __Tint:__ The starting tint for the colour of the iridescent effect (Note, this also controls the overall saturation and lightness of the colours)
+
+- __Fresnel Effect Strength:__ When viewed from grazing angles the iridescent hue shift is always bumped up to max. This controls how visible the fresnel effect is.
+
+- __Noise Texture 3D:__ A 3D Texture sample used for the lightwrap and breakup effect. This defaults to a low-res 3D perlin noise texture, which works for most cases.
+
+![Image](https://www.dropbox.com/s/esvxqsza7v9ahd9/iridescent_parameters.png?raw=1){: .center-image}
 
 ------
-
-## Quick Breakdown
-
-__Input Values:__
-- Iridescent Tint: The base tint of the iridescent effect
-- Range: The overall colour range the iridescent gradient extends over (1.0 = full RGB range, 0.5 = base tint -> base tint + 0.5 hue)
-- Scale: The overall scale of the 3D noise used with the lightwrap function
-- Fresnel Strength: An additional colour bump when viewed at grazing angles
-
-
-The Noise map is a low resolution 3D Perlin Noise texture, which is combined with a custom lightwrap UV function to simulate the iridescent effect when moving around the surface.
 
 ![Image](https://www.dropbox.com/s/laayahsdc03y6gy/iridescent_gif.gif?raw=1){: .center-image}
