@@ -5,24 +5,41 @@ img: https://www.dropbox.com/s/qlinrzximmdmp9t/thumb.png?raw=1 # Add image post 
 description: Breakdown of a surface shader for simulating microfibre materials, such as Moss and Cloth.
 tag: [Environment Art, Art, Lighting]
 ---
-Microfibre Surfaces such as moss and cloth differ to regular surfaces due to the fact the surface is built up of thousands of tiny fibres which have the ability to occlude other fibres and also self occlude. In a real world surface this would result in the tips of each fibre catching more light than the roots, which is what this shader aims to simulate.
 
-![Image](https://www.dropbox.com/s/c947at6sfn5l5rt/4e4c9bee28070aff36600e8f6978535e.gif?raw=1){: .center-image}
+This was a shader designer to simulate the Microfiber effect found on materials such as Moss, Fur and other surfaces in nature.
 
-In the real world when a viewer is looking head on to the surface they should be seeing deep into the occluded root area of the fibre, compared to a grazing angle where we should only see the well lit tips.
+The main difference between a Microfiber surface and a regular one is that Microfiber surfaces are built up of thousands of tiny fibers, which each have the ability to both occlude each other and self occlude themselves.
+In the real world this would result in the tips of each fiber catching more light than the roots, and this is what the shader aims to simulate.
 
-This is calculated using the dot product of the surface normals and camera position, and outputs a grayscale mask denoting the tips in white and core in black.
+---
 
-This mixed with some rim-lighting and colour ramping gives a nice effect similar to a real world microfibre surface.
+![Image](https://www.dropbox.com/s/suxi5rdn9zfrdzt/moss_turnaround.gif?raw=1){: .center-image}
 
-![Image](https://www.dropbox.com/s/3ij4998etbojey4/059e60fb7f3cffe41c0887cc5755f123.gif?raw=1){: .center-image}
 
-Other than the main part of this shader, there are some other areas such as subsurface colour tweaking, albedo and specular calculation, which all combine together to give a more realistic looking surface, along with a set of optional parameters:
+The effect is entirely dependent on the surfaces normal maps, and is ran through a dot product agains the camera reflection vector along with world space pixel normals. This way we will get a lighter albedo on the tips, and darker deeper in the roots. The use of a reflection vector rather than the raw camera vector adds a subtle lightwrap which breaks up the effect slightly.
 
-- Normals influence - overall strength the surface normals have on the effect
-- Effect multiplier - overall effect of the microfibre calculation on the surface
-- Inner / outer albedo multiplier - multiplier for the tips and core of the diffuse
-- Inner / outer specular exponent - exponent used for tips and core specular calculation
-- Subsurface exponent - used to simulate less porous back surfaces such as wood and dirt
+The effect also contains some custom controls for altering the specular strength, simulating specular occlusion, helping to give a more realistic final look.
 
-![Image](https://www.dropbox.com/s/oscvvm9unkwk766/Screenshot_4.png?raw=1){: .center-image}
+You can see the base, un-altered, map in the gif below.
+
+![Image](https://www.dropbox.com/s/2lg5cpdixibkoa3/moss_renders.png?raw=1){: .center-image}
+
+---
+
+### Parameters
+
+This is a breakdown of the input parameters to the fuzz function:
+
+- __Input Material Attributes__, this is specific to unreal and just packs the previously calculated surface properties into a single struct
+
+- __Albedo Darken Amount__, The overall darkness strength in the core of the material (roots)
+
+- __Albedo Lighten Amount__, For an additional bump in the albedo strength when viewing tips
+
+- __Specular Occlusion Strength__, the overall strength of the specular occlusion when viewing the roots
+
+- __Lightwrap Specular Strength__, an extra specular adjustment value when viewing areas considered light-wrapped
+
+- __Effect Strength__, overall strength of the microfiber effect on the whole surface, this can take in an extra map, uniform value, or vertex colours
+
+- __Subsurface Exponent__, used to simulate less porous surfaces behind the moss (Eg, wood/dirt)
