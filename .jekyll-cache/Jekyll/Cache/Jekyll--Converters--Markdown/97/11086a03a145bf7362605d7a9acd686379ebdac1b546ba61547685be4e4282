@@ -1,0 +1,73 @@
+I"�<p>The way that ocean rendering is typically simulated in 3d rendering is using <strong>Gerstner Waves</strong>.
+Unlike sine waves which will only displace the surface in the up axis (z all the way), Gerstner Waves offer a physically accurate simulation of how individual waves actually flow, by also offsetting the other two axis.</p>
+
+<p>You can see in the gif below how the vertices in the water plane move, with them getting more compact closer to the peaks, and less in the troths.</p>
+
+<p><img src="https://www.dropbox.com/s/td3ha3q5tcj89gn/wireframe_render.gif?raw=1" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<h2 id="core-parameters">Core Parameters</h2>
+
+<p>Since Gerstner Waves are a physical calculation of waves, it means real world parameters can also be used.</p>
+
+<p>The typical inputs for the gerstner function which are used here include:</p>
+
+<ul>
+  <li>
+    <p>Amplitude, the overall height of the wave (in Centimeters in this case)</p>
+  </li>
+  <li>
+    <p>Steepness, which controls the “sharpness” of the wave</p>
+  </li>
+  <li>
+    <p>Phase, the overall speed of the Gerstner Wave</p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="additional-parameters">Additional Parameters</h2>
+
+<p>And there are some additional ones which I have implemented:</p>
+
+<ul>
+  <li>
+    <p>Direction, a direction vector for the flow of the wave (2 component to avoid expensive sin/cos calls for each function)</p>
+  </li>
+  <li>
+    <p>Scale, an additional multiplier for the final wave to scale up/down from a single parameter</p>
+  </li>
+</ul>
+
+<p>And on top of that, since it’s a wave we can combine multiple Gerstner Waves together, so I created a second function (creatively called) <strong>GerstnerWaves</strong>, which has a couple of extra inputs:</p>
+
+<ul>
+  <li>WavesCount, the overall number of wave layers in the gerstner wave. Each new wave is double the frequency which results in a more finer amount of detail as the loops progress.</li>
+</ul>
+
+<hr />
+
+<h3 id="scattering">Scattering</h3>
+
+<p><img src="https://www.dropbox.com/s/m1ytipf8oo0udws/subsurface.jpg?raw=1" alt="Image" class="center-image" /></p>
+
+<h3 id="detailing-normals">Detailing Normals</h3>
+
+<p>Although the waves themselves do a large part in the realism of the shader, without additional surface detailing they end up looking quite flat. To fix this I used 3 sets of normals at different frequencies (High for main body detailing, Medium for subtle waves and Low for lower frequency ripples and surface disturbance).</p>
+
+<p>Normals alone tend to give a rather static and tiling look to the surface, so phasing between the textures in two states (similar to a flow map) also helps in avoiding this.</p>
+
+<p>Although the Gerstner calculations themselves do a huge part in making the shader feel realistic, without any additional surface detailing you’ll find that they still end up looking extremely flat.</p>
+
+<p><img src="https://www.dropbox.com/s/e1ntjrsi5ic8f2d/normals_comparison.gif?raw=1" alt="Image" class="center-image" /></p>
+
+<h3 id="sea-foam">Sea Foam</h3>
+<p>Foam is an area I’ve seen typically overlooked in some shaders, but found that even a subtle amount gives a nice effect. Unlike waves I couldn’t find a way of physically simulating this in realtime, so the way it is calculated uses some data from the Gerstner wave to create an ‘Amplitude Mask’.</p>
+
+<p>The foam mask was created in Substance Designer, and is a 2 channel mask of Worley noise distorted into a fluid like mask. It uses the phasing method mentioned before to give a nice fluid effect.</p>
+
+<p><img src="https://www.dropbox.com/s/hfgnq407hfo971z/foam_render.gif?raw=1" alt="Image" class="center-image" /></p>
+
+<p><img src="https://www.dropbox.com/s/b2017ok81rbo79p/foam_noise.jpg?raw=1" alt="Image" class="center-image" /></p>
+:ET
