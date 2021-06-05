@@ -1,0 +1,20 @@
+I"d<p>Asset Library is a series of pipeline tools and standardizations I’ve implemented into my own personal game projects, with a few main goals, all focused on maximizing the efficiency of taking content from various DCC Packages to the final Game.</p>
+
+<p>This is a somewhat personal solution to asset management for my own work, and is constantly evolving. But since it’s starting to morph into a more tangible pipeline and set of tools in itself I thought a post on it could be interesting.</p>
+
+<hr />
+
+<h3 id="asset-structure-standardization">Asset Structure Standardization</h3>
+
+<p>…</p>
+
+<h3 id="asset-types--asset-serialization">Asset Types / Asset Serialization</h3>
+
+<p>…</p>
+
+<h3 id="automation--importing--exporting">Automation &amp; Importing / Exporting</h3>
+
+<h3 id="inter-package-dcc-operability">Inter-package DCC Operability</h3>
+
+<p>…</p>
+:ET

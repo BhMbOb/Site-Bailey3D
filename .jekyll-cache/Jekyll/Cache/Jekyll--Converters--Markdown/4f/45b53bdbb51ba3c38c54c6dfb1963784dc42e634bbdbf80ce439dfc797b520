@@ -1,0 +1,58 @@
+I"-<p>Asset Library is a series of pipeline tools and standardizations I’ve implemented into my own personal game projects, with a few main goals, all focused on maximizing the efficiency of taking content from various DCC Packages to the final Game.</p>
+
+<p>This is a somewhat personal solution to asset management for my own work, and is constantly evolving. But since it’s starting to morph into a more tangible pipeline and set of tools in itself I thought a post on it could be interesting.</p>
+
+<p>Below I’ll list a series of the processes and tools that I’ve used to make the asset library pipeline as seamless as possible.</p>
+
+<hr />
+
+<h3 id="asset-types">Asset Types</h3>
+
+<p>I chose to add a new metadata asset type for all of the major asset types used in DCC applications. These files contain information on things like, material paths for geometry files, filepath history for asset management use, and shader parameters for materials and such.</p>
+
+<p>The current Asset types I’m using are: <strong>.geometry, .material, .shader</strong></p>
+
+<p>With future plans to include: <strong>.foliage, .texture, .prefab</strong></p>
+
+<p>There are a few advantages to adding custom metadata file types:</p>
+
+<ul>
+  <li>
+    <p>Standardization of exporting / importing process, meaning tools can be designed around automating the creation and usage of these files. At this point I don’t worry about importing individual asset files, but can import assets as a whole with all their dependencies. For example, .geometry files have .material file dependencies, which have .texture dependencies, the Asset Library importers allows for importing the whole dependency stack with a single click.</p>
+  </li>
+  <li>
+    <p>Store any useful information for assets, useful for things like import/export tools, and also means we don’t have to worry about parsing external file types (Eg, .uasset/.fbx)</p>
+  </li>
+  <li>
+    <p>Storing Asset Library relative information, such as relative paths to Asset Library materials in .geometry files, and Asset Library textures in .material files</p>
+  </li>
+</ul>
+
+<p>In the image below you can see the file structure for a single .geometry asset. The “textures”, “materials”, and “geometry” folders all include the respective sub-asset data needed to import to programs.
+<img src="https://www.dropbox.com/s/yaawqybzx3tb696/geometry_example.png?raw=1" alt="Image" class="center-image" /></p>
+
+<h3 id="asset-types--asset-serialization">Asset Types / Asset Serialization</h3>
+
+<p>One of the first things I found I needed for this process were certain metadata type files, for all of the main asset types used.
+Rather than creating bespoke file formats (such as .uasset), I’m instead using a .json file as the base of all my asset metadata.</p>
+
+<p>I’m currently using 4 main types of asset metadata  files:</p>
+
+<ul>
+  <li>.material, this stores the data on all parameters needed for a final surface (including textures)</li>
+  <li>.geometry, this is typically used for geometric asset types and stores data on which .FBX asset to target and the asset library .material files that it contains.</li>
+  <li>.shader,</li>
+</ul>
+
+<h3 id="asset-structure-standardization">Asset Structure Standardization</h3>
+
+<p>One of the most important (and possibly least interesting) goals of the Asset Library, was creating logical naming conventions and folder structures for all of my assets.</p>
+
+<h3 id="automation--importing--exporting">Automation &amp; Importing / Exporting</h3>
+
+<p>…</p>
+
+<h3 id="inter-package-dcc-operability">Inter-package DCC Operability</h3>
+
+<p>…</p>
+:ET

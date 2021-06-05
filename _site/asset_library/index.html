@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Asset Library Tools - Bailey3D</title>
+	<meta name="description" content="A collection of tools based around creating a standardized asset library, with simple import/export from multiple programs.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1UVB8W-8Q7I93-9obzDfuAALWUZ0bHxXM" type="image/png"/>
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#d25469">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#d25469">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#d25469">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  
+<header class="main_header">
+  <nav class="main_info">
+    <img src="https://drive.google.com/uc?export=view&id=1b8TLPZm8-DhLBIS8gVV1MKAlDoPM2_Fu" height=30 class="logo">
+    <a href="/" class="text">Bailey Martin - Technical Artist</a>
+  </nav>
+  <nav class="main_header_menu">
+    <nav>
+      <a href="/">Tech</a>
+      <a href="/art/">Art</a>
+      <a href="/about/">About</a>
+    </nav>
+    <nav class="social_header">
+        <a href="https://www.linkedin.com/in/bailey-bob-martin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/MrBhmbob" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://github.com/BhMbOb" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </nav>
+  </nav>
+</header> <!-- End Section Header -->
+
+<main class="post_content">
+  <article class="post">
+    <header>
+      <div class="post_image">
+        <img src=https://www.dropbox.com/s/pchwhaaryic7jne/asset_library.png?raw=1 alt="Asset Library Tools">
+      </div>
+      <div class="post_description">
+        <h1 class="post_title">Asset Library Tools</h1>
+      </div>
+    </header> <!-- End Header -->
+
+    <div class="entry_content">
+      <p>Asset Library is a series of pipeline tools I’ve created for my own personal projects.</p>
+
+<p>The main goals of these are to maximize the efficiency of bringing asset types from many DCC Packages to the final game.</p>
+
+<p>It’s all a somewhat personal solution to my own project needs, and is constantly evolving, but since it’s starting to morph into a tangible set of tools I thought writing a post on it could be interesting.</p>
+
+<hr />
+
+<h2 id="substance-designer">Substance Designer</h2>
+
+<h3 id="material-export">Material Export</h3>
+
+<p><img src="https://www.dropbox.com/s/3pht3ym28hzwvlb/material_editor.png?raw=1" alt="Image" class="center-image" /></p>
+
+<p>This is a tool used to automatically export a material and all variants from Substance Designer to the Asset Library. When the exporter is ran, all textures are re-exported, and the .material file is updated with any edited parameters.</p>
+
+<h3 id="material-refresh">Material Refresh</h3>
+
+<p><img src="https://www.dropbox.com/s/srujsjv4kfttc8g/designer_to_unreal.png?raw=1" alt="Image" class="center-image" /></p>
+
+<p>One of the nicest parts of the material pipeline is the “Import to Unreal Engine” sub-tool. Whevever this is ran, the current material is exported from Substance Designer, and reimported to Unreal with all of the new textures.</p>
+
+<p>This means I no longer have to nagivate to the updated material and manually reimport all dependent textures. Instead it’s a single button press.</p>
+
+<h3 id="material-import">Material Import</h3>
+
+<p>This loads a .sbs file from a target exported material. Nothing too special. But can save a couple of mouse clicks.</p>
+
+<hr />
+
+<h2 id="unreal-engine">Unreal Engine</h2>
+
+<h3 id="material-import-1">Material Import</h3>
+
+<p>This takes the data for a material as exported from Substance Designer, and automatically imports it to Unreal Engine, along with the whole dependency stack (all referenced textures).</p>
+
+<p>It also creates a new Material Instance from a list of predefined Master Materials/Shaders available to the Asset Library, and sets all of the child parameters accordingly.</p>
+
+<p><img src="https://www.dropbox.com/s/tzy21d3emm1lsfs/unreal_import.png?raw=1" alt="Image" class="center-image" /></p>
+
+<h3 id="geometry-import">Geometry Import</h3>
+
+<p>This is tied to the above Asset Importer, and is responsible for importing the Geometry asset type, along with all of the rest of the dependencies (Textures, Materials, etc)</p>
+
+<h3 id="material-export-1">Material Export</h3>
+
+<p>This tool will serialize all materials currently found inside the Unreal project to .material files, including their parameters, and textures relative to the asset library.</p>
+
+<p>This is useful for tweaking materials in the editor, while still being able to export them out to the asset library for editing in other external DCC applications.</p>
+
+<h3 id="shader-exporter">Shader Exporter</h3>
+
+<p>This is a standalone tool which will export the metadata for unreal based shaders to a .shader file. This is useful for reading shader parameters in external programs, and building materials outside of Unreal.</p>
+
+<hr />
+
+<h2 id="3ds-max">3DS Max</h2>
+
+<h3 id="geometry-exporter">Geometry Exporter</h3>
+
+<p>This tool will export the currently opened 3DS Max scene to either a single FBX file, or a series of FBX files.</p>
+
+<p>The exporter currently has two modes:</p>
+
+<ul>
+  <li>Single Export: This will export the whole file to a single .fbx file if only a single sub-mesh is found</li>
+</ul>
+
+<p><img src="https://www.dropbox.com/s/u42chrl3qnle4im/single_export.png?raw=1" alt="Image" class="center-image" /></p>
+
+<ul>
+  <li>Multi Export: This will export a series of meshes from a single file. The exporter looks for all layers that start with “SM_” as this is used to denote child meshes.</li>
+</ul>
+
+<p><img src="https://www.dropbox.com/s/99yn5iujox3s7zk/multi_export.png?raw=1" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<h3 id="tbc">TBC..</h3>
+
+<p>There are more tools, but at the moment they’re all pretty specific use cases for my projects. I’m sure I’ll add to this post more info on certain tools as they progress.</p>
+
+    </div>
+    
+    <div class="post_wrapper">
+      <footer class="post_footer cf">
+        <div class="post_share">
+          <span>Share:</span>
+          <a href="https://twitter.com/intent/tweet?text=Asset Library Tools&url=http://localhost:4000/asset_library/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/asset_library/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/asset_library/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+        </div>
+        <div class="post_tag">
+          <span>Tags:</span>
+          
+          <a href="/tags#Assets" class="tag">Assets</a>
+          
+          <a href="/tags#Tools" class="tag">Tools</a>
+          
+          <a href="/tags#Pipeline" class="tag">Pipeline</a>
+          
+        </div>
+      </footer>
+    </div>
+  </article> <!-- End Section Post -->
+
+  <section class="author cf">
+    <div class="post_wrapper">
+      <div class="author_image">
+        <img src="https://drive.google.com/uc?export=view&id=17g4_TPelUaX0spJtGdXO07gpswvPt4_x" alt="Author face">
+      </div>
+      <div class="author_info">
+        <h2 class="author_title">Bailey Martin</h2>
+        <p class="author_subtitle"> Technical artist @ Codemasters.
+ Specialising in Shaders, Tools and Proceduralism.
+ Feel free to get in touch with me through Email, Twitter or LinkedIn!</p>
+        <div class="author_social">
+          
+          <span class="author_email"><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:contact@bailey3d.com">contact@bailey3d.com</a></span>
+          
+
+          
+          <span class="author_website"><i class="fa fa-link" aria-hidden="true"></i> <a href="https://www.bailey3d.com" target="_blank">https://www.bailey3d.com</a></span>
+                      
+        </div>
+      </div>
+    </div>
+  </section> <!-- End Section Author -->
+  
+  
+<section class="comment_area">
+  <div class="comment_wrapper">
+    
+  </div>
+</section> <!-- End Section Comment Area -->
+  
+</main> <!-- End Section Post Content -->
+
+
+<footer class="main_footer">
+  <div class="wrapper">
+    <div class="copyright">
+      <p>&copy; 2021 Bailey3D | <a href="contact@bailey3d.com" target="_blank">Contact@Bailey3D.com</a></p>
+    </div>
+  </div>
+</footer> <!-- End Section Footer -->
+
+
+  
+<div class="top" title="Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div> <!-- End Top Scroll -->
+  
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jquery.vide.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+<!-- End Javascript -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+</body>
+</html>

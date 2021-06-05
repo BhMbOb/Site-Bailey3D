@@ -1,0 +1,17 @@
+I"�<p>Asset Library is a series of pipeline tools I’ve created for my own personal projects.</p>
+
+<p>The main goals of these are to maximize the efficiency of bringing asset types from many DCC Packages to the final game.</p>
+
+<p>It’s all a somewhat personal solution to my own project needs, and is constantly evolving, but since it’s starting to morph into a tangible set of tools I thought writing a post on it could be interesting.</p>
+
+<hr />
+
+<h3 id="asset-standardization">Asset Standardization</h3>
+
+<p>Possibly the most important part of the whole process is having standardization in how assets and files are named, and the folder structures.
+I’ve chosen to implement new file types for each of the major assets (.material, .geometry, .shader), which stores metadata such as where the final binary assets are stored (relative to the asset library), and various parameters for the asset type.</p>
+
+<p>Below you can see an example of the folder structure for a geometry asset. It’s been stored in a base folder with the name of the asset, and contains child folders for all materials, textures and geometry files (fbx)</p>
+
+<p><img src="https://www.dropbox.com/s/yaawqybzx3tb696/geometry_example.png?raw=1" alt="Image" class="center-image" /></p>
+:ET

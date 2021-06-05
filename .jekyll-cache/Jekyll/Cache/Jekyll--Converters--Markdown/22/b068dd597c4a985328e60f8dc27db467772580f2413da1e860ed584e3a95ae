@@ -1,0 +1,34 @@
+I",<p>Asset Library is a series of pipeline tools I’ve created for my own personal projects.</p>
+
+<p>The main goals of these are to maximize the efficiency of bringing asset types from many DCC Packages to the final game.</p>
+
+<p>It’s all a somewhat personal solution to my own project needs, and is constantly evolving, but since it’s starting to morph into a tangible set of tools I thought writing a post on it could be interesting.</p>
+
+<hr />
+
+<h3 id="material-export-substance-designer">Material Export (Substance Designer)</h3>
+
+<p><img src="https://www.dropbox.com/s/3pht3ym28hzwvlb/material_editor.png?raw=1" alt="Image" class="center-image" /></p>
+
+<p>This is a tool used to automatically export a material and all variants from Substance Designer to the Asset Library. When the exporter is ran, all textures are re-exported, and the .material file is updated with any edited parameters.</p>
+
+<hr />
+
+<h3 id="material-refresh-unreal-engine">Material Refresh (Unreal Engine)</h3>
+
+<p><img src="https://www.dropbox.com/s/srujsjv4kfttc8g/designer_to_unreal.png?raw=1" alt="Image" class="center-image" /></p>
+
+<p>One of the nicest parts of the material pipeline is the “Import to Unreal Engine” sub-tool. Whevever this is ran, the current material is exported from Substance Designer, and reimported to Unreal with all of the new textures.</p>
+
+<p>This means I no longer have to nagivate to the updated material and manually reimport all dependent textures. Instead it’s a single button press.</p>
+
+<hr />
+
+<h3 id="material-import-unreal-engine">Material Import (Unreal Engine)</h3>
+
+<p>This takes the data for a material as exported from Substance Designer, and automatically imports it to Unreal Engine, along with the whole dependency stack (all referenced textures).</p>
+
+<p>It also creates a new Material Instance from a list of predefined Master Materials/Shaders available to the Asset Library, and sets all of the child parameters accordingly.</p>
+
+<p><img src="https://www.dropbox.com/s/tzy21d3emm1lsfs/unreal_import.png?raw=1" alt="Image" class="center-image" /></p>
+:ET
