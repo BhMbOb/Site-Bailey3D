@@ -1,0 +1,42 @@
+I"X<p>This was experiment in cloth shading. This uses a few different methods to go from a standard surface / cloth brdf to something more reminiscent of an actual fibrous surface.</p>
+
+<p>A few of the main effects this shader utilizes include:</p>
+
+<ul>
+  <li>
+    <p>Single layer parallax shadowing (for the fuzz layer)</p>
+  </li>
+  <li>
+    <p>High-frequency normals calculated from height maps</p>
+  </li>
+  <li>
+    <p>Curvature edge masking, for altering opacity at grazing angles</p>
+  </li>
+  <li>
+    <p>Specular occlusion for the fibers to help simulate the self shadowing and fuzzyness of the surface</p>
+  </li>
+  <li>
+    <p>Low frequency normals (for larger scale surface deformation)</p>
+  </li>
+  <li>
+    <p>Statically compiled variants for using Colour Tint Maps and Dual-tone tinting</p>
+  </li>
+</ul>
+
+<h2 id="renders">Renders:</h2>
+
+<p><img src="https://www.dropbox.com/s/ha66k7toi59bbfo/cloth_turnaround.gif?raw=1" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<p><img src="https://www.dropbox.com/s/pmlde33hv2wqklj/materials.png?raw=1" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<p><img src="https://www.dropbox.com/s/oqeic32dm93jemu/02.png?raw=1" alt="Image" class="center-image" /></p>
+
+<hr />
+
+<p><img src="https://www.dropbox.com/s/elotrl3szm0djdu/07.png?raw=1" alt="Image" class="center-image" />
+(Example of the data maps used)</p>
+:ET

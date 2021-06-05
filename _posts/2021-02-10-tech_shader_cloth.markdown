@@ -1,37 +1,33 @@
 ---
 layout: post
 title: "Cloth Shader"
-img:  https://www.dropbox.com/s/kwj7o7m0jsultw6/thumb.png?raw=1
+img:  https://www.dropbox.com/s/ha66k7toi59bbfo/cloth_turnaround.gif?raw=1
 description: Study in creating a custom cloth shader with realistic fuzz and fiber masking.
 tag: [Tech Art, Shader, Lighting]
 ---
-An experiment in cloth shading. This uses a few different methods to go from a standard surface / cloth brdf to something more reminiscent of an actual fibrous surface.
+This was experiment in cloth shading. This uses a few different methods to go from a standard surface / cloth brdf to something more reminiscent of an actual fibrous surface.
 
-The shader is using a few effects, such as single layer pom/shadowing for the fuzz layer, procedural curvature aware masking for fuzz breakup at the edges of the surface, and specular / fibre occlusion, just to list the main ones.
+A few of the main effects this shader utilizes include:
 
-The examples here are each using a fiber height map and fuzz mask map, both of which are generating normals within the shader.
-These textures can be swapped out for completely different effects depending on the surface look.
+- Single layer parallax shadowing (for the fuzz layer)
 
-![Image](https://www.dropbox.com/s/khew0bobro7u2sl/turnaround.gif?raw=1){: .center-image}
-------
+- High-frequency normals calculated from height maps
 
+- Curvature edge masking, for altering opacity at grazing angles
 
-![Image](https://www.dropbox.com/s/ozvrkgy4l0lbca5/05.png?raw=1){: .center-image}
+- Specular occlusion for the fibers to help simulate the self shadowing and fuzzyness of the surface
 
-Left: Custom Cloth Shader - Right: Standard Surface Shader
+- Low frequency normals (for larger scale surface deformation)
 
-------
+- Statically compiled variants for using Colour Tint Maps and Dual-tone tinting
 
 ![Image](https://www.dropbox.com/s/elotrl3szm0djdu/07.png?raw=1){: .center-image}
+(Example of the data maps used)
 
-The maps used - Normals are generated from the Fibres and Pattern map in realtime, along with parallax + shadowing from the fibres map.
+## Renders:
 
-------
+![Image](https://www.dropbox.com/s/kwj7o7m0jsultw6/thumb.png?raw=1){: .center-image}
 
-![Image](https://www.dropbox.com/s/lrz8uxw1711c5vl/08.png?raw=1){: .center-image}
-
-------
+![Image](https://www.dropbox.com/s/pmlde33hv2wqklj/materials.png?raw=1){: .center-image}
 
 ![Image](https://www.dropbox.com/s/oqeic32dm93jemu/02.png?raw=1){: .center-image}
-
-[Fuzz + Fibers Masking + Fibers Self Shadowing] - Edge/curvature masking used to make the surface look less flat

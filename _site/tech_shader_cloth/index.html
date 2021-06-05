@@ -50,7 +50,7 @@
   <article class="post">
     <header>
       <div class="post_image">
-        <img src=https://www.dropbox.com/s/kwj7o7m0jsultw6/thumb.png?raw=1 alt="Cloth Shader">
+        <img src=https://www.dropbox.com/s/ha66k7toi59bbfo/cloth_turnaround.gif?raw=1 alt="Cloth Shader">
       </div>
       <div class="post_description">
         <h1 class="post_title">Cloth Shader</h1>
@@ -58,34 +58,41 @@
     </header> <!-- End Header -->
 
     <div class="entry_content">
-      <p>An experiment in cloth shading. This uses a few different methods to go from a standard surface / cloth brdf to something more reminiscent of an actual fibrous surface.</p>
+      <p>This was experiment in cloth shading. This uses a few different methods to go from a standard surface / cloth brdf to something more reminiscent of an actual fibrous surface.</p>
 
-<p>The shader is using a few effects, such as single layer pom/shadowing for the fuzz layer, procedural curvature aware masking for fuzz breakup at the edges of the surface, and specular / fibre occlusion, just to list the main ones.</p>
+<p>A few of the main effects this shader utilizes include:</p>
 
-<p>The examples here are each using a fiber height map and fuzz mask map, both of which are generating normals within the shader.
-These textures can be swapped out for completely different effects depending on the surface look.</p>
+<ul>
+  <li>
+    <p>Single layer parallax shadowing (for the fuzz layer)</p>
+  </li>
+  <li>
+    <p>High-frequency normals calculated from height maps</p>
+  </li>
+  <li>
+    <p>Curvature edge masking, for altering opacity at grazing angles</p>
+  </li>
+  <li>
+    <p>Specular occlusion for the fibers to help simulate the self shadowing and fuzzyness of the surface</p>
+  </li>
+  <li>
+    <p>Low frequency normals (for larger scale surface deformation)</p>
+  </li>
+  <li>
+    <p>Statically compiled variants for using Colour Tint Maps and Dual-tone tinting</p>
+  </li>
+</ul>
 
-<h2><img src="https://www.dropbox.com/s/khew0bobro7u2sl/turnaround.gif?raw=1" alt="Image" class="center-image" /></h2>
+<p><img src="https://www.dropbox.com/s/elotrl3szm0djdu/07.png?raw=1" alt="Image" class="center-image" />
+(Example of the data maps used)</p>
 
-<p><img src="https://www.dropbox.com/s/ozvrkgy4l0lbca5/05.png?raw=1" alt="Image" class="center-image" /></p>
+<h2 id="renders">Renders:</h2>
 
-<p>Left: Custom Cloth Shader - Right: Standard Surface Shader</p>
+<p><img src="https://www.dropbox.com/s/kwj7o7m0jsultw6/thumb.png?raw=1" alt="Image" class="center-image" /></p>
 
-<hr />
-
-<p><img src="https://www.dropbox.com/s/elotrl3szm0djdu/07.png?raw=1" alt="Image" class="center-image" /></p>
-
-<p>The maps used - Normals are generated from the Fibres and Pattern map in realtime, along with parallax + shadowing from the fibres map.</p>
-
-<hr />
-
-<p><img src="https://www.dropbox.com/s/lrz8uxw1711c5vl/08.png?raw=1" alt="Image" class="center-image" /></p>
-
-<hr />
+<p><img src="https://www.dropbox.com/s/pmlde33hv2wqklj/materials.png?raw=1" alt="Image" class="center-image" /></p>
 
 <p><img src="https://www.dropbox.com/s/oqeic32dm93jemu/02.png?raw=1" alt="Image" class="center-image" /></p>
-
-<p>[Fuzz + Fibers Masking + Fibers Self Shadowing] - Edge/curvature masking used to make the surface look less flat</p>
 
     </div>
     
