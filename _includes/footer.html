@@ -1,8 +1,14 @@
+<div class="page__footer-follow">
+  <ul class="social-icons">
 
-<footer class="main_footer">
-  <div class="wrapper">
-    <div class="copyright">
-      <p>&copy; {{site.time | date: '%Y'}} Bailey3D | <a href="contact@bailey3d.com" target="_blank">Contact@Bailey3D.com</a></p>
-    </div>
-  </div>
-</footer> <!-- End Section Footer -->
+    {% if site.footer.links %}
+      {% for link in site.footer.links %}
+        {% if link.label and link.url %}
+          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}  |  <a href="mailto:contact@bailey3d.com" rel="nofollow">Contact@Bailey3D.com</a></div>

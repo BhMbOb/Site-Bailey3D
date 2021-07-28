@@ -1,68 +1,114 @@
 ---
-layout: default
+layout: splash
+title: "Bailey Martin - Technical Art"
+banner_title: "Hi - I'm Bailey,"
+excerpt: "Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedurlal Tooling."
+header:
+  overlay_image: /assets/images/banner.jpg
+  actions:
+    - label: "Resume"
+      url: "http://resume.bailey3d.com"
+
+# Begin Shaders
+
+shader_row:
+    - image_path: https://www.dropbox.com/s/laayahsdc03y6gy/iridescent_gif.gif?raw=1
+      title: "Iridesecense Shader"
+      url: "../tech_shader_iridescent"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+    - image_path: https://www.dropbox.com/s/vzvp31ghfqeqls5/thumb.gif?raw=1
+      title: "Ocean Rendering"
+      url: "../tech_shader_gerstner"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+    - image_path: https://www.dropbox.com/s/kwj7o7m0jsultw6/thumb.png?raw=1
+      title: "Cloth Shading"
+      url: "../tech_shader_cloth"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+    - image_path: https://www.dropbox.com/s/qlinrzximmdmp9t/thumb.png?raw=1
+      title: "Microfibre Rendering"
+      url: "../tech_shader_fuzz"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+    - image_path: https://drive.google.com/uc?export=view&id=1abXDTO1qtY6KGTnVR5cjJTZqPfuV6gI8
+      title: "Desert Rendering"
+      url: "../tech_environment_desert"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+    - image_path: https://www.dropbox.com/s/hp3m7u8xjwfjyg1/thumb.jpg?raw=1
+      title: "Volumetric Clouds"
+      url: "../tech_shader_clouds"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+tools_row:
+
+    - image_path: https://www.dropbox.com/s/vca95xu6qjb1ei9/juniper.png?raw=1
+      title: "Juniper - Tools Framework"
+      url: "https://github.com/BhMbOb/Juniper"
+      new_tab: "True"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+    - image_path: https://drive.google.com/uc?export=view&id=15EFnDyBj4xX6gk_dALCu67T0HA-r2n-N
+      title: "Procedural Volcano"
+      url: "../tech_environment_volcano"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+    - image_path: https://drive.google.com/uc?export=view&id=1mAeN8qpLeqQiVgt2BVyGek4BIzNVO1-f
+      title: "Procedural Assets"
+      url: "../tech_tools_procedural_placement"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+    - image_path: https://www.dropbox.com/s/pchwhaaryic7jne/asset_library.png?raw=1
+      title: "Asset Library"
+      url: "../asset_library"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+# Environments
+
+art_row:
+    - image_path: https://drive.google.com/uc?export=view&id=1toxUF-SDqCxPNbSVn8cApQVcw-TFJepj
+      title: "Soviet Mines"
+      url: "../art_mines"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+    - image_path: https://drive.google.com/uc?export=view&id=1jxRpK4Et2NIIsUQhNRH58W4scZEnv2j2
+      title: "Victorian Brothel"
+      url: "../art_brothel"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+    - image_path: https://drive.google.com/uc?export=view&id=1ggKxwmNcTYvphSioW4XrlHtRnElskerU
+      title: "Forest Campsite"
+      url: "../art_forest"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
+    - image_path: https://drive.google.com/uc?export=view&id=1HVlUsBsY3j5D4QFQe8NpWHmowOjrfki_
+      title: "Library Environment"
+      url: "../art_library"
+      btn_class: "btn--primary"
+      btn_label: "View Post"
+
 ---
-  {% include header.html %}
 
-  <main class="page-content" aria-label="Content">
-    <div class="image_row_3">
-      <div class="image_column_3">
+<a name="Shaders"><h1>Shaders<hr></h1></a>
+{% include shader_row %}
 
-        <div class="image_cell">
-          <img src="https://www.dropbox.com/s/laayahsdc03y6gy/iridescent_gif.gif?raw=1"/>
-          <a class="text_link" href="../tech_shader_iridescent/index.html">Iridescence <br><i><small>[HLSL / Unreal Shader]</small></i></a>
-        </div>
+<a name="Tools"><h1>Tools<hr></h1></a>
+{% include tools_row %}
 
-        <div class="image_cell">
-          <img src="https://www.dropbox.com/s/vzvp31ghfqeqls5/thumb.gif?raw=1"/>
-          <a class="text_link" href="../tech_shader_gerstner/index.html">Ocean Rendering <br><i><small>[HLSL Shader]</small></i></a>
-        </div>
-
-        <div class="image_cell">
-          <img src="https://drive.google.com/uc?export=view&id=1abXDTO1qtY6KGTnVR5cjJTZqPfuV6gI8"/>
-          <a class="text_link" href="../tech_environment_desert/index.html">Desert Environment <br><i><small>[Tech]</small></i></a>
-        </div>
-
-      </div>
-
-      <div class="image_column_3">
-
-        <div class="image_cell">
-          <img src="https://www.dropbox.com/s/vca95xu6qjb1ei9/juniper.png?raw=1"/>
-          <a class="text_link" href="https://github.com/BhMbOb/Juniper">Juniper <br><i><small>Framework for a unified scripting pipeline across various DCC packages</small></i></a>
-        </div>
-       
-        <div class="image_cell">
-          <img src="https://drive.google.com/uc?export=view&id=15EFnDyBj4xX6gk_dALCu67T0HA-r2n-N"/>
-          <a class="text_link" href="../tech_environment_volcano/index.html" target="_blank">Volcano Render<br><i><small>[Procedural / Niagara / Shaders]</small></i></a>
-        </div>
-
-        <div class="image_cell">
-          <img src="https://www.dropbox.com/s/qlinrzximmdmp9t/thumb.png?raw=1"/>
-          <a class="text_link" href="../tech_shader_fuzz/index.html">Microfibre Surfaces <br><i><small>[HLSL / Unreal Shader]</small></i></a>
-        </div>
-
-      </div>
-
-      <div class="image_column_3">
-
-        <div class="image_cell">
-          <img src="https://www.dropbox.com/s/kwj7o7m0jsultw6/thumb.png?raw=1"/>
-          <a class="text_link" href="../tech_shader_cloth/index.html">Cloth Shading <br><i><small>[Unreal Shader]</small></i></a>
-        </div>
-      
-        <div class="image_cell">
-          <img src="https://drive.google.com/uc?export=view&id=1mAeN8qpLeqQiVgt2BVyGek4BIzNVO1-f"/>
-          <a class="text_link" href="../tech_tools_procedural_placement/index.html">Procedural Assets <br><i><small>[UE4 Tools]</small></i></a>
-        </div>
-
-        <div class="image_cell">
-          <!--<img src="https://drive.google.com/uc?export=view&id=1HhMoczF5WPbEPMvaRYjygAn4mTnrfshq"/>
-          <a class="text_link" href="../tech_vfx/index.html">Other Stuff<br><i><small>[VFX / Shader]</small></i></a>-->
-          <img src="https://www.dropbox.com/s/pchwhaaryic7jne/asset_library.png?raw=1"/>
-          <a class="text_link" href="../asset_library/index.html">Asset Library<br><i><small>[Pipeline Tools / Breakdown]</small></i></a>
-        </div>
-
-    </div>
-  </main>
-
-  {% include footer.html %}
+<a name="Art"><h1>Art<hr></h1></a>
+{% include art_row %}

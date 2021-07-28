@@ -1,0 +1,19 @@
+# main links
+main:
+  - title: "Shaders"
+    url: "#Shaders"
+  - title: "Tools"
+    url: "#Tools"
+  - title: "Art"
+    url: "#Art"
+  - title: "Resume"
+    url: "http://resume.bailey3d.com"
+    new_tab: "true"
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/

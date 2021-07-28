@@ -1,0 +1,104 @@
+/* ==========================================================================
+   MASTHEAD
+   ========================================================================== */
+
+.masthead {
+  background-color: white;
+  position: relative;
+  border-bottom: 1px solid $border-color;
+  -webkit-animation: $intro-transition;
+  animation: $intro-transition;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+  z-index: 20;
+
+  &__inner-wrap {
+    @include clearfix;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-family: $sans-serif-narrow;
+
+    @include breakpoint($x-large) {
+      max-width: $max-width;
+    }
+
+    nav {
+      background-color: white;
+      z-index: 10;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: white;
+    }
+  }
+}
+
+.site-logo img {
+  background-color: white;
+  max-height: 2rem;
+}
+
+.site-title {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-weight: bold;
+  // z-index: 20;
+}
+
+.site-subtitle {
+  display: block;
+  background-color: white;
+  font-size: $type-size-8;
+}
+
+.masthead__menu {
+  float: left;
+  background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  clear: both;
+
+  .site-nav {
+    margin-left: 0;
+    background-color: white;
+    @include breakpoint($small) {
+      float: right;
+    }
+  }
+
+  ul {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    list-style-type: none;
+  }
+}
+
+.masthead__menu-item {
+  background-color: white;
+  display: block;
+  list-style-type: none;
+  white-space: nowrap;
+
+  &--lg {
+    background-color: white;
+    padding-right: 2em;
+    font-weight: 700;
+  }
+}

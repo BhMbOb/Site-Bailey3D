@@ -1,138 +1,645 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Bailey3D</title>
-	<meta name="description" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta property="og:image" content="">
-	<link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1UVB8W-8Q7I93-9obzDfuAALWUZ0bHxXM" type="image/png"/>
-	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#d25469">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#d25469">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#d25469">
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
-	<!-- Styles -->
-	<link rel="stylesheet" href="/assets/css/main.css">
-</head>
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
 
-<body>
+<!-- begin _includes/seo.html --><title>Bailey Martin - Technical Art</title>
+<meta name="description" content="Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedurlal Tooling.">
+
+
+  <meta name="author" content="Hi - I'm Bailey!">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Bailey Martin">
+<meta property="og:title" content="Bailey Martin - Technical Art">
+<meta property="og:url" content="/">
+
+
+  <meta property="og:description" content="Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedurlal Tooling.">
+
+
+
+  <meta property="og:image" content="/assets/images/banner.jpg">
+
+
+
+  <meta name="twitter:site" content="@MrBhmbob">
+  <meta name="twitter:title" content="Bailey Martin - Technical Art">
+  <meta name="twitter:description" content="Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedurlal Tooling.">
+  <meta name="twitter:url" content="/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/assets/images/banner.jpg">
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Bailey Martin",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Bailey Martin Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1UVB8W-8Q7I93-9obzDfuAALWUZ0bHxXM" type="image/png"/>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--splash">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
 
     
-<header class="main_header">
-  <nav class="main_info">
-    <img src="https://drive.google.com/uc?export=view&id=1b8TLPZm8-DhLBIS8gVV1MKAlDoPM2_Fu" height=30 class="logo">
-    <a href="/" class="text">Bailey Martin - Technical Artist</a>
-  </nav>
-  <nav class="main_header_menu">
-    <nav>
-      <a href="/">Tech</a>
-      <a href="/art/">Art</a>
-      <a href="/about/">About</a>
-    </nav>
-    <nav class="social_header">
-        <a href="https://www.linkedin.com/in/bailey-bob-martin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/MrBhmbob" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://github.com/BhMbOb" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-    </nav>
-  </nav>
-</header> <!-- End Section Header -->
 
-  <main class="page-content" aria-label="Content">
-    <div class="image_row_3">
-      <div class="image_column_3">
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/B3D_Logo.png"></a>
+        
+        <a class="site-title" href="/">
+          Bailey Martin - Technical Artist
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/#Shaders"  >Shaders</a>
+            </li><li class="masthead__menu-item">
+              <a href="/#Tools"  >Tools</a>
+            </li><li class="masthead__menu-item">
+              <a href="/#Art"  >Art</a>
+            </li><li class="masthead__menu-item">
+              <a href="http://resume.bailey3d.com" target="_blank" >Resume</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
 
-        <div class="image_cell">
-          <img src="https://www.dropbox.com/s/laayahsdc03y6gy/iridescent_gif.gif?raw=1"/>
-          <a class="text_link" href="../tech_shader_iridescent/index.html">Iridescence <br><i><small>[HLSL / Unreal Shader]</small></i></a>
-        </div>
+        <nav class="social_header">
+          <a href="https://www.linkedin.com/in/bailey-bob-martin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/MrBhmbob" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://github.com/BhMbOb" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+      </nav>
 
-        <div class="image_cell">
-          <img src="https://www.dropbox.com/s/vzvp31ghfqeqls5/thumb.gif?raw=1"/>
-          <a class="text_link" href="../tech_shader_gerstner/index.html">Ocean Rendering <br><i><small>[HLSL Shader]</small></i></a>
-        </div>
-
-        <div class="image_cell">
-          <img src="https://drive.google.com/uc?export=view&id=1abXDTO1qtY6KGTnVR5cjJTZqPfuV6gI8"/>
-          <a class="text_link" href="../tech_environment_desert/index.html">Desert Environment <br><i><small>[Tech]</small></i></a>
-        </div>
-
-      </div>
-
-      <div class="image_column_3">
-
-        <div class="image_cell">
-          <img src="https://www.dropbox.com/s/vca95xu6qjb1ei9/juniper.png?raw=1"/>
-          <a class="text_link" href="https://github.com/BhMbOb/Juniper">Juniper <br><i><small>Framework for a unified scripting pipeline across various DCC packages</small></i></a>
-        </div>
-       
-        <div class="image_cell">
-          <img src="https://drive.google.com/uc?export=view&id=15EFnDyBj4xX6gk_dALCu67T0HA-r2n-N"/>
-          <a class="text_link" href="../tech_environment_volcano/index.html" target="_blank">Volcano Render<br><i><small>[Procedural / Niagara / Shaders]</small></i></a>
-        </div>
-
-        <div class="image_cell">
-          <img src="https://www.dropbox.com/s/qlinrzximmdmp9t/thumb.png?raw=1"/>
-          <a class="text_link" href="../tech_shader_fuzz/index.html">Microfibre Surfaces <br><i><small>[HLSL / Unreal Shader]</small></i></a>
-        </div>
-
-      </div>
-
-      <div class="image_column_3">
-
-        <div class="image_cell">
-          <img src="https://www.dropbox.com/s/kwj7o7m0jsultw6/thumb.png?raw=1"/>
-          <a class="text_link" href="../tech_shader_cloth/index.html">Cloth Shading <br><i><small>[Unreal Shader]</small></i></a>
-        </div>
-      
-        <div class="image_cell">
-          <img src="https://drive.google.com/uc?export=view&id=1mAeN8qpLeqQiVgt2BVyGek4BIzNVO1-f"/>
-          <a class="text_link" href="../tech_tools_procedural_placement/index.html">Procedural Assets <br><i><small>[UE4 Tools]</small></i></a>
-        </div>
-
-        <div class="image_cell">
-          <!--<img src="https://drive.google.com/uc?export=view&id=1HhMoczF5WPbEPMvaRYjygAn4mTnrfshq"/>
-          <a class="text_link" href="../tech_vfx/index.html">Other Stuff<br><i><small>[VFX / Shader]</small></i></a>-->
-          <img src="https://www.dropbox.com/s/pchwhaaryic7jne/asset_library.png?raw=1"/>
-          <a class="text_link" href="../asset_library/index.html">Asset Library<br><i><small>[Pipeline Tools / Breakdown]</small></i></a>
-        </div>
-
-    </div>
-  </main>
-
-  
-<footer class="main_footer">
-  <div class="wrapper">
-    <div class="copyright">
-      <p>&copy; 2021 Bailey3D | <a href="contact@bailey3d.com" target="_blank">Contact@Bailey3D.com</a></p>
+      </nav>
     </div>
   </div>
-</footer> <!-- End Section Footer -->
+</div>
 
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/assets/images/banner.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Hi - I’m Bailey,
+
+        
+      </h1>
+      
+        <p class="page__lead">Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedurlal Tooling.
+</p>
+      
+      
+
+
+      
+      
+        <p>
+        
+          <a href="http://resume.bailey3d.com" target="_blank" class="btn btn--light-outline btn--large">Resume</a>
+        
+      
+    </div>
+  
+  
+</div>
+
+
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Bailey Martin - Technical Art">
+    <meta itemprop="description" content="Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedurlal Tooling.">
+    
+    
+
+    <section class="page__content" itemprop="text">
+      <a name="Shaders"><h1>Shaders<hr></h1></a>
+
+
+<div class="feature__wrapper">
 
   
-<div class="top" title="Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div> <!-- End Top Scroll -->
-  
-<script src="/assets/js/jquery-3.2.1.min.js"></script>
-<script src="/assets/js/jquery.vide.min.js"></script>
-<script src="/assets/js/custom.js"></script>
-<!-- End Javascript -->
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/tech_shader_iridescent" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://www.dropbox.com/s/laayahsdc03y6gy/iridescent_gif.gif?raw=1" alt="">
+            </a>
+            
+          </div>
+        
 
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', '', 'auto');
-  ga('send', 'pageview');
-</script> <!-- End Analytics -->
-</body>
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/tech_shader_iridescent" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Iridesecense Shader
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/tech_shader_gerstner" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://www.dropbox.com/s/vzvp31ghfqeqls5/thumb.gif?raw=1" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/tech_shader_gerstner" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Ocean Rendering
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/tech_shader_cloth" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://www.dropbox.com/s/kwj7o7m0jsultw6/thumb.png?raw=1" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/tech_shader_cloth" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Cloth Shading
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/tech_shader_fuzz" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://www.dropbox.com/s/qlinrzximmdmp9t/thumb.png?raw=1" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/tech_shader_fuzz" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Microfibre Rendering
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/tech_environment_desert" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://drive.google.com/uc?export=view&id=1abXDTO1qtY6KGTnVR5cjJTZqPfuV6gI8" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/tech_environment_desert" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Desert Rendering
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/tech_shader_clouds" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://www.dropbox.com/s/hp3m7u8xjwfjyg1/thumb.jpg?raw=1" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/tech_shader_clouds" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Volumetric Clouds
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+
+<a name="Tools"><h1>Tools<hr></h1></a>
+
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="https://github.com/BhMbOb/Juniper" style="text-decoration:none" target="_blank" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://www.dropbox.com/s/vca95xu6qjb1ei9/juniper.png?raw=1" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="https://github.com/BhMbOb/Juniper" style="text-decoration:none" target="_blank" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Juniper - Tools Framework
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/tech_environment_volcano" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://drive.google.com/uc?export=view&id=15EFnDyBj4xX6gk_dALCu67T0HA-r2n-N" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/tech_environment_volcano" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Procedural Volcano
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/tech_tools_procedural_placement" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://drive.google.com/uc?export=view&id=1mAeN8qpLeqQiVgt2BVyGek4BIzNVO1-f" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/tech_tools_procedural_placement" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Procedural Assets
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/asset_library" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://www.dropbox.com/s/pchwhaaryic7jne/asset_library.png?raw=1" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/asset_library" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Asset Library
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+
+<a name="Art"><h1>Art<hr></h1></a>
+
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/art_mines" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://drive.google.com/uc?export=view&id=1toxUF-SDqCxPNbSVn8cApQVcw-TFJepj" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/art_mines" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Soviet Mines
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/art_brothel" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://drive.google.com/uc?export=view&id=1jxRpK4Et2NIIsUQhNRH58W4scZEnv2j2" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/art_brothel" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Victorian Brothel
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/art_forest" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://drive.google.com/uc?export=view&id=1ggKxwmNcTYvphSioW4XrlHtRnElskerU" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/art_forest" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Forest Campsite
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <a href="/art_library" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+              <img src="https://drive.google.com/uc?export=view&id=1HVlUsBsY3j5D4QFQe8NpWHmowOjrfki_" alt="">
+            </a>
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">
+              <a href="/art_library" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
+                Library Environment
+              </a>
+            </h2>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+    </section>
+  </article>
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Bailey Martin  |  <a href="mailto:contact@bailey3d.com" rel="nofollow">Contact@Bailey3D.com</a></div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
 </html>
