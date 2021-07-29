@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Procedural Asset Creation</title>
+<!-- begin _includes/seo.html --><title>Procedural Asset Placement Tools</title>
 <meta name="description" content="Some examples of tools created for procedural placement and generation of assets - includes randomness, modularity, proceduralism …">
 
 
@@ -22,7 +22,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Bailey Martin">
-<meta property="og:title" content="Procedural Asset Creation">
+<meta property="og:title" content="Procedural Asset Placement Tools">
 <meta property="og:url" content="/tech_tools_procedural_placement/">
 
 
@@ -33,7 +33,7 @@
 
 
   <meta name="twitter:site" content="@MrBhmbob">
-  <meta name="twitter:title" content="Procedural Asset Creation">
+  <meta name="twitter:title" content="Procedural Asset Placement Tools">
   <meta name="twitter:description" content="Some examples of tools created for procedural placement and generation of assets - includes randomness, modularity, proceduralism …">
   <meta name="twitter:url" content="/tech_tools_procedural_placement/">
 
@@ -168,8 +168,8 @@
 
 <div id="main" role="main">
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Procedural Asset Creation">
-    <meta itemprop="description" content="These are a series of tools in unreal focused around procedural creation and placement of geometry and environmental details. They were all created using a mix of Blueprint and C++.">
+    <meta itemprop="headline" content="Procedural Asset Placement Tools">
+    <meta itemprop="description" content="These are a series of Unreal based tools focused around procedural generation of geometry, and procedural placement of environment props.They were all created using a mix of C++ and Blueprints.">
     <meta itemprop="datePublished" content="2000-10-10T00:00:00+01:00">
     
 
@@ -178,46 +178,74 @@
   <article class="post">
     <header>
       <div class="post_image">
-        <img src=https://drive.google.com/uc?export=view&id=1mAeN8qpLeqQiVgt2BVyGek4BIzNVO1-f alt="Procedural Asset Creation">
+        <img src=https://drive.google.com/uc?export=view&id=1mAeN8qpLeqQiVgt2BVyGek4BIzNVO1-f alt="Procedural Asset Placement Tools">
       </div>
       <div class="post_description">
-        <h1 class="post_title">Procedural Asset Creation</h1>
+        <h1 class="post_title">Procedural Asset Placement Tools</h1>
       </div>
     </header> <!-- End Header -->
 
     <div class="entry_content">
-      <p>These are a series of tools in unreal focused around procedural creation and placement of geometry and environmental details. 
-They were all created using a mix of Blueprint and C++.</p>
+      <p>These are a series of Unreal based tools focused around procedural generation of geometry, and procedural placement of environment props.
+They were all created using a mix of C++ and Blueprints.</p>
 
-<p>The main benefit to interactive procedural tools like this is the time cost saving it creates, taking processes which would typically be full tasks and turning them into simple-to-do processes.</p>
+<p>The main aim of these tools was to cut down in creation time - taking processes that would typically be full tasks and replacing it with a parameterised, fluid system.</p>
 
 <hr />
+
+<h3 id="procedural-railbed-placement">Procedural Railbed Placement</h3>
 
 <p><img src="https://drive.google.com/uc?export=view&amp;id=1OjGdXKF8vshJGc6RcV4akFOWIUE2gSSF" alt="Image" class="center-image" /></p>
 
-<p>This rail-bed system uses two unique assets (Planks &amp; Rail) to allow for easy modular placement of rails within an environment. The height and tangents of the spline can easily be tweaked to conform to the environment without need for many different track variations.</p>
+<p>A C++ based Actor type which takes a single input for ‘Outer Rail Mesh’ and an array of ‘Plank Meshes’. Used for modular and dynamic placement of rails within an environmment.
+Tangents and Knots of the spline can be easily tweaked to conform to the environment without need of many variations.</p>
+
+<p>All planks are instanced meshes, while the outer rail is an Unreal Spline Mesh. The tool contains extra options for density of the spline mesh to help combat the runtime cost.</p>
 
 <hr />
+
+<h3 id="procedural--randomized-book-placement">Procedural / Randomized Book Placement</h3>
 
 <p><img src="https://drive.google.com/uc?export=view&amp;id=1PSDJGoJ6gbbU-aCB2YtT3k_VscYSbKQ6" alt="Image" class="center-image" /></p>
 
-<p>These follow a spline along a path which they’re randomly placed, it allows for the books to easily be placed on surfaces (such as windows or bookshelves). Like the previous example, these use instanced meshes and some shader maths to give unique colours and titles, which can be extremely useful for environments like libraries where you can have upwards of 100k book meshes.</p>
+<p>This is a Blueprint based tool used to place books dynamically along a spline. This was developed for a Library Environment, which contained upward of 100k book meshes, the randomness and instancing helped to break up the look of the shelves, while also improving performance.</p>
+
+<p>It has two major components:</p>
+
+<p><strong>1 - Placement:</strong> <br />
+Places the books along the spline, with additional parameters for things such as “Placement Messiness” for controlling how messy the placement is, and “Random Scale Range” for the overall book scaling.
+The books are all a single instanced mesh, all using the exact same material.</p>
+
+<p><strong>2 - Material Randomness:</strong> <br />
+Using a single per-instance random integer, multiple random values are generated, which is used in the shader for a few different effects:</p>
+<ul>
+  <li>Random book name UVs, selected from a single 1D flipbook.</li>
+  <li>Random tinting, from a single 1D look up texture.</li>
+  <li>Random patternation, again selected from a 1D flipbook.</li>
+</ul>
 
 <hr />
+
+<h3 id="dynamic-pipes">Dynamic Pipes</h3>
 
 <p><img src="https://drive.google.com/uc?export=view&amp;id=16MlrCf6lkIDp7rogGSXy05ltYygWxc4W" alt="Image" class="center-image" /></p>
 
-<p>This pipe spline uses a control spline to dynamically create spline meshes for easy creation of pipes.</p>
+<p>A relatively simple Blueprint based tool which generates a spline mesh per-segment of a spline, with additional parameters for tiling a pipe connector mesh at <i>X</i> intervals.</p>
 
-<p>The pipes themselves are made up of only 2 assets (Pipe Body &amp; Connector), compared to dozens of variations for a typical spline system.</p>
+<p>The pipes also use a Tri-planar material which means the generated mesh does not use the UV channel. Saving a little bit of performance cost, and also helping to alleviate tiling.</p>
 
 <hr />
 
+<h3 id="modular-bookcase">Modular Bookcase</h3>
+
 <p><img src="https://drive.google.com/uc?export=view&amp;id=1ka6PYor62_ojeZPS6Sa696SENFjtlidJ" alt="Image" class="center-image" /></p>
 
-<p>Procedural and modular bookcase system. Again all unique meshes are instanced, and a single shader is used for all pieces. The system uses 8 unique bookcase pieces along with the shelf and door, meaning the whole system uses 10 draw calls. System is parameterized with settings such as: RowsCount, ColumsCount and bUseDrawers. This system helped to save a lot of time and avoid art fatigue within the library scene along with improving the scenes overall performance.</p>
+<p>Blueprint based actor used to generate modular bookcases. All meshes are instanced where possible, and a single parent material is used for all pieces.
+The system used 8 unique bookcase pieces + 1 for the shelves and 1 for the doors.</p>
 
-<p><img src="https://drive.google.com/uc?export=view&amp;id=1gFGZYYooGn8XjJjLPgESCRoTh_Ijetqe" alt="Image" class="center-image" /></p>
+<p>This was also made for a Library Environment, and save a lot of time compared to hand building different variants, while also helping with art fatigue.</p>
+
+<p>The actor contains parameters for things such as “Rows Count”, “Columns Count” and “Use Drawers?”</p>
 
     </div>
     

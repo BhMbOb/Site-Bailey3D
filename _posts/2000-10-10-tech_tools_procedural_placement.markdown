@@ -1,40 +1,66 @@
 ---
 layout: post
-title: "Procedural Asset Creation"
+title: "Procedural Asset Placement Tools"
 img: https://drive.google.com/uc?export=view&id=1mAeN8qpLeqQiVgt2BVyGek4BIzNVO1-f # Add image post (optional)
 description: Some examples of tools created for procedural placement and generation of assets - includes randomness, modularity, proceduralism ...
 tag: [Environment Art, Art, Lighting]
 ---
 
-These are a series of tools in unreal focused around procedural creation and placement of geometry and environmental details. 
-They were all created using a mix of Blueprint and C++.
+These are a series of Unreal based tools focused around procedural generation of geometry, and procedural placement of environment props.
+They were all created using a mix of C++ and Blueprints.
 
-The main benefit to interactive procedural tools like this is the time cost saving it creates, taking processes which would typically be full tasks and turning them into simple-to-do processes.
+The main aim of these tools was to cut down in creation time - taking processes that would typically be full tasks and replacing it with a parameterised, fluid system.
 
 ------
+
+### Procedural Railbed Placement
 
 ![Image](https://drive.google.com/uc?export=view&id=1OjGdXKF8vshJGc6RcV4akFOWIUE2gSSF){: .center-image}
 
-This rail-bed system uses two unique assets (Planks & Rail) to allow for easy modular placement of rails within an environment. The height and tangents of the spline can easily be tweaked to conform to the environment without need for many different track variations.
+A C++ based Actor type which takes a single input for 'Outer Rail Mesh' and an array of 'Plank Meshes'. Used for modular and dynamic placement of rails within an environmment.
+Tangents and Knots of the spline can be easily tweaked to conform to the environment without need of many variations.
+
+All planks are instanced meshes, while the outer rail is an Unreal Spline Mesh. The tool contains extra options for density of the spline mesh to help combat the runtime cost.
 
 ------
+
+### Procedural / Randomized Book Placement
 
 ![Image](https://drive.google.com/uc?export=view&id=1PSDJGoJ6gbbU-aCB2YtT3k_VscYSbKQ6){: .center-image}
 
-These follow a spline along a path which they're randomly placed, it allows for the books to easily be placed on surfaces (such as windows or bookshelves). Like the previous example, these use instanced meshes and some shader maths to give unique colours and titles, which can be extremely useful for environments like libraries where you can have upwards of 100k book meshes.
+This is a Blueprint based tool used to place books dynamically along a spline. This was developed for a Library Environment, which contained upward of 100k book meshes, the randomness and instancing helped to break up the look of the shelves, while also improving performance.
+
+It has two major components:
+
+__1 - Placement:__ <br>
+Places the books along the spline, with additional parameters for things such as "Placement Messiness" for controlling how messy the placement is, and "Random Scale Range" for the overall book scaling.
+The books are all a single instanced mesh, all using the exact same material.
+
+__2 - Material Randomness:__ <br>
+Using a single per-instance random integer, multiple random values are generated, which is used in the shader for a few different effects:
+- Random book name UVs, selected from a single 1D flipbook.
+- Random tinting, from a single 1D look up texture.
+- Random patternation, again selected from a 1D flipbook.
 
 ------
+
+### Dynamic Pipes
 
 ![Image](https://drive.google.com/uc?export=view&id=16MlrCf6lkIDp7rogGSXy05ltYygWxc4W){: .center-image}
 
-This pipe spline uses a control spline to dynamically create spline meshes for easy creation of pipes.
+A relatively simple Blueprint based tool which generates a spline mesh per-segment of a spline, with additional parameters for tiling a pipe connector mesh at <i>X</i> intervals.
 
-The pipes themselves are made up of only 2 assets (Pipe Body & Connector), compared to dozens of variations for a typical spline system.
+The pipes also use a Tri-planar material which means the generated mesh does not use the UV channel. Saving a little bit of performance cost, and also helping to alleviate tiling.
 
 ------
 
+### Modular Bookcase
+
 ![Image](https://drive.google.com/uc?export=view&id=1ka6PYor62_ojeZPS6Sa696SENFjtlidJ){: .center-image}
 
-Procedural and modular bookcase system. Again all unique meshes are instanced, and a single shader is used for all pieces. The system uses 8 unique bookcase pieces along with the shelf and door, meaning the whole system uses 10 draw calls. System is parameterized with settings such as: RowsCount, ColumsCount and bUseDrawers. This system helped to save a lot of time and avoid art fatigue within the library scene along with improving the scenes overall performance.
+Blueprint based actor used to generate modular bookcases. All meshes are instanced where possible, and a single parent material is used for all pieces.
+The system used 8 unique bookcase pieces + 1 for the shelves and 1 for the doors.
 
-![Image](https://drive.google.com/uc?export=view&id=1gFGZYYooGn8XjJjLPgESCRoTh_Ijetqe){: .center-image}
+This was also made for a Library Environment, and save a lot of time compared to hand building different variants, while also helping with art fatigue.
+
+The actor contains parameters for things such as "Rows Count", "Columns Count" and "Use Drawers?"
