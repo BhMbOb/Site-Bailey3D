@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Shaders"
-    url: "#Shaders"
   - title: "Tools"
     url: "#Tools"
+  - title: "Shaders"
+    url: "#Shaders"
   - title: "Art"
     url: "#Art"
   - title: "Resume"
