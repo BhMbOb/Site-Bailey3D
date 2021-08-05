@@ -12,7 +12,7 @@ It includes a few different drop methods for different geometry types, from more
 It's worth noting this doesn't run a physics simulation, it's only for direct dropping to terrain.<br>
 A good use for this would be foliage placement.  Using per-vertex drop to deform tree roots to terrain, and the bounds based dropfor dropping tree meshes.
 
-You can download the digital asset <a href="https://www.dropbox.com/sh/yrf4u7k5q0knmvk/AADizglDUOgLA9gCO9fxMIXLa?dl=0">here</a>, unfortunately I'm still using Houdini Apprentice, which isn't ideal, but there is an (untested) converted version too.
+You can download the digital asset <a href="https://www.dropbox.com/sh/yrf4u7k5q0knmvk/AADizglDUOgLA9gCO9fxMIXLa?dl=0">here</a>. It includes a HDA (Terrain Drop), and an example file including the rubber toy dropping to a simple terrain.
 
 ---
 
