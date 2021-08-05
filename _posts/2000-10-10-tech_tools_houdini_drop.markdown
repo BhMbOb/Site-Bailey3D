@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Terrain Drop - Houdini"
+title: "Drop To Terrain (Houdini)"
 img: https://www.dropbox.com/s/x1663flfgodn5je/houdini_drop.png?raw=1
 description: Houdin script used to drop geometry to input terrain with different drop modes.
 tag: [Assets, Tools, Pipeline]
 ---
 
-Terrain Drop is a Houdini based tool used to drop different types of geometry to terrain, using different methods.<br>
+Drop To Terrain is a Houdini based tool used to drop different types of geometry to terrain, using different methods.<br>
 It includes a few different drop methods for different geometry types, from more deformable geometry such as tree roots, to hard surface geometry such as rocks.
 
 It's worth noting this doesn't run a physics simulation, it's only for direct dropping to terrain.<br>
