@@ -84,3 +84,20 @@ Properties: `Drop Mode: BBox (Center) or BBox (Corners)`
 Uniform drop offset is applied across the whole geometry. <br>
 When using BBox (Corners) drop position is the average of the 4 bottom corners of the bounds.<br>
 When using BBox (Center) drop is calculated from the center of the bounds.
+
+
+---
+
+### The Other Stuff
+
+The node graph itself is pretty basic, as the drop is all calculated through a python node inside the network. But here it is for those who are interested:
+
+![Image](https://www.dropbox.com/s/sp7z7qmpsd91snz/node_graph.jpg?raw=1){: .center-image}
+
+And here's a gist of the python code for the actual drop:
+
+<style type="text/css">
+  .gist-file
+  .gist-data {max-height: 500px;}
+</style>
+<script src="https://gist.github.com/BhMbOb/7d8f17750df1b33481070e6542cfd7f0.js"></script>
