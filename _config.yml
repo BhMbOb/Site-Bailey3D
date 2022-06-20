@@ -22,7 +22,7 @@ title_separator          : "-"
 subtitle                 : "Technical Artist"
 name                     : "Bailey Martin"
 description              : ""
-summary                  : "Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedural Tooling."
+summary                  : "Technical Artist. Specialising in Pipeline and Tools, and Realtime Shaders."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -79,12 +79,12 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
-twitter_url              : "https://twitter.com/MrBhmbob"
-linkedin_url             : "https://www.linkedin.com/in/bailey-bob-martin"
-github_url               : "https://github.com/BhMbOb"
+twitter_url              : "https://twitter.com/Bailey3D_"
+linkedin_url             : "https://www.linkedin.com/in/bailey3d"
+github_url               : "https://github.com/Bailey3D"
 
 twitter:
-  username               : MrBhmbob
+  username               : Bailey3D_
 facebook:
   username               :
   app_id                 :

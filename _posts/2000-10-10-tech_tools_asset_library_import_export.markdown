@@ -11,9 +11,9 @@ These are a series of tools written to automate the general import and export pi
 The main aim with these tools is to take various processes which by default take a series of clicks (and a bit of careful thought) and condense them down to 1 or 2 button clicks, and removing the thinking step all together.
 
 The tools are were all built around an asset pipeline I'm using for my personal projects, so portability is very limited.
-However all of the source is available <a href="https://github.com/BhMbOb/Juniper-AssetLibrary" target="_blank">here<a> for you to pick through as you please.
+However all of the source is available <a href="https://github.com/Juniper3d/Plugin-AssetLibrary" target="_blank">here<a> for you to pick through as you please.
 
-The codebase is also all built around my <a href="https://github.com/BhMbOb/Juniper" target="_blank">Juniper Tools Framework<a> which aims to further standardize the tools pipeline across multiple DCC packages. Feel free to take a look at that.
+The codebase is also all built around my <a href="https://github.com/Juniper3d/Juniper" target="_blank">Juniper Tools Framework<a> which aims to further standardize the tools pipeline across multiple DCC packages. Feel free to take a look at that.
 
 
 ## Material Exporter <small><i>(Substance Designer)</i></small>

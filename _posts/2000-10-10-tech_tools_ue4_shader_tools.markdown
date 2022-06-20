@@ -32,8 +32,8 @@ To fix this we'll need to add in a search path for the shaders. I've done this i
 This is relatively simple, and just requires us to add an extra Shader Source Directory Mapping to the project.
 You can see how I've set this up in the code below. In my case there is some extra code for reading the path from the Registry, but that can be omitted if you're using a static path.
 
-<script src="https://gist.github.com/BhMbOb/4786196223ed5e136239958d81c370dc.js"></script>
-<script src="https://gist.github.com/BhMbOb/2aa821a85a313c02a3060137aa8dd26f.js"></script>
+<script src="https://gist.github.com/Bailey3D/4786196223ed5e136239958d81c370dc.js"></script>
+<script src="https://gist.github.com/Bailey3D/2aa821a85a313c02a3060137aa8dd26f.js"></script>
 
 All being well, this should allow you to #include '.USH' and '.USF' files in your Project/Plugin Shaders directory.
 
@@ -50,9 +50,9 @@ __- On Engine Startup:__ Sets off a script which watches for changes to files in
 __- On Change Detected:__ Copies all files from the external library to the project's Shaders directory <br>
 __- Convert to USF:__ covered in the next section, but this is required since .HLSL cannot be used in Unreal <br>
 
-Example source files can be found here: <a href="https://github.com/BhMbOb/Juniper/blob/main/lib/python/juniper/framework/types/folder_watcher.py" target="_blank">folder_watcher.py</a> <b>+</b> 
-<a href="https://github.com/BhMbOb/Juniper-AssetLibrary/blob/main/scripts/ue4/startup/1/shader_source_watcher.py" target="_blank">shader_source_watcher.py</a> <b>+</b> 
-<a href="https://github.com/BhMbOb/Juniper-AssetLibrary/blob/main/lib/python/asset_library/programs/ue4/asset_management/shaders.py" target="_blank">shaders.py</a>
+Example source files can be found here: <a href="https://github.com/Bailey3D/Juniper/blob/main/lib/python/juniper/framework/types/folder_watcher.py" target="_blank">folder_watcher.py</a> <b>+</b> 
+<a href="https://github.com/Bailey3D/Juniper-AssetLibrary/blob/main/scripts/ue4/startup/1/shader_source_watcher.py" target="_blank">shader_source_watcher.py</a> <b>+</b> 
+<a href="https://github.com/Bailey3D/Juniper-AssetLibrary/blob/main/lib/python/asset_library/programs/ue4/asset_management/shaders.py" target="_blank">shaders.py</a>
 
 
 ### Converting .HLSL to .USF
@@ -73,13 +73,13 @@ Instead we can use the HLSL preprocessor to automatically create the instance of
 
 To do this I have a file ' defines.hlsl' which contains a macro called 'container'. A container is essentially treated like a namespace or singleton (albeit a bit more limited):
 
-<script src="https://gist.github.com/BhMbOb/482b687fb6a4588adb6abae328526f0a.js"></script>
+<script src="https://gist.github.com/Bailey3D/482b687fb6a4588adb6abae328526f0a.js"></script>
 
 And here's an example of how a container is populated, and how to call the generated container:
 
-<script src="https://gist.github.com/BhMbOb/f6dc98c141012f90a19bdaa576828bc6.js"></script>
+<script src="https://gist.github.com/Bailey3D/f6dc98c141012f90a19bdaa576828bc6.js"></script>
 
-<script src="https://gist.github.com/BhMbOb/ef9ee1c353decc5e6f449b565ca3ed32.js"></script>
+<script src="https://gist.github.com/Bailey3D/ef9ee1c353decc5e6f449b565ca3ed32.js"></script>
 
 ---
 
