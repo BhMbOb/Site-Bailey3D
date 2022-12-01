@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Desert Tech Environment"
-img: https://drive.google.com/uc?export=view&id=1abXDTO1qtY6KGTnVR5cjJTZqPfuV6gI8 # Add image post (optional)
+img: https://github.com/Bailey3D-Website/2020/blob/main/projects/Desert/thumb.gif?raw=true
 description: A Desert Tech-Environment created in Unreal Engine. Focuses on a few unique systems such as stylized rendering, houdini proceduralism, procedural texturing.
 tag: [Environment Art, Art, Lighting]
 ---
@@ -12,6 +12,7 @@ A Desert Tech-Environment created in Unreal Engine. Focuses on a few unique syst
 - Houdini / Procedural Meshes
 - Procedural Stylized Texturing System
 
-![Image](https://drive.google.com/uc?export=view&id=17Hp30336Jjm3vWGLiAicFenNymiriT2g){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1hqXPHywRFbKcGcafejp0e5me-uO2VPMz){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Desert/bailey-martin-render-desert-main-1.jpg?raw=true){: .center-image}
+
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Desert/bailey-martin-render-desert-props.jpg?raw=true){: .center-image}

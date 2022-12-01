@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shader - Iridescense"
-img: https://www.dropbox.com/s/z5x9nyt6cp2i06s/thumb.png?raw=1 # Add image post (optional)
+img: https://github.com/Bailey3D-Website/2020/blob/main/projects/Iridescent%20Shader/thumb.png?raw=true # Add image post (optional)
 description: Shader simulating an iridescent surface, similar to that seen in Oil and Beetle shells.
 tag: [Environment Art, Art, Lighting]
 ---
@@ -10,7 +10,7 @@ This is a shader function which can be added to any PBR surface to add an intera
 
 It was designed to be as minimal as possible, meaning it can be applied to pretty much any surface. This has the advantage of being plug and play, and works within a regular deferred pass, but the disadvantage ob being only a simulation meaning we're not calculating physically accurate diffraction.
 
-![Image](https://www.dropbox.com/s/79nq4xkenul1k2k/materials.png?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Iridescent%20Shader/materials.png?raw=true){: .center-image}
 
 ------
 
@@ -28,8 +28,6 @@ The effect is fully parameterized so we can add it to any surface, the parameter
 
 - __Noise Texture 3D:__ A 3D Texture sample used for the lightwrap and breakup effect. This defaults to a low-res 3D perlin noise texture, which works for most cases.
 
-![Image](https://www.dropbox.com/s/esvxqsza7v9ahd9/iridescent_parameters.png?raw=1){: .center-image}
-
 ------
 
-![Image](https://www.dropbox.com/s/laayahsdc03y6gy/iridescent_gif.gif?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Iridescent%20Shader/iridescent_gif.gif?raw=true){: .center-image}

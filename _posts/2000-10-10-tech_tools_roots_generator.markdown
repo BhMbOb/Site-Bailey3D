@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tree Root Generator (Houdini)"
-img: https://www.dropbox.com/s/p5ftv8rrvzqybvf/tree_roots.gif?raw=1
+img: https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/thumb.gif?raw=true
 description: ""
 tag: [Assets, Tools, Pipeline]
 ---
@@ -22,19 +22,19 @@ You can see this in action in the gifs below. Where the nodes work outward into 
 
 |<b>Space Colonization - Single Node</b>|<b>Space Colonization - Multiple Nodes</b>|
 | :---: | :---: |
-|![Image](https://www.dropbox.com/s/zbpsnqbzcu7cbka/space_colonisation_single.gif?raw=1)|![Image](https://www.dropbox.com/s/31evtemwsgx4yz3/space_colonisation_multi.gif?raw=1)|
+|![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/space_colonisation_single.gif?raw=true)|![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/space_colonisation_multi.gif?raw=true)|
 | Roots are spawned from a single node.<br> The roots are free to expand as far as possible as they<br>are only fighting against themselves. | Roots are spawned from multiple nodes.<br> Each root is fighting with both itself and its siblings.<br> Resulting in a system that has to fight for growth space. |
 
 |<b>Space Colonization - Inside a 3D Volume</b>|
 |---|
-|![Image](https://www.dropbox.com/s/9ctk895hbc4yfjr/space_colonization_volume.gif?raw=1)|
+|![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/space_colonization_volume.gif?raw=true)|
 |Since the space colonization algorithm goes of possible attraction points, data can be generated on any input volume.|
 
 ---
 
 ### Inputs
 
-![Image](https://www.dropbox.com/s/58wx6nhqv07kez8/inputs.jpg?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/inputs.jpg?raw=true){: .center-image}
 
 | Input | Description |
 |---|---|
@@ -44,7 +44,7 @@ You can see this in action in the gifs below. Where the nodes work outward into 
 
 ### Parameters
 
-![Image](https://www.dropbox.com/s/hc821muassasuya/properties.jpg?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/properties.jpg?raw=true){: .center-image}
 
 | Parameter | Description |
 | --- | --- |
@@ -68,15 +68,15 @@ You can see this in action in the gifs below. Where the nodes work outward into 
 
 | <b>Generation Method : Surface</b> | Generation Method: Volume |
 |---|---|
-| ![Image](https://www.dropbox.com/s/lq1lpgwqun6dao7/surface.jpg?raw=1) | ![Image](https://www.dropbox.com/s/5do0fb2j205q5m0/volume.jpg?raw=1) |
+| ![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/surface.jpg?raw=true) | ![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/volume.jpg?raw=true) |
 | Example of attraction point distribution on surface mode. | Example of attraction point distribution on volume mode. |
 
 
 | <b>Max Branch Levels : 2</b> | <b>Max Branch Levels : 6</b> |
 |---|---|
-| ![Image](https://www.dropbox.com/s/12i2cdcr6tlqqa6/2_levels.jpg?raw=1) | ![Image](https://www.dropbox.com/s/31yw4bkttru9vk5/6_levels.jpg?raw=1) |
+| ![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/2_levels.jpg?raw=true) | ![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/6_levels.jpg?raw=true) |
 
 | <b>Conforming To Environments</b> |
 |---|
-|![Image](https://www.dropbox.com/s/xj6hauo21fv7jjn/wall_example.gif?raw=1)|
+|![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/wall_example.gif?raw=true)|
 |Since any input geometry can be given, the roots can conform to any environment. Here you can see them creeping up a wall.<br>With some minor changes the algorithm could also raycast into geometry to ensure only attraction points on one given side of a surface can interfere with each other (at the cost of generation times).|

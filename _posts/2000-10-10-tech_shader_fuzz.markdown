@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shader - Microfibre Surfaces"
-img: https://www.dropbox.com/s/qlinrzximmdmp9t/thumb.png?raw=1 # Add image post (optional)
+img: https://github.com/Bailey3D-Website/2019/blob/main/projects/Microfibre%20Shader/thumb.png?raw=true # Add image post (optional)
 description: Breakdown of a surface shader for simulating microfibre materials, such as Moss and Cloth.
 tag: [Environment Art, Art, Lighting]
 ---
@@ -13,7 +13,7 @@ In the real world this would result in the tips of each fiber catching more ligh
 
 ---
 
-![Image](https://www.dropbox.com/s/suxi5rdn9zfrdzt/moss_turnaround.gif?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Microfibre%20Shader/moss_turnaround.gif?raw=true){: .center-image}
 
 
 The effect is entirely dependent on the surfaces normal maps, and is ran through a dot product agains the camera reflection vector along with world space pixel normals. This way we will get a lighter albedo on the tips, and darker deeper in the roots. The use of a reflection vector rather than the raw camera vector adds a subtle lightwrap which breaks up the effect slightly.
@@ -22,7 +22,7 @@ The effect also contains some custom controls for altering the specular strength
 
 You can see the base, un-altered, map in the gif below.
 
-![Image](https://www.dropbox.com/s/2lg5cpdixibkoa3/moss_renders.png?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Microfibre%20Shader/moss_renders.png?raw=true){: .center-image}
 
 ---
 

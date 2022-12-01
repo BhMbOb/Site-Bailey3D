@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spline Tools"
-img:  https://drive.google.com/uc?export=view&id=1M4-i-47mE6sFGRTiQUgiU9jcOOQAlg_9
+img:  https://github.com/Bailey3D-Website/2019/blob/main/projects/Spline%20Tools/bailey-martin-a809f0-c0ef469af24a443a8553696429c38242-mv2.gif?raw=true
 description: Some examples of how I've used spline tools within my work for procedural and dynamic asset creation.
 tag: [Environment Art, Art, Lighting]
 ---
@@ -16,13 +16,13 @@ When using meshes that aren't deforming it's also useful to use mesh instancing,
 
 ------
 
-![Image](https://drive.google.com/uc?export=view&id=1OjGdXKF8vshJGc6RcV4akFOWIUE2gSSF){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Spline%20Tools/bailey-martin-a809f0-c0ef469af24a443a8553696429c38242-mv2.gif?raw=true){: .center-image}
 
 This rail-bed system uses two unique assets (Planks & Rail) to allow for easy modular placement of rails within an environment. The height and tangents of the spline can easily be tweaked to conform to the environment without need for many different track variations.
 
 ------
 
-![Image](https://drive.google.com/uc?export=view&id=1PSDJGoJ6gbbU-aCB2YtT3k_VscYSbKQ6){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Spline%20Tools/thumb.gif?raw=true){: .center-image}
 
 These follow a spline along a path which they're randomly placed, it allows for the books to easily be placed on surfaces (such as windows or bookshelves). Like the previous example, these use instanced meshes and some shader maths to give unique colours and titles, which can be extremely useful for environments like libraries where you can have upwards of 100k book meshes.
 
@@ -30,7 +30,7 @@ This is something I covered in another post but since it's also using splines I 
 
 ------
 
-![Image](https://drive.google.com/uc?export=view&id=16MlrCf6lkIDp7rogGSXy05ltYygWxc4W){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Spline%20Tools/bailey-martin-a809f0-61f6f37fe755463f89c1c1182d9904d7-mv2.gif?raw=true){: .center-image}
 
 This pipe spline uses a control spline to dynamically create spline meshes for easy creation of pipes.
 

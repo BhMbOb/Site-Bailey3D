@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Environment - Soviet Mines"
-img: https://drive.google.com/uc?export=view&id=1toxUF-SDqCxPNbSVn8cApQVcw-TFJepj # Add image post (optional)
+img: https://github.com/Bailey3D-Website/2019/blob/main/projects/Soviet%20Mines/thumb.png?raw=true
 description: Soviet Era Mineshaft 3D Environment.
 tag: [Environment Art, Art, Lighting]
 ---
@@ -17,16 +17,17 @@ Similar to the concept, I made sure to keep the obvious symbolism to a more subt
 
 Spline tools were a great help in creating multiple areas of the environment. The rail-tracks and pipes were all created using instanced meshes to increase performance and iteration time.
 
-![Image](https://drive.google.com/uc?export=view&id=1cQI9iEkf6NFPQy5w3m8jDHgv8E9MZtbl){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1gkzDNTyocp9APykiHFGGR6qRcCn4WvtC){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Soviet%20Mines/bailey-bob-martin-render-scene-mines.jpg?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1526wCdLtAAeADaB4k1kCQeE96WUtuSDJ){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Soviet%20Mines/bailey-bob-martin-render-scene-mainroom.jpg?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1UH4uBr1si86wDiiRxot_4xw3rUxIfqqu){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Soviet%20Mines/bailey-bob-martin-render-materials.jpg?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1luWUxaIga06JHyOvzBUDOJW_xhqwXw3a){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Soviet%20Mines/bailey-bob-martin-render-main-wireframe.jpg?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1RNA2YKuKfKvU8xjZcl1ArBKBe7mIVOTW){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Soviet%20Mines/bailey-bob-martin-render-main-lit.jpg?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1JOYr32m8s9kHUZkwdDX6z87Y3M5l9MMJ){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Soviet%20Mines/bailey-bob-martin-render-main-assets.jpg?raw=true){: .center-image}
+
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Soviet%20Mines/bailey-bob-martin-fhhgfhfghfhg.gif?raw=true){: .center-image}

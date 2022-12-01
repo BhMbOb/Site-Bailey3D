@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Procedural Terrain Generation"
-img: https://drive.google.com/uc?export=view&id=15EFnDyBj4xX6gk_dALCu67T0HA-r2n-N # Add image post (optional)
+img: https://github.com/Bailey3D-Website/2020/blob/main/projects/Volcano/thumb.gif?raw=true # Add image post (optional)
 description: System for creating terrain in Substance designer and rendering in realtime, allowing for realtime terrain tweaking.
 tag: [Environment Art, Art, Lighting]
 ---
@@ -9,14 +9,13 @@ A procedural terrain system created in Substance Designer with procedural textur
 
 Particles were created using Niagara with exposed parameters for the activity and state of the eruption.
 
-![Image](https://drive.google.com/uc?export=view&id=1E3rwoJtiGVX8uaJmW5ixJptwa_k45_q_){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1fsvg_V_GceKH0Kgnbs0NOZY-kTMxapEu){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Volcano/ProceduralTerrain_Render_02.gif?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1jVdoaMzjMauPl3KG1U26wcOZDoq1FK5X){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Volcano/ProceduralTerrain_BumpOffset.gif?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1T_ZNsHsVdYLbo6AyAOHtdkX-6XTV8rDE){: .center-image}
+![Image](hhttps://github.com/Bailey3D-Website/2020/blob/main/projects/Volcano/ProceduralTerrain_Mat_Rocks.png?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1fsvg_V_GceKH0Kgnbs0NOZY-kTMxapEu){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Volcano/ProceduralTerrain_Nodes.png?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1eC_0qn4rXhSkFowh20OFgKsH51Lt6K2T){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Volcano/ProceduralTerrain_NiagaraStack.png?raw=true){: .center-image}

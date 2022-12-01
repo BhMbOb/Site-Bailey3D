@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Environment - Oak Forest"
-img: https://drive.google.com/uc?export=view&id=1ggKxwmNcTYvphSioW4XrlHtRnElskerU # Add image post (optional)
+img: https://github.com/Bailey3D-Website/2019/blob/main/projects/Forest/thumb.gif?raw=true # Add image post (optional)
 description: Riverside camp in an Oak Forest, created in just over a week. Focusing on a more natural/non-hard surface environment for this piece.
 tag: [Environment Art, Art, Lighting]
 ---
@@ -13,10 +13,10 @@ The location went through a few iterations, but eventually I decided on a rivers
 
 A mix of Procedural materials (In Substance Designer) and Image-to-material (For Foliage/Leaves) was used throughout the scene.
 
-![Image](https://drive.google.com/uc?export=view&id=1uOWAVQp9PHhU1G9dLHbM2bwp-lXYvNFy){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Forest/bailey-bob-martin-render-main.jpg?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1JTHENdZhPH4qnLoqmlNTVqxWhoVj2D_5){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Forest/bailey-bob-martin-ezgif-com-optimize.gif?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=1PLmaDxVtnSbfarBSXiNMXU-DpFYr3oQN){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Forest/bailey-bob-martin-render-assets.jpg?raw=true){: .center-image}
 
-![Image](https://drive.google.com/uc?export=view&id=17kwJOEzNhQiDWK61GuNr6sCex6RUCG__){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2019/blob/main/projects/Forest/bailey-bob-martin-webp-net-gifmaker.gif?raw=true){: .center-image}

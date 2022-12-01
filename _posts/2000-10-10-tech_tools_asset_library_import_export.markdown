@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Asset Auto Exporters / Importers"
-img: https://www.dropbox.com/s/jvsgeq68a3fatmk/import_export.png?raw=1
+img: https://github.com/Bailey3D-Website/2021/blob/main/projects/Exporters/thumb.png?raw=true
 description: A series of tools for automating and standardising the export and import process for common DCC packages.
 tag: [Assets, Tools, Pipeline]
 ---
@@ -26,7 +26,7 @@ __2 - Material Metadata:__ A `{mat_name}.material` metadata file is generated (I
 __3 - Unreal Reimport:__ If Unreal is open, the textures are re-imported (à la live link) <br>
 __4 - SBSAR Export:__ A `{mat_name}.SBSAR` file automatically is generated/updated (for use in Substance Painter) <br>
 
-![Image](https://www.dropbox.com/s/3pht3ym28hzwvlb/material_editor.png?raw=1)
+![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Exporters/material_editor.png?raw=true)
 
 
 ## Material Refresh <small><i>(Substance Designer)</i></small>
@@ -42,7 +42,7 @@ From the previously cumbersom process of: <br>
 ~~__3 - Pick Import Properties:__~~ For new assets things such as texture properties (compression, type, etc) were previously hand done. <br>
 ~~__4 - Build Material:__~~ For new materials the material would need manually creating.
 
-![Image](https://www.dropbox.com/s/srujsjv4kfttc8g/designer_to_unreal.png?raw=1)
+![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Exporters/designer_to_unreal.png?raw=true)
 
 
 ## Material Importer <small><i>(Substance Designer)</i></small>
@@ -59,16 +59,16 @@ Exports a currently opened '.max' file as FBX - along with associated materials,
 This is what happens when the exporter is ran:
 
 __1a - Single Export:__ Used when a single sub-mesh is found in the Max file <br>
-![Image](https://www.dropbox.com/s/u42chrl3qnle4im/single_export.png?raw=1) <br>
+![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Exporters/single_export.png?raw=true) <br>
 __1b - Multi Export:__ Exports a series of meshes from the file. Layers beginning with 'SM_' denote unique meshes to be exported. <br>
-![Image](https://www.dropbox.com/s/99yn5iujox3s7zk/multi_export.png?raw=1) <br>
+![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Exporters/multi_export.png?raw=true) <br>
 __2 - Material Processing:__ Material IDs are baked down to ensure only used materials are exported (0..NUM) <br>
 __3 - Metadata Export:__ A '.geometry' file is generated per-mesh containing metadata on the asset (such as material paths, and source file data).
 
 
 ## Material Importer <small><i>(Unreal)</i></small>
 
-![Image](https://www.dropbox.com/s/tzy21d3emm1lsfs/unreal_import.png?raw=1)
+![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Exporters/unreal_import.png?raw=true)
 
 As mentioned previously, this can either be automatic (on export), or manual - this will cover the manual portion. <br>
 There's also a batch mode which whill import all materials. Although this needs more work to ensure only "dirty" assets are updated.

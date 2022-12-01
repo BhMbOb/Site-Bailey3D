@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cloth Shader"
-img:  https://www.dropbox.com/s/ha66k7toi59bbfo/cloth_turnaround.gif?raw=1
+img:  https://github.com/Bailey3D-Website/2021/blob/main/projects/Cloth%20Shading/cloth_turnaround.gif?raw=true
 description: Study in creating a custom cloth shader with realistic fuzz and fiber masking.
 tag: [Tech Art, Shader, Lighting]
 ---
@@ -21,13 +21,13 @@ A few of the main effects this shader utilizes include:
 
 - Statically compiled variants for using Colour Tint Maps and Dual-tone tinting
 
-![Image](https://www.dropbox.com/s/elotrl3szm0djdu/07.png?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Cloth%20Shading/07.png?raw=true){: .center-image}
 (Example of the data maps used)
 
 ## Renders:
 
-![Image](https://www.dropbox.com/s/kwj7o7m0jsultw6/thumb.png?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Cloth%20Shading/03.png?raw=true){: .center-image}
 
-![Image](https://www.dropbox.com/s/pmlde33hv2wqklj/materials.png?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Cloth%20Shading/materials.png?raw=true){: .center-image}
 
-![Image](https://www.dropbox.com/s/oqeic32dm93jemu/02.png?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Cloth%20Shading/02.png?raw=true){: .center-image}

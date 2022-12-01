@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shader - Ocean Waves"
-img: https://www.dropbox.com/s/vzvp31ghfqeqls5/thumb.gif?raw=1 # Add image post (optional)
+img: https://github.com/Bailey3D-Website/2020/blob/main/projects/Gerstner%20Waves/thumb.gif?raw=true # Add image post (optional)
 description: Ocean shader system utilizing Gerstner waves for wave simulation and foam calculation.
 tag: [Environment Art, Art, Lighting]
 
@@ -15,7 +15,7 @@ Unlike sine waves which will only displace the surface in the up axis (z), Gerst
 
 You can see in the gif below how the vertices in the water plane move, with them getting more compact closer to the peaks, and less in the troths.
 
-![Image](https://www.dropbox.com/s/td3ha3q5tcj89gn/wireframe_render.gif?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Gerstner%20Waves/bailey-martin-ezgif-com-optimize.gif?raw=true){: .center-image}
 
 ---
 
@@ -54,7 +54,7 @@ And on top of that, since it's a wave we can combine multiple Gerstner Waves tog
 On top of the other effects the shader includes a simulation of light scattering, while staying fully opaque.
 It uses a single directional light source to simulate the light scatter when viewing parallel to the suns vector.
 
-![Image](https://www.dropbox.com/s/m1ytipf8oo0udws/subsurface.jpg?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Gerstner%20Waves/bailey-martin-unnamed.jpg?raw=true){: .center-image}
 
 ---
 
@@ -64,9 +64,9 @@ Foam is an area that's typically overlooked in some shaders, but found that even
 
 The foam mask was created in Substance Designer, and is a 2 channel mask of Worley noise distorted into a fluid like mask. It uses the a texture phasing method (described below) to give a nice fluid effect.
 
-![Image](https://www.dropbox.com/s/hfgnq407hfo971z/foam_render.gif?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Gerstner%20Waves/bailey-martin-asasd.gif?raw=true){: .center-image}
 
-![Image](https://www.dropbox.com/s/b2017ok81rbo79p/foam_noise.jpg?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Gerstner%20Waves/bailey-martin-ezgif-com-resize22.jpg?raw=true){: .center-image}
 
 ---
 
@@ -78,4 +78,4 @@ Normals alone tend to give a rather static and tiling look to the surface, so ph
 
 Although the Gerstner calculations themselves do a huge part in making the shader feel realistic, without any additional surface detailing you'll find that they still end up looking extremely flat.
 
-![Image](https://www.dropbox.com/s/e1ntjrsi5ic8f2d/normals_comparison.gif?raw=1){: .center-image}
+![Image](https://github.com/Bailey3D-Website/2020/blob/main/projects/Gerstner%20Waves/bailey-martin-a809f0-b4ef25b74a3a42e78bf648c2352db3ae-mv2.gif?raw=true){: .center-image}

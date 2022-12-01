@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HLSL Shader Library In Unreal"
-img: https://www.dropbox.com/s/jd3vc9fl6jtzv1g/unreal_hlsl_tools.png?raw=1 # Add image post (optional)
+img: https://github.com/Bailey3D-Website/2021/blob/main/projects/HLSL%20Library/thumb.png?raw=true
 description: Python based tool used to automate generation of .USF files from external HLSL Libraries
 tag: [Tech, Shaders, Tools, Python]
 ---
