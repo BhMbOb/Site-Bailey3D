@@ -19,33 +19,25 @@ You can see in the gif below how the vertices in the water plane move, with them
 
 ---
 
-### Core Parameters
+## Parameters (Single Gerstner Wave)
 
-Since Gerstner Waves are a physical calculation of waves, it means real world parameters can also be used.
+| Name | Description |
+| --- | --- |
+| <b>Amplitude</b> | The overall height of the wave (in Centimeters in this case) |
+| <b>Steepness</b> | Controls the "sharpness" of the wave |
+| <b>Phase</b> | Overall speed of the Gerstner Wave |
+|||
+| <b>Direction</b> | Direction vector for the flow of the wave (2 component to avoid expensive sin/cos calls for each function) |
+| <b>Scale</b> | Additional multiplier for the final wave to scale up/down from a single parameter |
 
-The typical inputs for the gerstner function which are used here include:
+## Parameters (Wave Set)
 
-- Amplitude, the overall height of the wave (in Centimeters in this case)
+Additionally since it's a wave we can combine multiple functions together, so I created a second function (creatively called) __GerstnerWaves__, which has a couple of extra inputs:
 
-- Steepness, which controls the "sharpness" of the wave
-
-- Phase, the overall speed of the Gerstner Wave
-
----
-
-### Additional Parameters
-
-And there are some additional parameters which I've added myself:
-
-- Direction, a direction vector for the flow of the wave (2 component to avoid expensive sin/cos calls for each function)
-
-- Scale, an additional multiplier for the final wave to scale up/down from a single parameter
-
-And on top of that, since it's a wave we can combine multiple Gerstner Waves together, so I created a second function (creatively called) __GerstnerWaves__, which has a couple of extra inputs:
-
-- WavesCount, the overall number of wave layers in the gerstner wave. Each new wave is double the frequency which results in a more finer amount of detail as the loops progress.
-
-- Uniformity, where a value of 1.0 will result in all waves moving in the same direction, while lower to 0.0 will result in each layer going in a direction further away than the previous. This is good to alter how "random" the surface ends up looking.
+| Name | Description |
+| --- | --- |
+| <b>Waves Count</b> | Overall number of wave layers in the gerstner wave. Each new wave is double the frequency which results in a more finer amount of detail as the loops progress. |
+| <b>Uniformity</b> | Where a value of 1.0 will result in all waves moving in the same direction, while lower to 0.0 will result in each layer going in a direction further away than the previous. This is good to alter how random the surface ends up looking. |
 
 ---
 

@@ -198,49 +198,65 @@ Unlike sine waves which will only displace the surface in the up axis (z), Gerst
 
 <hr />
 
-<h3 id="core-parameters">Core Parameters</h3>
+<h2 id="parameters-single-gerstner-wave">Parameters (Single Gerstner Wave)</h2>
 
-<p>Since Gerstner Waves are a physical calculation of waves, it means real world parameters can also be used.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Amplitude</b></td>
+      <td>The overall height of the wave (in Centimeters in this case)</td>
+    </tr>
+    <tr>
+      <td><b>Steepness</b></td>
+      <td>Controls the “sharpness” of the wave</td>
+    </tr>
+    <tr>
+      <td><b>Phase</b></td>
+      <td>Overall speed of the Gerstner Wave</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><b>Direction</b></td>
+      <td>Direction vector for the flow of the wave (2 component to avoid expensive sin/cos calls for each function)</td>
+    </tr>
+    <tr>
+      <td><b>Scale</b></td>
+      <td>Additional multiplier for the final wave to scale up/down from a single parameter</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>The typical inputs for the gerstner function which are used here include:</p>
+<h2 id="parameters-wave-set">Parameters (Wave Set)</h2>
 
-<ul>
-  <li>
-    <p>Amplitude, the overall height of the wave (in Centimeters in this case)</p>
-  </li>
-  <li>
-    <p>Steepness, which controls the “sharpness” of the wave</p>
-  </li>
-  <li>
-    <p>Phase, the overall speed of the Gerstner Wave</p>
-  </li>
-</ul>
+<p>Additionally since it’s a wave we can combine multiple functions together, so I created a second function (creatively called) <strong>GerstnerWaves</strong>, which has a couple of extra inputs:</p>
 
-<hr />
-
-<h3 id="additional-parameters">Additional Parameters</h3>
-
-<p>And there are some additional parameters which I’ve added myself:</p>
-
-<ul>
-  <li>
-    <p>Direction, a direction vector for the flow of the wave (2 component to avoid expensive sin/cos calls for each function)</p>
-  </li>
-  <li>
-    <p>Scale, an additional multiplier for the final wave to scale up/down from a single parameter</p>
-  </li>
-</ul>
-
-<p>And on top of that, since it’s a wave we can combine multiple Gerstner Waves together, so I created a second function (creatively called) <strong>GerstnerWaves</strong>, which has a couple of extra inputs:</p>
-
-<ul>
-  <li>
-    <p>WavesCount, the overall number of wave layers in the gerstner wave. Each new wave is double the frequency which results in a more finer amount of detail as the loops progress.</p>
-  </li>
-  <li>
-    <p>Uniformity, where a value of 1.0 will result in all waves moving in the same direction, while lower to 0.0 will result in each layer going in a direction further away than the previous. This is good to alter how “random” the surface ends up looking.</p>
-  </li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Waves Count</b></td>
+      <td>Overall number of wave layers in the gerstner wave. Each new wave is double the frequency which results in a more finer amount of detail as the loops progress.</td>
+    </tr>
+    <tr>
+      <td><b>Uniformity</b></td>
+      <td>Where a value of 1.0 will result in all waves moving in the same direction, while lower to 0.0 will result in each layer going in a direction further away than the previous. This is good to alter how random the surface ends up looking.</td>
+    </tr>
+  </tbody>
+</table>
 
 <hr />
 
