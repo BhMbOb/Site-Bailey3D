@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Procedural Asset Placement Tools"
+title: "Procedural Asset Placement"
 img: https://github.com/Bailey3D-Website/2019/blob/main/projects/Spline%20Tools/thumb.gif?raw=true # Add image post (optional)
 description: Some examples of tools created for procedural placement and generation of assets - includes randomness, modularity, proceduralism ...
 tag: [Environment Art, Art, Lighting]

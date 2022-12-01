@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Environment - Victorian Brothel"
+title: "Victorian Brothel"
 img: https://raw.githubusercontent.com/Bailey3D-Website/2019/main/projects/Brothel/thumb.jpg # Add image post (optional)
 date: 2017-07-03 12:55:00 +0300
 description: "

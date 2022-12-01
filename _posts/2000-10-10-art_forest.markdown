@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Environment - Oak Forest"
+title: "Campsite Environment"
 img: https://github.com/Bailey3D-Website/2019/blob/main/projects/Forest/thumb.gif?raw=true # Add image post (optional)
 description: Riverside camp in an Oak Forest, created in just over a week. Focusing on a more natural/non-hard surface environment for this piece.
 tag: [Environment Art, Art, Lighting]

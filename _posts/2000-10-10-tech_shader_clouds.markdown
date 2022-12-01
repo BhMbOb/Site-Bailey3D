@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Shader - Volumetric Clouds"
+title: "Volumetric Clouds"
 img: https://github.com/Bailey3D-Website/2020/blob/main/projects/Volumetric%20Clouds/thumb.jpg?raw=true # Add image post (optional)
 description: System created in Unreal Engine, using HLSL and Raymarching techniques to create volumetric clouds.
 tag: [Environment Art, Art, Lighting]

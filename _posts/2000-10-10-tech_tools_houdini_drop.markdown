@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Drop To Terrain (Houdini)"
+title: "Drop To Terrain [Houdini]"
 img: https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Drop/thumb.png?raw=true
 description: Houdin script used to drop geometry to input terrain with different drop modes.
 tag: [Assets, Tools, Pipeline]

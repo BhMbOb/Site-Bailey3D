@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Shader - Ocean Waves"
+title: "Ocean Shader"
 img: https://github.com/Bailey3D-Website/2020/blob/main/projects/Gerstner%20Waves/thumb.gif?raw=true # Add image post (optional)
 description: Ocean shader system utilizing Gerstner waves for wave simulation and foam calculation.
 tag: [Environment Art, Art, Lighting]

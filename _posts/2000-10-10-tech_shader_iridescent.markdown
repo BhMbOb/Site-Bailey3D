@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Shader - Iridescense"
+title: "Iridesecense Shader"
 img: https://github.com/Bailey3D-Website/2020/blob/main/projects/Iridescent%20Shader/thumb.png?raw=true # Add image post (optional)
 description: Shader simulating an iridescent surface, similar to that seen in Oil and Beetle shells.
 tag: [Environment Art, Art, Lighting]

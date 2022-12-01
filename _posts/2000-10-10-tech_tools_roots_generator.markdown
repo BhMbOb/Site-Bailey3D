@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tree Root Generator (Houdini)"
+title: "Tree Root Generator [Houdini]"
 img: https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/thumb.gif?raw=true
 description: ""
 tag: [Assets, Tools, Pipeline]

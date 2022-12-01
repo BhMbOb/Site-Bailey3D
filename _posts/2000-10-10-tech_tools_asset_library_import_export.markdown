@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Asset Auto Exporters / Importers"
+title: "Asset Import / Export Tools"
 img: https://github.com/Bailey3D-Website/2021/blob/main/projects/Exporters/thumb.png?raw=true
 description: A series of tools for automating and standardising the export and import process for common DCC packages.
 tag: [Assets, Tools, Pipeline]

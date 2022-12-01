@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Procedural Terrain Generation"
+title: "Volcano Diorama"
 img: https://github.com/Bailey3D-Website/2020/blob/main/projects/Volcano/thumb.gif?raw=true # Add image post (optional)
 description: System for creating terrain in Substance designer and rendering in realtime, allowing for realtime terrain tweaking.
 tag: [Environment Art, Art, Lighting]

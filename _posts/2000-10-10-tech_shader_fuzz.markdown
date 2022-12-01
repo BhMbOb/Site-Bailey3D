@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Shader - Microfibre Surfaces"
+title: "Microfibre Shader"
 img: https://github.com/Bailey3D-Website/2019/blob/main/projects/Microfibre%20Shader/thumb.png?raw=true # Add image post (optional)
 description: Breakdown of a surface shader for simulating microfibre materials, such as Moss and Cloth.
 tag: [Environment Art, Art, Lighting]
