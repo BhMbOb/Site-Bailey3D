@@ -169,7 +169,7 @@
 <div id="main" role="main">
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Iridesecense Shader">
-    <meta itemprop="description" content="This is a shader function which can be added to any PBR surface to add an interactive iridescent effect (with colours changing depending on view angle).">
+    <meta itemprop="description" content="This pack contains presets for a variety of different Iridescent based effects.">
     <meta itemprop="datePublished" content="2000-10-10T00:00:00+01:00">
     
 
@@ -178,7 +178,7 @@
   <article class="post">
     <header>
       <div class="post_image">
-        <img src=https://github.com/Bailey3D-Website/2020/blob/main/projects/Iridescent%20Shader/thumb.png?raw=true alt="Iridesecense Shader">
+        <img src=https://github.com/Bailey3D-Website/2021/blob/main/projects/Iridescent/thumb.png?raw=true alt="Iridesecense Shader">
       </div>
       <div class="post_description">
         <h1 class="post_title">Iridesecense Shader</h1>
@@ -186,39 +186,119 @@
     </header> <!-- End Header -->
 
     <div class="entry_content">
-      <p>This is a shader function which can be added to any PBR surface to add an interactive iridescent effect (with colours changing depending on view angle).</p>
+      <p>This pack contains presets for a variety of different Iridescent based effects.</p>
 
-<p>It was designed to be as minimal as possible, meaning it can be applied to pretty much any surface. This has the advantage of being plug and play, and works within a regular deferred pass, but the disadvantage ob being only a simulation meaning we’re not calculating physically accurate diffraction.</p>
+<p>The material is built up from a base material function, which can be easily plugged into existing materials (to add the effect wherever you like)</p>
 
-<p><img src="https://github.com/Bailey3D-Website/2020/blob/main/projects/Iridescent%20Shader/materials.png?raw=true" alt="Image" class="center-image" /></p>
+<p>The effect is ready to use out of the box. It contains one texture which can be swapped out as desired to give different effects.</p>
+
+<p>This pack is for sale <a href="https://www.unrealengine.com/marketplace/en-US/product/8e02316d70ea4ec0ba4b332980cfa5ce">here on the Unreal marketplace</a>.</p>
+
+<hr />
+
+<p><img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Iridescent/img_01.png?raw=true" alt="Image" class="center-image" />
+<img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Iridescent/img_02.png?raw=true" alt="Image" class="center-image" />
+<img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Iridescent/img_03.png?raw=true" alt="Image" class="center-image" />
+<img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Iridescent/img_04.png?raw=true" alt="Image" class="center-image" /></p>
 
 <hr />
 
 <h2 id="parameters">Parameters</h2>
 
-<p>The effect is fully parameterized so we can add it to any surface, the parameters are listed below:</p>
+<p><img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Iridescent/parameters.png?raw=true" alt="Image" class="center-image" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Material Attributes</b></td>
+      <td>Input material attributes (the base surface to apply the effect to)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><b>Input Metallic</b></td>
+      <td>Metallic for the iridescent effect.</td>
+    </tr>
+    <tr>
+      <td><b>Input Roughness</b></td>
+      <td>Roughness for the iridescent effect.</td>
+    </tr>
+    <tr>
+      <td><b>Surface Uniformity</b></td>
+      <td>How flat the surface should be treated.</td>
+    </tr>
+    <tr>
+      <td><b>Input Specular</b></td>
+      <td>Specular for the iridescent effect.</td>
+    </tr>
+    <tr>
+      <td><b>Effect Strength</b></td>
+      <td>Overall strength of the iridescent effect.</td>
+    </tr>
+    <tr>
+      <td><b>Body Strength</b></td>
+      <td>OVerall strength of the iridescent distortion in the body of the surface.</td>
+    </tr>
+    <tr>
+      <td><b>Exponent</b></td>
+      <td>Tighten / loosen the fresnel effect.</td>
+    </tr>
+    <tr>
+      <td><b>Frequency</b></td>
+      <td>How high/low frequency the noise is for distortion.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><b>Iridescent Tint</b></td>
+      <td>Base tint for the iridescent effect.</td>
+    </tr>
+    <tr>
+      <td><b>Emissive Injection Strength</b></td>
+      <td>Optional multiplier for when injection the iridescent coluors into the emissive buffer.</td>
+    </tr>
+    <tr>
+      <td><b>Saturation</b></td>
+      <td>Saturation boost for the iridescent colours.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><b>Pixel Normals</b></td>
+      <td>World space normals. Used for surface distortion. Defaults to PixelNormalWS. (Note: World space - not tangent space)</td>
+    </tr>
+    <tr>
+      <td><b>Pixel Normal Strength</b></td>
+      <td>Strength of the pixel normals. This is useful for lessening the effect a normal map will have on the surface.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><b>Mask</b></td>
+      <td>Optional mask for the iridescent effect. You can use this for vertex painting / texture masking.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="limitations">Limitations</h2>
 
 <ul>
-  <li>
-    <p><strong>Scale:</strong> This controls the overall scale of the 3D noise used for the light wrapping and breakup affect</p>
-  </li>
-  <li>
-    <p><strong>Colour Range:</strong> A [0..1] value which is used for the maximum hue shift allowed by the effect. 1.0 will result in a full colour spectrum (starting at the input tint), whereas 0.0 will result in only the tint being used.</p>
-  </li>
-  <li>
-    <p><strong>Tint:</strong> The starting tint for the colour of the iridescent effect (Note, this also controls the overall saturation and lightness of the colours)</p>
-  </li>
-  <li>
-    <p><strong>Fresnel Effect Strength:</strong> When viewed from grazing angles the iridescent hue shift is always bumped up to max. This controls how visible the fresnel effect is.</p>
-  </li>
-  <li>
-    <p><strong>Noise Texture 3D:</strong> A 3D Texture sample used for the lightwrap and breakup effect. This defaults to a low-res 3D perlin noise texture, which works for most cases.</p>
-  </li>
+  <li>Phsysically - iridescent colours vary by the angle of the surface, relative to each light cast onto it. Unfortunately without implementing per-pixel lighting this is not possible in Unreal. I have chose here to instead use camera relative hue shifting, which looks good enough in most situations.</li>
 </ul>
-
-<hr />
-
-<p><img src="https://github.com/Bailey3D-Website/2020/blob/main/projects/Iridescent%20Shader/iridescent_gif.gif?raw=true" alt="Image" class="center-image" /></p>
 
     </div>
     
