@@ -7,7 +7,7 @@ main:
   - title: "Art"
     url: "#Art"
   - title: "Resume"
-    url: "http://resume.bailey3d.com"
+    url: "https://github.com/Bailey3D-Website/2021/blob/main/personal/Bailey%20Martin%20-%20Resume.pdf"
     new_tab: "true"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
