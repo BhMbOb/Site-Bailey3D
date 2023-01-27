@@ -53,4 +53,4 @@ This pack is for sale [here on the Unreal marketplace](https://www.unrealengine.
 
 ## Limitations
 
-- Phsysically - iridescent colours vary by the angle of the surface, relative to each light cast onto it. Unfortunately without implementing per-pixel lighting this is not possible in Unreal. I have chose here to instead use camera relative hue shifting, which looks good enough in most situations.
+- True Iridescent lighting is not possible to recreate in Unreal without per-pixel lighting. Instead, this implementation uses a mix of camera-relative hue shifting and a custom lightwrap effect.
