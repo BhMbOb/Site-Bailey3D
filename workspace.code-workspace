@@ -1,8 +1,8 @@
 {
 	"folders": [
 		{
-			"name":"Pages",
-			"path":".\\_posts"
+			"name":"Pages - Portfolio",
+			"path":".\\portfolio"
 		},
 		{
 			"name":"Site",
