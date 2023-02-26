@@ -1,6 +1,11 @@
 {
 	"folders": [
 		{
+			"name":"Pages",
+			"path":".\\_posts"
+		},
+		{
+			"name":"Site",
 			"path": "."
 		}
 	],
