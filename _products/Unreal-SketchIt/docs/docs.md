@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SketchIt - Docs"
-img: https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/thumb.gif?raw=true
+img: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/banner.png?raw=true
 description: ""
 tag: [Store, Shaders, Post Process]
 
@@ -42,13 +42,19 @@ Here is a list of all the preset variants currently available:
 |<b>Vintage:</b>|Adds an old-school and nostalgic touch to your designs with an aged and stained paper texture, great for creating vintage and retro-inspired artwork.|[MM_PP_SketchIt_HandDrawn](../shader_docs/MM_PP_SketchIt_HandDrawn)|
 
 
-## Known Issues and Limitations
+## Known Limitations / FAQ
 
-- Translucent materials may render over some SketchIt effects due to forward rendering limitations.
-See [this](https://danieru.com/2018/07/04/dither-based-transparency-in-unreal-engines-material-editor/) post for a tutorial on setting up dithered opacity to get around this.
+<b>Why do translucent materials render over some SketchIt effects?</b><br>
+This is due to limitations with deferred rendering. It can be fixed by using dithered opacity for translucent materials.
 
-- Mobile projects must ensure they are using the mobile deferred renderer.
+<b>How do I set up SketchIt to work on a mobile project?</b><br>
+Mobile projects must ensure that they are using the mobile deferred renderer.<br>
 See Epic's documentation on [Mobile Deferred Shading](https://docs.unrealengine.com/5.1/en-US/using-the-mobile-deferred-shading-mode-in-unreal-engine/) for guidance enabling this.
+
+<b>Why are SketchIt effects tonemapped?</b><br>
+In order for TemporalAA to work correctly SketchIt effects are rendered "Before Tonemapper", which results in the final rendered scene being tonemapped.
+There is no simple fix to this, but you can alter the tonemapper settings yourself in a post-process volume.<br>
+See the documentation by Epic on [Color Grading anf Filmic Tonemapper](https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/PostProcessEffects/ColorGrading/) for more info on this.
 
 
 ## See Also
