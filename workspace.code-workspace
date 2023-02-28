@@ -2,7 +2,11 @@
 	"folders": [
 		{
 			"name":"Pages - Portfolio",
-			"path":".\\portfolio"
+			"path":".\\_portfolio"
+		},
+		{
+			"name":"Pages - Products",
+			"path":".\\_products"
 		},
 		{
 			"name":"Site",
@@ -13,6 +17,9 @@
 		"files.exclude": {
 			"**/_site": true,
 			"**/.jekyll-cache": true
-		}
+		},
+		"markdownlint.ignore": [
+			"MD033"
+		]
 	}
 }

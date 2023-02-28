@@ -289,3 +289,13 @@ defaults:
       comments: # true
       share: true
       related: true
+
+
+# Bailey: Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  products:
+    output: true
+    permalink: /:collection/:path/
