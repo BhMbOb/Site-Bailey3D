@@ -7,6 +7,11 @@ tag: [Store, Shaders, Post Process, Documentation]
 ---
 [< Back to Docs](../docs/docs)
 
+<b>SketchIt v1.1.0</b> - for Unreal 5.0+
+
+- <b>New</b>: Added <b>Demo Gallery</b> level.
+
+
 <b>SketchIt v1.0.0</b> - for Unreal 5.0+
 
 - <b>New</b>: Added the <b>Byro Pen</b> variant.

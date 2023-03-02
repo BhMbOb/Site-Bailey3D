@@ -4,8 +4,16 @@ title: "SketchIt - Chalk Board (Master Material)"
 img: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/banner.png?raw=true
 description: ""
 tag: [Store, Shaders, Post Process, Documentation]
+carousels:
+  - images: 
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/Chalkboard_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkboardVice.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkDrawing_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkDrawing_Vice.jpeg?raw=true
 ---
 [< Back to Docs](../../docs)
+
+{% include carousel.html height="50" unit="%" duration="99999" number="1" %}
 
 |<b>Category</b>|<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|:---|

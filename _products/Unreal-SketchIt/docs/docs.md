@@ -7,10 +7,23 @@ tag: [Store, Shaders, Post Process]
 
 carousels:
   - images: 
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/thumb.gif?raw=true
-    - image: https://github.com/Bailey3D-Website/2019/blob/main/projects/Spline%20Tools/bailey-martin-a809f0-c0ef469af24a443a8553696429c38242-mv2.gif?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Schematic_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Vintage_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/Chalkboard_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Pencil_Vice.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Charcoal_Rift.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Graph_Rift.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Notepad_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkDrawing_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/ByroPen_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/InkPen_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Pastel_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/GelPen_Vice.jpeg?raw=true
 
 ---
+
+{% include carousel.html height="50" unit="%" duration="99999" number="1" %}
+
 ## Getting Started
 
 Getting started with SketchIt is as easy as adding one of the pre-existing material templates to a post-processing volume in your map.

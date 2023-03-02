@@ -4,8 +4,19 @@ title: "SketchIt - Ink Pen (Master Material)"
 img: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/banner.png?raw=true
 description: ""
 tag: [Store, Shaders, Post Process, Documentation]
+carousels:
+  - images: 
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/InkPen_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/ByroPen_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/ByroPen_Vice.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/GelPen_Trove.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/GelPen_Vice.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/InkPen_Rift.jpeg?raw=true
+    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/InkPen_Vice.jpeg?raw=true
 ---
 [< Back to Docs](../../docs)
+
+{% include carousel.html height="50" unit="%" duration="99999" number="1" %}
 
 |<b>Category</b>|<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|:---|
