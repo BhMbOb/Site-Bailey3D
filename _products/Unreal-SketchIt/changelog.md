@@ -7,6 +7,10 @@ tag: [Store, Shaders, Post Process, Documentation]
 ---
 [< Back to Docs](../docs/docs)
 
+<b>SketchIt v1.1.1</b> - for Unreal 5.0+
+
+- <b>Add</b>: Added <b>"README.txt"</b> with links to documentation and changelogs. For marketplaces which do not allow external links (such as <b>Artstation</b>).
+
 <b>SketchIt v1.1.0</b> - for Unreal 5.0+
 
 - <b>New</b>: Added <b>Demo Gallery</b> level.
