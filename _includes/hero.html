@@ -1,0 +1,79 @@
+<!--
+:desc Page used as the hero banner for a page - with info on the name/docs
+:desc for store pages this will include price and rating
+:desc for blog pages this will include tags and author
+-->
+{% assign l_hero_image = null %}
+
+{% if page.hero_image %}
+    {% assign l_hero_image = page.hero_image %}
+{% endif %}
+
+<!--
+store properties
+-->
+{% if page.store_name %}
+    {% assign l_store_price = site.store[page.store_name].price %}
+    {% assign l_buy_now_link = site.store[page.store_name].buy_now_link %}
+    {% assign l_docs_link = site.store[page.store_name].docs_link %}
+    {% assign l_store_rating = site.store[page.store_name].rating %}
+{% else %}
+    {% assign l_store_price = nil %}
+    {% assign l_buy_now_link = nil %}
+    {% assign l_docs_link = nil %}
+    {% assign l_store_rating = nil %}
+{% endif %}
+
+{% if page.title || page.subtitle %}
+<section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if l_hero_image %} style="background: url('{{ l_hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
+    <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
+        <div class="container">
+            <h1 class="title is-2">{{ page.title }}</h1>
+            <p class="subtitle is-3">{{ page.subtitle }}</p>
+            {% if page.hero_link %}
+                <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
+            {% endif %}
+
+            {% if page.layout == "post" %}
+                <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
+            {% endif %}
+
+            <div>
+
+                {% if l_store_price and l_buy_now_link %}
+                    <a class="button is-primary" href="{{l_buy_now_link}}" target="_blank">{{ l_store_price }} - Buy Now</a>
+                {% else %}
+                    {% if l_store_price %}
+                        <a class="button is-primary">{{ l_store_price }}</a>
+                    {% endif %}
+        
+                    {% if l_buy_now_link %}
+                        <a class="button is-primary" href="{{l_buy_now_link}}">Buy Now</a>
+                    {% endif %}
+                {% endif %}
+
+
+                {% if l_docs_link and page.layout == "product" %}
+                    <a class="button is-secondary" href="{{l_docs_link}}">Documentation</a>
+                {% endif %}
+
+                {% for tag in page.tags %}
+                    <a class="button is-secondary"><i>{{ tag }}</i></a>
+                {% endfor %}
+
+                {% if page.resume_link %}
+                    <a class="button is-secondary" href="{{page.resume_link}}">Resumé</a>
+                {% endif %}
+
+            </div>
+
+            {%if l_store_rating and page.layout == "product" %}
+                {% assign rating = l_store_rating %}
+                {% include rating.html %}
+            {% endif %}
+
+
+        </div>
+    </div>
+</section>
+{% endif %}

@@ -1,0 +1,27 @@
+---
+layout: default
+show_sidebar: false
+---
+
+<div class="columns is-multiline">
+
+  <div class="column is-12">
+    {{ page.content }}
+  </div>
+
+  {% for store in site.store %}
+    {% for post in site.products %}
+      {% if post.store_name == store[0] %}
+      <div class="column is-4-desktop is-6-tablet">
+
+
+        <a href="{{ post.url | relative_url }}">
+          {% include card-product.html %}
+        </a>
+
+      </div>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</div>
+

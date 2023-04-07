@@ -1,0 +1,13 @@
+- label: Documentation
+  items:
+    - name: Juniper
+      link: /docs/Juniper/index/#juniper
+    - name: Program Support
+      link: /docs/Juniper/index/#program_support
+    - name: Requirements
+      link: /docs/Juniper/index/#requirements
+
+- label: See Also
+  items:
+    - name: "GitHub"
+      link: https://github.com/Bailey3D/Juniper

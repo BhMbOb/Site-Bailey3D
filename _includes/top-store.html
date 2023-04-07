@@ -1,0 +1,28 @@
+<!--
+:desc Vertical list of all top store products (small)
+:todo! Ability to sort products
+-->
+{% if page.store_name %}
+<p class="title is-4">See Also</p>
+{% else %}
+    <p class="title is-4">Store</p>
+{% endif %}
+
+<div class="columns is-multiline">
+
+    {% for store in site.store %}
+        {% for post in site.products %}
+            {% if post.store_name == store[0] and post.store_name != page.store_name %}
+                <div class="column is-12">
+                    {% include card-product.html %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+</div>
+
+<div class="has-text-centered">
+    <a href="{{ site.baseurl }}/store/" class="button is-primary">See All Products..</a>
+</div>
+
+

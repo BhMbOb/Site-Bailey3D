@@ -1,14 +1,20 @@
-<div class="page__footer-follow">
-  <ul class="social-icons">
-
-    {% if site.footer.links %}
-      {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+<footer class="footer">
+    <div class="container">
+        
+        {% if site.footer_menu %}
+        <div class="columns is-multiline">
+            {% for item in site.data[site.footer_menu] %}
+            <div class="column has-text-centered">
+                <div>
+                    <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
         {% endif %}
-      {% endfor %}
-    {% endif %}
-  </ul>
-</div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}  |  <a href="mailto:contact@bailey3d.com" rel="nofollow">Contact@Bailey3D.com</a></div>
+        <div class="content is-small has-text-centered">
+            <p class="">Copyright © <a href="https://www.bailey3d.com">Bailey Martin {{ site.time | date: '%Y' }}</a></p>
+        </div>
+    </div>
+</footer>

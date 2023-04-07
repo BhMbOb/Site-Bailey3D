@@ -1,0 +1,22 @@
+<!--
+:desc Vertical list of all top blog posts (big)
+:todo! Ability to sort blog posts
+-->
+<p class="title is-4">Top Posts</p>
+
+<div class="columns is-multiline">
+    {% for portfolio in site.portfolio %}
+        {% for post in site.posts %}
+            {% if post.portfolio == portfolio[0] %}
+            <div class="column is-12">
+                {% include post-card.html %}
+            </div>
+            {% endif %}
+        {% endfor %}
+
+    {% endfor %}    
+</div>
+
+<div class="has-text-centered">
+    <a href="{{ site.baseurl }}/blog/" class="button is-primary">See More Blog Posts..</a>
+</div>

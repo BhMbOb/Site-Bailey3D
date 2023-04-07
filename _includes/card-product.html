@@ -1,0 +1,56 @@
+<!--
+:desc This file is used as a template for a product widget
+-->
+
+
+{% if post.store_name %}
+    {% assign l_store_price = site.store[post.store_name].price %}
+    {% assign l_store_rating = site.store[post.store_name].rating %}
+{% else %}
+    {% assign l_store_price = nil %}
+    {% assign l_store_rating = nil %}
+{% endif %}
+
+<div class="card">
+    {% if post.image %}
+    <div class="card-image">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            <img src="{{ post.image }}" alt="{{ post.title }}">
+        </a>
+    </div>
+    {% else %}
+    <header class="card-header">
+        <a class="card-header-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+    </header>
+    {% endif %}
+    <div class="card-content">
+        <div class="content">
+            {% if post.image %}
+            <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+            {% endif %}
+            {% if post.summary %}
+                {{ post.summary | markdownify }}
+            {% else if post.subtitle %}
+            {{ post.subtitle | markdownify }}
+            {% else %}
+                <p>{{ post.excerpt }}</p>
+            {% endif %}
+        </div>
+
+        {%if l_store_rating %}
+            {% assign rating = l_store_rating %}
+            {% include rating.html %}
+        {% endif %}
+
+        <div>
+            {% if l_store_price %}
+                <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">{{ l_store_price }}</a>
+            {% endif %}
+
+            {% for tag in post.tags %}
+                <a href="{{ site.baseurl }}{{ post.url }}" class="button is-secondary">{{ tag }}</a>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>

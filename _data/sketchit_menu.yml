@@ -1,0 +1,26 @@
+- label: Documentation
+  items:
+    - name: Getting Started
+      link: /docs/SketchIt/index/#getting_started
+    - name: Variants
+      link: /docs/SketchIt/index/#variants
+    - name: Known Limitations / FAQ
+      link: /docs/SketchIt/index/#limitations
+
+- label: Master Materials
+  items:
+    - name: Ink Pen
+      link: /docs/SketchIt/master_materials/ink_pen/
+    - name: Chalk Board
+      link: /docs/SketchIt/master_materials/chalk_board/
+    - name: Charcoal
+      link: /docs/SketchIt/master_materials/charcoal/
+    - name: Schematic
+      link: /docs/SketchIt/master_materials/schematic/
+    - name: Hand Drawn
+      link: /docs/SketchIt/master_materials/hand_drawn/
+
+- label: See Also
+  items:
+    - name: "Changelog"
+      link: /docs/SketchIt/changelog/

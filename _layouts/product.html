@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<!--
+:desc A single product card - used when we show products in a grid / list
+-->
+
+{% if page.store_name %}
+    {% assign l_store_price = site.store[page.store_name].price %}
+    {% assign l_buy_now_link = site.store[page.store_name].buy_now_link %}
+    {% assign l_docs_link = site.store[page.store_name].docs_link %}
+    {% assign l_store_rating = site.store[page.store_name].rating %}
+{% else %}
+    {% assign l_store_price = nil %}
+    {% assign l_buy_now_link = nil %}
+    {% assign l_docs_link = nil %}
+    {% assign l_store_rating = nil %}
+{% endif %}
+
+<div class="columns is-multiline">
+
+    <div class="column is-12">
+        <!--<p class="title is-4">Description</p>-->
+        <div class="content">
+            
+    
+            {{ content }}
+        </div>
+    </div>
+
+    {% if site.data.reviews[page.product_code] %}
+    <div class="column is-12">
+        <p class="title is-4">Reviews</p>
+        {% for review in site.data.reviews[page.product_code] %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <div>
+        {% if l_store_price and l_buy_now_link %}
+            <a class="button is-primary" href="{{l_buy_now_link}}" target="_blank">{{ l_store_price }} - Buy Now</a>
+        {% else %}
+            {% if l_store_price %}
+                <a class="button is-primary">{{ l_store_price }}</a>
+            {% endif %}
+
+            {% if l_buy_now_link %}
+                <a class="button is-primary" href="{{l_buy_now_link}}">Buy Now</a>
+            {% endif %}
+        {% endif %}
+
+
+    {% if l_docs_link and page.layout == "product" %}
+        <a class="button is-secondary" href="{{l_docs_link}}">Documentation</a>
+    {% endif %}
+    </div>
+
+</div>

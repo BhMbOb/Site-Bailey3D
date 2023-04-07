@@ -1,51 +1,28 @@
 ---
-layout: splash
+layout: default
 ---
 
-<main class="post_content">
-  <article class="post">
-    <header>
-      <div class="post_image">
-        <img src={{page.img}} alt="{{page.title}}">
-      </div>
-      <div class="post_description">
-        <h1 class="post_title">{{page.title}}</h1>
-      </div>
-    </header> <!-- End Header -->
+<div class="content">
 
-    <div class="entry_content">
-      {{page.content | markdownify}}
-    </div>
-    
-    <div class="post_wrapper">
-      <footer class="post_footer cf">
-        <div class="post_tag">
-          <span>Tags:</span>
-          {% for tag in page.tags %}
-          <a class="tag">{{ tag }}</a>
-          {% endfor %}
-        </div>
-      </footer>
-    </div>
-  </article> <!-- End Section Post -->
-  
-  <section class="author cf">
-    <div class="post_wrapper">
-      <div class="author_image">
-        <img src="https://github.com/Bailey3D-Website/2021/blob/main/personal/B3D_Pic.jpg?raw=true" alt="Author face">
-      </div>
-      <div class="author_info">
-        <h2 class="author_title">{% if site.name %}{{site.name}}{% endif %}</h2>
-        <p class="author_subtitle">{% if site.summary %}{{site.summary}}{% endif %}</p>
-        <div class="author_social">
-          {% if site.email %}
-          <span class="author_email"><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:{{site.email}}">{{site.email}}</a></span>
-          {% else %}
-          <span class="author_email"><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:contact@bailey3d.com">contact@bailey3d.com</a></span>
-          {% endif %}         
-        </div>
-      </div>
-    </div>
-  </section> <!-- End Section Author -->
+    <!--<p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>-->
 
-</main> <!-- End Section Post Content -->
+    {% if page.series %}
+        {% include series.html %}
+    {% endif %}
+
+    {{ content }}
+</div>
+
+<div class="tags">
+    {% for tag in page.tags %}
+      {% include tag.html tag=tag %}
+    {% endfor %}
+</div>
+
+{% unless site.hide_share_buttons %}
+{% include share-buttons.html %}
+{% endunless %}
+
+{% if site.disqus.shortname %}
+  {% include disqus.html %}
+{% endif %}

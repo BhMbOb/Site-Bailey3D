@@ -1,12 +1,16 @@
 {
 	"folders": [
 		{
-			"name":"Pages - Portfolio",
-			"path":".\\_portfolio"
+			"name":"Pages - Blog",
+			"path":".\\_posts"
 		},
 		{
 			"name":"Pages - Products",
 			"path":".\\_products"
+		},
+		{
+			"name":"Pages - Documentation",
+			"path":".\\_docs"
 		},
 		{
 			"name":"Site",

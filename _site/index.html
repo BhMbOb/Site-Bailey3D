@@ -1,720 +1,1052 @@
-<!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
   <head>
     <meta charset="utf-8">
-
-<!-- begin _includes/seo.html --><title>Bailey Martin - Technical Art</title>
-<meta name="description" content="Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedural Tooling.">
-
-
-  <meta name="author" content="Hi - I'm Bailey!">
-  
-
-
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Bailey Martin">
-<meta property="og:title" content="Bailey Martin - Technical Art">
-<meta property="og:url" content="/">
-
-
-  <meta property="og:description" content="Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedural Tooling.">
-
-
-
-  <meta property="og:image" content="/assets/images/banner.jpg">
-
-
-
-  <meta name="twitter:site" content="@Bailey3D_">
-  <meta name="twitter:title" content="Bailey Martin - Technical Art">
-  <meta name="twitter:description" content="Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedural Tooling.">
-  <meta name="twitter:url" content="/">
-
-  
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="/assets/images/banner.jpg">
-  
-
-  
-
-
-
-
-
-
-
-  
-
-  
-
-
-<link rel="canonical" href="/">
-
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/assets/images/B3D_Logo.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Hi I’m Bailey, | Bailey3D</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Hi I’m Bailey," />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Technical Artist - Specialising in Pipeline, Tools, and Shaders." />
+<meta property="og:description" content="Technical Artist - Specialising in Pipeline, Tools, and Shaders." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Bailey3D" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Hi I’m Bailey," />
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    
-      "@type": "Person",
-      "name": "Bailey Martin",
-      "url": "/"
-    
-  }
-</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Technical Artist - Specialising in Pipeline, Tools, and Shaders.","headline":"Hi I’m Bailey,","name":"Bailey3D","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
 
+    <!-- head scripts -->
+<script src="/assets/js/main.min.js"></script></head>
 
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
 
+        
+        <div class="navbar-brand">
+            
+            <div style="display: flex; justify-content: center; align-items: center;">
+                
+                    <a class="site-logo" href="/"><img src="/assets/images/B3D_Logo.png" style="max-width: 32px; max-height: 32px;"></a>
+                
+            </div>
 
+            <a href="/" class="navbar-item">
+                Bailey3D
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
 
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item is-active">Home</a>
+                
+                
+                    
+                    <a href="/blog/" class="navbar-item ">Blog</a>
+                    
+                
+                    
+                    <a href="/store/" class="navbar-item ">Store</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Docs</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/docs/SketchIt/index/" class="navbar-item ">SketchIt</a>
+                            
+                            <a href="/docs/Juniper/index/" class="navbar-item ">Juniper</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                
+            </div>
 
+            <div class="navbar-end">
+                
+            </div>
 
-<!-- end _includes/seo.html -->
-
-
-
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Bailey Martin Feed">
-
-
-<!-- https://t.co/dKP3o1e -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-</script>
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="shortcut icon" href="https://github.com/Bailey3D-Website/2021/blob/main/personal/B3D_Logo_64.png?raw=true" type="image/png"/>
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
-<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
-
-
-    <!-- start custom head snippets -->
-
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
-
-<!-- end custom head snippets -->
-
-  </head>
-
-  <body class="layout--splash">
-    <nav class="skip-links">
-  <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
-    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
-    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
-  </ul>
+        </div>
+    </div>
 </nav>
 
-    <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-<![endif]-->
+    
+        <!--
+:desc Page used as the hero banner for a page - with info on the name/docs
+:desc for store pages this will include price and rating
+:desc for blog pages this will include tags and author
+-->
+
+
+
+
+<!--
+store properties
+-->
+
+
+
+<section class="hero  is-medium  is-bold is-primary"  style="background: url('/assets/images/banner.jpg') no-repeat center center; background-size: cover;" >
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">Hi I'm Bailey,</h1>
+            <p class="subtitle is-3">Technical Artist - Specialising in Pipeline, Tools, and Shaders.</p>
+            
+
+            
+
+            <div>
+
+                
+                    
+        
+                    
+                
+
+
+                
+
+                
+
+                
+                    <a class="button is-secondary" href="https://github.com/Bailey3D-Website/2021/blob/main/personal/Bailey%20Martin%20-%20Resume.pdf">Resumé</a>
+                
+
+            </div>
+
+            
+
+
+        </div>
+    </div>
+</section>
 
     
+    
 
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-8">
+                    
+                    
+                    
+                    
+                    
+<div class="content">
+    <!--
+:desc Vertical list of all top blog posts (big)
+:todo! Ability to sort blog posts
+-->
+<p class="title is-4">Top Posts</p>
+
+<div class="columns is-multiline">
+    
         
-          <a class="site-logo" href="/"><img src="/assets/images/B3D_Logo.png"></a>
+            
         
-        <a class="site-title" href="/">
-          Bailey Martin - Technical Artist
+            
+        
+            
+            <div class="column is-12">
+                <div class="card">
+    
+    <div class="card-image">
+        <a href="/2021/10/30/space_colonisation/">
+            <img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/thumb.gif?raw=true" alt="Tree Root Generator (Houdini)" style="width: 100%;" />
         </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/#Tools"  >Tools</a>
-            </li><li class="masthead__menu-item">
-              <a href="/#Shaders"  >Shaders</a>
-            </li><li class="masthead__menu-item">
-              <a href="/#Art"  >Art</a>
-            </li><li class="masthead__menu-item">
-              <a href="https://github.com/Bailey3D-Website/2021/blob/main/personal/Bailey%20Martin%20-%20Resume.pdf" target="_blank" >Resume</a>
-            </li></ul>
-        
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
-
-        <nav class="social_header">
-          <a href="https://www.linkedin.com/in/bailey3d" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href="https://twitter.com/Bailey3D_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="https://github.com/Bailey3D" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-      </nav>
-
-      </nav>
     </div>
-  </div>
-</div>
-
-
-    <div class="initial-content">
-      
-  
-
-
-
-
-
-
-
-<div class="page__hero--overlay"
-  style=" background-image: url('/assets/images/banner.jpg');"
->
-  
-    <div class="wrapper">
-      <h1 id="page-title" class="page__title" itemprop="headline">
-        
-          Hi - I’m Bailey,
-
-        
-      </h1>
-      
-        <p class="page__lead">Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedural Tooling.
+    
+    <div class="card-content">
+        <div class="content">
+            
+            <a class="title is-4" href="/2021/10/30/space_colonisation/">Tree Root Generator (Houdini)</a>
+            
+            
+                <p><p>This is a Houdini based tool used to generate tree roots from input spawn positions, with a variety of inputs.</p>
 </p>
-      
-      
+            
+        </div>
 
-
-      
-      
-        <p>
-        
-          <a href="https://github.com/Bailey3D-Website/2021/blob/main/personal/Bailey%20Martin%20-%20Resume.pdf" target="_blank" class="btn btn--light-outline btn--large">Resumé</a>
-        
-      
-    </div>
-  
-  
-</div>
-
-
-
-<div id="main" role="main">
-  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Bailey Martin - Technical Art">
-    <meta itemprop="description" content="Technical artist in Games. Specialising in Pipeline Development, Realtime Shaders, and Procedural Tooling.">
+        <div>
+            <a href="/2021/10/30/space_colonisation/" class="button is-primary">Read more</a>
     
+            
+                <a href="/2021/10/30/space_colonisation/" class="button is-secondary">Houdini</a>
+            
+                <a href="/2021/10/30/space_colonisation/" class="button is-secondary">Python</a>
+            
+                <a href="/2021/10/30/space_colonisation/" class="button is-secondary">Assets</a>
+            
+                <a href="/2021/10/30/space_colonisation/" class="button is-secondary">Tools</a>
+            
+                <a href="/2021/10/30/space_colonisation/" class="button is-secondary">Pipeline</a>
+            
+        </div>
+
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-item">Published: Oct 30, 2021</p>
+    </footer>
+</div>
+            </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
     
-
-    <section class="page__content" itemprop="text">
-      <a name="Tools"><h1>Tools<hr></h1></a>
-
-
-<div class="feature__wrapper">
-
-  
-    <div class="feature__item">
-      <div class="archive__item">
         
-          <div class="archive__item-teaser">
-            <a href="https://github.com/Juniper3d/Juniper" style="text-decoration:none" target="_blank" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Juniper/juniper.png?raw=true" alt="">
-            </a>
             
-          </div>
         
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="https://github.com/Juniper3d/Juniper" style="text-decoration:none" target="_blank" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Juniper - Tools Framework
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/tools/tech_tools_roots_generator" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Roots/thumb.gif?raw=true" alt="">
-            </a>
             
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/tools/tech_tools_roots_generator" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Tree Root Generation [Houdini]
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
+            <div class="column is-12">
+                <div class="card">
+    
+    <div class="card-image">
+        <a href="/2021/10/30/ue4_shader_tools/">
+            <img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/HLSL%20Library/thumb.png?raw=true" alt="HLSL Shader Library In Unreal" style="width: 100%;" />
+        </a>
     </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/tools/tech_tools_ue4_shader_tools" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/HLSL%20Library/thumb.png?raw=true" alt="">
-            </a>
+    
+    <div class="card-content">
+        <div class="content">
             
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/tools/tech_tools_ue4_shader_tools" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                HLSL Shader Library In Unreal
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/tools/tech_tools_asset_library_import_export" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Exporters/thumb.png?raw=true" alt="">
-            </a>
+            <a class="title is-4" href="/2021/10/30/ue4_shader_tools/">HLSL Shader Library In Unreal</a>
             
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/tools/tech_tools_asset_library_import_export" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Asset Import / Export Tools
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/tools/tech_tools_houdini_drop" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Houdini%20Drop/thumb.png?raw=true" alt="">
-            </a>
             
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/tools/tech_tools_houdini_drop" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Drop To Terrain [Houdini]
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/tools/tech_tools_procedural_placement" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2019/blob/main/projects/Spline%20Tools/thumb.gif?raw=true" alt="">
-            </a>
+                <p><p>As someone who has experience with using HLSL for shader coding, the lack of HLSL support in Unreal has always frustrated me.</p>
+</p>
             
-          </div>
+        </div>
+
+        <div>
+            <a href="/2021/10/30/ue4_shader_tools/" class="button is-primary">Read more</a>
+    
+            
+                <a href="/2021/10/30/ue4_shader_tools/" class="button is-secondary">Unreal</a>
+            
+                <a href="/2021/10/30/ue4_shader_tools/" class="button is-secondary">HLSL</a>
+            
+                <a href="/2021/10/30/ue4_shader_tools/" class="button is-secondary">Python</a>
+            
+                <a href="/2021/10/30/ue4_shader_tools/" class="button is-secondary">Assets</a>
+            
+                <a href="/2021/10/30/ue4_shader_tools/" class="button is-secondary">Tools</a>
+            
+                <a href="/2021/10/30/ue4_shader_tools/" class="button is-secondary">Pipeline</a>
+            
+                <a href="/2021/10/30/ue4_shader_tools/" class="button is-secondary">Shaders</a>
+            
+        </div>
+
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-item">Published: Oct 30, 2021</p>
+    </footer>
+</div>
+            </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
         
 
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/tools/tech_tools_procedural_placement" style="text-decoration:none"  onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Procedural Asset Placement
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <div class="column is-12">
+                <div class="card">
+    
+    <div class="card-image">
+        <a href="/2020/10/30/gerstner_waves/">
+            <img src="https://github.com/Bailey3D-Website/2020/blob/main/projects/Gerstner%20Waves/thumb.gif?raw=true" alt="Ocean Rendering" style="width: 100%;" />
+        </a>
     </div>
-  
+    
+    <div class="card-content">
+        <div class="content">
+            
+            <a class="title is-4" href="/2020/10/30/gerstner_waves/">Ocean Rendering</a>
+            
+            
+                <p><p>This was a project aiming to create a realistic looking ocean shader with sea foam, waves and realistic looking lighting.
+The shader code was primarily coded in HLSL, and pieced together in Unreal for the final renders.</p>
+</p>
+            
+        </div>
+
+        <div>
+            <a href="/2020/10/30/gerstner_waves/" class="button is-primary">Read more</a>
+    
+            
+                <a href="/2020/10/30/gerstner_waves/" class="button is-secondary">Shaders</a>
+            
+                <a href="/2020/10/30/gerstner_waves/" class="button is-secondary">Lighting</a>
+            
+                <a href="/2020/10/30/gerstner_waves/" class="button is-secondary">Art</a>
+            
+                <a href="/2020/10/30/gerstner_waves/" class="button is-secondary">HLSL</a>
+            
+        </div>
+
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-item">Published: Oct 30, 2020</p>
+    </footer>
+</div>
+            </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+    
+        
+            
+            <div class="column is-12">
+                <div class="card">
+    
+    <div class="card-image">
+        <a href="/2022/10/30/juniper/">
+            <img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Juniper/juniper.png?raw=true" alt="Juniper" style="width: 100%;" />
+        </a>
+    </div>
+    
+    <div class="card-content">
+        <div class="content">
+            
+            <a class="title is-4" href="/2022/10/30/juniper/">Juniper</a>
+            
+            
+                <p><p>Juniper is a unified scripting framework - for use across a variety of applications which include an embedded Python interpreter.</p>
+</p>
+            
+        </div>
+
+        <div>
+            <a href="/2022/10/30/juniper/" class="button is-primary">Read more</a>
+    
+            
+                <a href="/2022/10/30/juniper/" class="button is-secondary">Python</a>
+            
+                <a href="/2022/10/30/juniper/" class="button is-secondary">DCC</a>
+            
+                <a href="/2022/10/30/juniper/" class="button is-secondary">Pipeline</a>
+            
+                <a href="/2022/10/30/juniper/" class="button is-secondary">Tools</a>
+            
+                <a href="/2022/10/30/juniper/" class="button is-secondary">Framework</a>
+            
+        </div>
+
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-item">Published: Oct 30, 2022</p>
+    </footer>
+</div>
+            </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <div class="column is-12">
+                <div class="card">
+    
+    <div class="card-image">
+        <a href="/2019/10/30/desert_diorama/">
+            <img src="https://github.com/Bailey3D-Website/2020/blob/main/projects/Desert/thumb.gif?raw=true" alt="Desert Diorama" style="width: 100%;" />
+        </a>
+    </div>
+    
+    <div class="card-content">
+        <div class="content">
+            
+            <a class="title is-4" href="/2019/10/30/desert_diorama/">Desert Diorama</a>
+            
+            
+                <p><p>Small desert diorama. Mainly a test in lighting, composition and use of a minimal colour palette.</p>
+</p>
+            
+        </div>
+
+        <div>
+            <a href="/2019/10/30/desert_diorama/" class="button is-primary">Read more</a>
+    
+            
+                <a href="/2019/10/30/desert_diorama/" class="button is-secondary">Shaders</a>
+            
+                <a href="/2019/10/30/desert_diorama/" class="button is-secondary">Lighting</a>
+            
+                <a href="/2019/10/30/desert_diorama/" class="button is-secondary">Art</a>
+            
+                <a href="/2019/10/30/desert_diorama/" class="button is-secondary">Unreal</a>
+            
+        </div>
+
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-item">Published: Oct 30, 2019</p>
+    </footer>
+</div>
+            </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+    
+        
+            
+        
+            
+        
+            
+        
+            
+            <div class="column is-12">
+                <div class="card">
+    
+    <div class="card-image">
+        <a href="/2021/10/30/iridescent/">
+            <img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Iridescent/thumb.png?raw=true" alt="Iridescense Shader" style="width: 100%;" />
+        </a>
+    </div>
+    
+    <div class="card-content">
+        <div class="content">
+            
+            <a class="title is-4" href="/2021/10/30/iridescent/">Iridescense Shader</a>
+            
+            
+                <p><p>This pack contains presets for a variety of different Iridescent based effects.</p>
+</p>
+            
+        </div>
+
+        <div>
+            <a href="/2021/10/30/iridescent/" class="button is-primary">Read more</a>
+    
+            
+                <a href="/2021/10/30/iridescent/" class="button is-secondary">Shaders</a>
+            
+                <a href="/2021/10/30/iridescent/" class="button is-secondary">Lighting</a>
+            
+                <a href="/2021/10/30/iridescent/" class="button is-secondary">Art</a>
+            
+                <a href="/2021/10/30/iridescent/" class="button is-secondary">Unreal</a>
+            
+        </div>
+
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-item">Published: Oct 30, 2021</p>
+    </footer>
+</div>
+            </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        
+</div>
+
+<div class="has-text-centered">
+    <a href="/blog/" class="button is-primary">See More Blog Posts..</a>
+</div>
 
 </div>
 
+                </div>
+                
+                <div class="column is-4-desktop is-4-tablet">
+                    <!--
+:desc Vertical list of all top store products (small)
+:todo! Ability to sort products
+-->
 
-<a name="Shaders"><h1>Shaders<hr></h1></a>
+    <p class="title is-4">Store</p>
 
 
-<div class="feature__wrapper">
+<div class="columns is-multiline">
 
-  
-    <div class="feature__item">
-      <div class="archive__item">
+    
         
-          <div class="archive__item-teaser">
-            <a href="/portfolio/shaders/tech_shader_iridescent" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Iridescent/thumb.png?raw=true" alt="">
-            </a>
             
-          </div>
-        
+                <div class="column is-12">
+                    <!--
+:desc This file is used as a template for a product widget
+-->
 
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/shaders/tech_shader_iridescent" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Iridesecense Shader
-              </a>
-            </h2>
-          
 
-          
-        </div>
-      </div>
+
+
+<div class="card">
+    
+    <div class="card-image">
+        <a href="/products/iridescent_materials/">
+            <img src="https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMaterials/featured.jpg?raw=true" alt="Iridescent Materials Pack">
+        </a>
     </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/shaders/tech_shader_gerstner" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2020/blob/main/projects/Gerstner%20Waves/thumb.gif?raw=true" alt="">
-            </a>
+    
+    <div class="card-content">
+        <div class="content">
             
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/shaders/tech_shader_gerstner" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Ocean Shader
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/shaders/tech_shader_cloth" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2021/blob/main/projects/Cloth%20Shading/thumb.png?raw=true" alt="">
-            </a>
+            <a class="title is-4" href="/products/iridescent_materials/">Iridescent Materials Pack</a>
             
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/shaders/tech_shader_cloth" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Cloth Shader
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/shaders/tech_shader_fuzz" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2019/blob/main/projects/Microfibre%20Shader/thumb.png?raw=true" alt="">
-            </a>
             
-          </div>
-        
+            <p>Pearlescent, Bubbles, Iridescent Paint</p>
 
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/shaders/tech_shader_fuzz" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Microfibre Shader
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/shaders/tech_shader_clouds" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2020/blob/main/projects/Volumetric%20Clouds/thumb.jpg?raw=true" alt="">
-            </a>
             
-          </div>
+        </div>
+
+        
+            
+            
+    <div class="content left">
+        
+        <span class="icon">
+            <i class="fas fa-star"></i>
+        </span>
+        
+        <span class="icon">
+            <i class="fas fa-star"></i>
+        </span>
+        
+        <span class="icon">
+            <i class="fas fa-star"></i>
+        </span>
+        
+        <span class="icon">
+            <i class="fas fa-star"></i>
+        </span>
+        
+        <span class="icon">
+            <i class="fas fa-star"></i>
+        </span>
+        
+        
+        
+    </div>
+
         
 
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/shaders/tech_shader_clouds" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Volumetric Clouds
-              </a>
-            </h2>
-          
+        <div>
+            
+                <a href="/products/iridescent_materials/" class="button is-primary">$24.99</a>
+            
 
-          
+            
+                <a href="/products/iridescent_materials/" class="button is-secondary">Unreal</a>
+            
+                <a href="/products/iridescent_materials/" class="button is-secondary">Shaders</a>
+            
         </div>
-      </div>
-    </div>
-  
 
+    </div>
+</div>
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="column is-12">
+                    <!--
+:desc This file is used as a template for a product widget
+-->
+
+
+
+
+<div class="card">
+    
+    <div class="card-image">
+        <a href="/products/sketch_it/">
+            <img src="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/featured.jpg?raw=true" alt="Sketch-It">
+        </a>
+    </div>
+    
+    <div class="card-content">
+        <div class="content">
+            
+            <a class="title is-4" href="/products/sketch_it/">Sketch-It</a>
+            
+            
+            <p>Hand Drawn Post Process Pack</p>
+
+            
+        </div>
+
+        
+            
+            
+    <div class="content left">
+        
+        <span class="icon">
+            <i class="fas fa-star"></i>
+        </span>
+        
+        <span class="icon">
+            <i class="fas fa-star"></i>
+        </span>
+        
+        <span class="icon">
+            <i class="fas fa-star"></i>
+        </span>
+        
+        <span class="icon">
+            <i class="fas fa-star"></i>
+        </span>
+        
+        <span class="icon">
+            <i class="fas fa-star"></i>
+        </span>
+        
+        
+        
+    </div>
+
+        
+
+        <div>
+            
+                <a href="/products/sketch_it/" class="button is-primary">$23.99</a>
+            
+
+            
+                <a href="/products/sketch_it/" class="button is-secondary">Unreal</a>
+            
+                <a href="/products/sketch_it/" class="button is-secondary">Shaders</a>
+            
+        </div>
+
+    </div>
+</div>
+                </div>
+            
+        
+    
+        
+            
+        
+            
+                <div class="column is-12">
+                    <!--
+:desc This file is used as a template for a product widget
+-->
+
+
+
+
+<div class="card">
+    
+    <div class="card-image">
+        <a href="/products/mesh_splitter/">
+            <img src="https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/featured.jpg?raw=true" alt="Mesh Splitter">
+        </a>
+    </div>
+    
+    <div class="card-content">
+        <div class="content">
+            
+            <a class="title is-4" href="/products/mesh_splitter/">Mesh Splitter</a>
+            
+            
+            
+
+            
+        </div>
+
+        
+
+        <div>
+            
+                <a href="/products/mesh_splitter/" class="button is-primary">Free</a>
+            
+
+            
+                <a href="/products/mesh_splitter/" class="button is-secondary">3DS Max</a>
+            
+                <a href="/products/mesh_splitter/" class="button is-secondary">Tools</a>
+            
+        </div>
+
+    </div>
+</div>
+                </div>
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+                <div class="column is-12">
+                    <!--
+:desc This file is used as a template for a product widget
+-->
+
+
+
+
+<div class="card">
+    
+    <div class="card-image">
+        <a href="/products/quick_merge_selection/">
+            <img src="https://github.com/Bailey3D-Website/2021/blob/main/packages/MergeSelection/featured.jpg?raw=true" alt="Quick Merge Selection">
+        </a>
+    </div>
+    
+    <div class="card-content">
+        <div class="content">
+            
+            <a class="title is-4" href="/products/quick_merge_selection/">Quick Merge Selection</a>
+            
+            
+            
+
+            
+        </div>
+
+        
+
+        <div>
+            
+                <a href="/products/quick_merge_selection/" class="button is-primary">$4.99</a>
+            
+
+            
+                <a href="/products/quick_merge_selection/" class="button is-secondary">3DS Max</a>
+            
+                <a href="/products/quick_merge_selection/" class="button is-secondary">Tools</a>
+            
+        </div>
+
+    </div>
+</div>
+                </div>
+            
+        
+            
+        
+    
+</div>
+
+<div class="has-text-centered">
+    <a href="/store/" class="button is-primary">See All Products..</a>
 </div>
 
 
-<a name="Art"><h1>Art<hr></h1></a>
 
-
-<div class="feature__wrapper">
-
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/art/tech_environment_desert" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2020/blob/main/projects/Desert/thumb.gif?raw=true" alt="">
-            </a>
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/art/tech_environment_desert" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Desert Diorama
-              </a>
-            </h2>
-          
-
-          
+                </div>
+                
+            </div>
         </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/art/art_mines" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2019/blob/main/projects/Soviet%20Mines/thumb.png?raw=true" alt="">
-            </a>
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/art/art_mines" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Soviet Mines
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/art/art_brothel" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2019/blob/main/projects/Brothel/thumb.jpg?raw=true" alt="">
-            </a>
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/art/art_brothel" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Victorian Brothel
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/art/art_forest" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2019/blob/main/projects/Forest/thumb.gif?raw=true" alt="">
-            </a>
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/art/art_forest" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Campsite Diorama
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/art/art_library" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2019/blob/main/projects/Library/thumb.jpg?raw=true" alt="">
-            </a>
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/art/art_library" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Library Environment
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <a href="/portfolio/art/tech_environment_volcano" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-              <img src="https://github.com/Bailey3D-Website/2020/blob/main/projects/Volcano/thumb.gif?raw=true" alt="">
-            </a>
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">
-              <a href="/portfolio/art/tech_environment_volcano" style="text-decoration:none" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'">
-                Volcano Diorama
-              </a>
-            </h2>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  
-
-</div>
-
     </section>
-  </article>
-</div>
+    
+        <footer class="footer">
+    <div class="container">
+        
+        
+        <div class="columns is-multiline">
+            
+        </div>
+        
 
+        <div class="content is-small has-text-centered">
+            <p class="">Copyright © <a href="https://www.bailey3d.com">Bailey Martin 2023</a></p>
+        </div>
     </div>
+</footer>
 
     
-
-    <div id="footer" class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
-
-<!-- end custom footer snippets -->
-        <div class="page__footer-follow">
-  <ul class="social-icons">
-
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-  </ul>
-</div>
-
-<div class="page__footer-copyright">&copy; 2023 Bailey Martin  |  <a href="mailto:contact@bailey3d.com" rel="nofollow">Contact@Bailey3D.com</a></div>
-
-      </footer>
-    </div>
-
-    
-  <script src="/assets/js/main.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-  </body>
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
 </html>

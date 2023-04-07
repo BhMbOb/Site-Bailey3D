@@ -1,19 +1,16 @@
-# main links
-main:
-  - title: "Tools"
-    url: "#Tools"
-  - title: "Shaders"
-    url: "#Shaders"
-  - title: "Art"
-    url: "#Art"
-  - title: "Resume"
-    url: "https://github.com/Bailey3D-Website/2021/blob/main/personal/Bailey%20Martin%20-%20Resume.pdf"
-    new_tab: "true"
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  
+- name: Blog
+  link: /blog/
+
+- name: Store
+  link: /store/
+
+#- name: About
+#  link: /about/
+
+- name: Docs
+  dropdown:
+    - name: SketchIt
+      link: /docs/SketchIt/index/
+    - name: Juniper
+      link: /docs/Juniper/index/

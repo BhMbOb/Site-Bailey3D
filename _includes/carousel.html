@@ -32,11 +32,13 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="carousel__indicators">
-            {% for item in page.carousels[number].images %}
-              <label class="carousel__indicator" for="{{ number }}{{ letters[forloop.index0] }}"></label>
-            {% endfor %}
-        </div>
+        {% if include.show_indicators != false %}
+          <div class="carousel__indicators">
+              {% for item in page.carousels[number].images %}
+                <label class="carousel__indicator" for="{{ number }}{{ letters[forloop.index0] }}"></label>
+              {% endfor %}
+          </div>
+        {%  endif %}
     </div>
 </div>
 
@@ -87,13 +89,26 @@
   position: absolute;
   display: block;
   cursor: pointer;
-  border-width: 5px 5px 0 0;
+  border-width: 4px 4px 0 0;
   border-style: solid;
   border-color: #fafafa;
   opacity: 0.35;
   opacity: 1;
   outline: 0;
   z-index: 3;
+}
+
+.carousel__control:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    border-color: black; /* Change this to the desired outline color */
+    z-index: -1; /* Place the outline behind the arrow */
 }
 .carousel__control:hover {
   opacity: 1;

@@ -1,0 +1,14 @@
+
+    <div class="content left">
+        {% for num in (1..rating) %}
+        <span class="icon">
+            <i class="fas fa-star"></i>
+        </span>
+        {% endfor %}
+        {% assign remainder = 5 | minus: rating %}
+        {% for num in (1..remainder) %}
+        <span class="icon">
+            <i class="far fa-star"></i>
+        </span>
+        {% endfor %}
+    </div>
