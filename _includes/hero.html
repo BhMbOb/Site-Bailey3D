@@ -24,11 +24,17 @@ store properties
     {% assign l_store_rating = nil %}
 {% endif %}
 
-{% if page.title || page.subtitle %}
+{% if page.title || page.subtitle || page.title_render %}
 <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if l_hero_image %} style="background: url('{{ l_hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
     <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
         <div class="container">
-            <h1 class="title is-2">{{ page.title }}</h1>
+
+            {% if page.title_render %}
+                <h1 class="title is-2">{{ page.title_render }}</h1>
+            {% else %}
+                <h1 class="title is-2">{{ page.title }}</h1>
+            {% endif %}
+
             <p class="subtitle is-3">{{ page.subtitle }}</p>
             {% if page.hero_link %}
                 <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
