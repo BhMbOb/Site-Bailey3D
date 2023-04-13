@@ -1,5 +1,5 @@
-
-<div id="{{ include.id }}">
+<!--TODO! Text-->
+<div id="{{ include.id }}" class="twentytwenty-container">
     <!-- The before image is first -->
     <img src="{{ include.img1 }}" />
     <!-- The after image is last -->
@@ -7,7 +7,10 @@
 </div>
 
 <script>
-    $(function(){
+    // Bailey3D: The TwentyTwenty documentation says to use 
+    //`$(function(){` - but if the connection is not quick enough and we finish loading the page
+    // before they are all downloading then they will not be visible until the next refresh.
+    $(window).on("load", function(){
       $("#{{include.id}}").twentytwenty();
     });
 </script>
