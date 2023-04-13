@@ -30,7 +30,7 @@ Use this effect to evoke nostalgia or create an artistic aesthetic.
 
 In the images below you can see the same scene rendered with 3 bits, 4 bits, and 8 bits respectively.
 
-{% include image_slider.html id="bit_depth_slider" img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/ImageEffects/3bit.jpeg?raw=true"  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg?raw=true" %}
+{% include image_slider.html id="bit_depth_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/3bit.jpeg"  img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -49,7 +49,7 @@ The provided color palette uses the colors of the original GameBoy color, which 
 
 Take a look at the image below for an example of what the gradient mapping looks like when enabled and disabled.
 
-{% include image_slider.html id="gradient_mapping_slider" img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/ImageEffects/gradient_map_on.jpeg?raw=true"  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/ImageEffects/gradient_map_off.jpeg?raw=true" %}
+{% include image_slider.html id="gradient_mapping_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/gradient_map_on.jpeg"  img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/gradient_map_off.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -64,7 +64,7 @@ Pixelate simplifies the image by reducing its resolution, creating a blocky, pix
 
 This effect is useful for emulating the low-resolution graphics of retro games or creating a stylized, digital look.
 
-{% include image_slider.html id="pixelate_slider" img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/ImageEffects/pixelate.jpeg?raw=true" img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg?raw=true" %}
+{% include image_slider.html id="pixelate_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/pixelate.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -83,7 +83,7 @@ This effect is useful for creating a specific mood or matching the color intensi
 
 Hint: Set the saturation to `0.0` for a grayscale / monochrome effect.
 
-{% include image_slider.html id="saturation_slider" img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/ImageEffects/saturation_0.jpeg?raw=true" img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg?raw=true" %}
+{% include image_slider.html id="saturation_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/saturation_0.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -100,7 +100,7 @@ Hint: The saturation of the static is also tied to the saturation of the scene, 
 
 Check out the images below for examples of a varying level of static settings.
 
-{% include image_slider.html id="static_slider" img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/ImageEffects/static_rgb.jpeg?raw=true" img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg?raw=true" %}
+{% include image_slider.html id="static_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/static_rgb.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
 
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
