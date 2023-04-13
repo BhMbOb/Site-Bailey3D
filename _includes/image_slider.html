@@ -1,0 +1,13 @@
+
+<div id="{{ include.id }}">
+    <!-- The before image is first -->
+    <img src="{{ include.img1 }}" />
+    <!-- The after image is last -->
+    <img src="{{ include.img2 }}" />
+</div>
+
+<script>
+    $(function(){
+      $("#{{include.id}}").twentytwenty();
+    });
+</script>

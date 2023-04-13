@@ -1,0 +1,54 @@
+- label: Documentation
+  items:
+    - name: Overview
+      link: /docs/RetroFiltersPack/index/#overview
+    - name: Key Features
+      link: /docs/RetroFiltersPack/index/#key_features
+    - name: Gallery
+      link: /docs/RetroFiltersPack/index/#gallery
+
+- label: Templates
+  items:
+    - name: CRT Monitor
+      link: /docs/RetroFiltersPack/templates/#crt_monitor
+    - name: Retro Console
+      link: /docs/RetroFiltersPack/templates/#retro_console
+    - name: Pixelate
+      link: /docs/RetroFiltersPack/templates/#pixelate
+    - name: VHS
+      link: /docs/RetroFiltersPack/templates/#vhs
+    - name: Vintage
+      link: /docs/RetroFiltersPack/templates/#vintage
+    - name: Film Grain
+      link: /docs/RetroFiltersPack/templates/#film_grain
+
+
+- label: Screen Effects
+  items:
+    - name: Overview
+      link: /docs/RetroFiltersPack/screen_effects/#overview
+    - name: CRT Distortion
+      link: /docs/RetroFiltersPack/screen_effects/#crt_distortion
+    - name: LED Pixels
+      link: /docs/RetroFiltersPack/screen_effects/#led_pixels
+    - name: Interlacing
+      link: /docs/RetroFiltersPack/screen_effects/#interlacing
+    - name: Glitch
+      link: /docs/RetroFiltersPack/screen_effects/#vignette
+    - name: Vignette
+      link: /docs/RetroFiltersPack/screen_effects/#vignette
+
+- label: Image Effects
+  items:
+    - name: Overview
+      link: /docs/RetroFiltersPack/image_effects/#overview
+    - name: Bit Depth
+      link: /docs/RetroFiltersPack/image_effects/#bit_depth
+    - name: Gradient Mapping
+      link: /docs/RetroFiltersPack/image_effects/#gradient_mapping
+    - name: Pixelate
+      link: /docs/RetroFiltersPack/image_effects/#pixelate
+    - name: Saturation
+      link: /docs/RetroFiltersPack/image_effects/#saturation
+    - name: Static
+      link: /docs/RetroFiltersPack/image_effects/#static
