@@ -2,22 +2,6 @@
 title: SketchIt
 subtitle: Documentation
 description: ""
-
-carousels:
-  - images: 
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Schematic_Trove.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Vintage_Trove.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/Chalkboard_Trove.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Pencil_Vice.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Charcoal_Rift.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Graph_Rift.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Notepad_Trove.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkDrawing_Trove.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/ByroPen_Trove.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/InkPen_Trove.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Pastel_Trove.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/GelPen_Vice.jpeg?raw=true
-
 layout: page
 image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/banner.png?raw=true
 menubar: sketchit_menu
@@ -34,7 +18,20 @@ Getting started with SketchIt is as easy as adding one of the pre-existing mater
 If you're new to Unreal, take a look at the documentation by Epic on how to set up a post processing volume in your scene, and apply a material.<br>
 - [Epic Games - Post Process Materials](https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/PostProcessEffects/PostProcessMaterials/)
 
-{% include carousel.html height="50" unit="%" duration="99999" number="1" %}
+{% include carousel.html id="bit_depth_slider"
+  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Schematic_Trove.jpeg?raw=true"
+  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Vintage_Trove.jpeg?raw=true"
+  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/Chalkboard_Trove.jpeg?raw=true"
+  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Pencil_Vice.jpeg?raw=true"
+  img5="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Charcoal_Rift.jpeg?raw=true"
+  img6="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Graph_Rift.jpeg?raw=true"
+  img7="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Notepad_Trove.jpeg?raw=true"
+  img8="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkDrawing_Trove.jpeg?raw=true"
+  img9="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/ByroPen_Trove.jpeg?raw=true"
+  img10="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/InkPen_Trove.jpeg?raw=true"
+  img11="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Pastel_Trove.jpeg?raw=true"
+  img12="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/GelPen_Vice.jpeg?raw=true"
+%}
 
 ## Variants
 <section id="variants"/>

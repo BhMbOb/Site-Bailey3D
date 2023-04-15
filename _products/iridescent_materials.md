@@ -8,17 +8,15 @@ image: https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMat
 tags: [Unreal, Shaders]
 store_name: iridescent_materials
 
-carousels:
-  - images: 
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMaterials/gallery_main.png?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMaterials/gallery_iridescent.png?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMaterials/gallery_pearlescent.png?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMaterials/gallery_liquid.png?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMaterials/gallery_metal.png?raw=true
-
 ---
 
-{% include carousel.html height="56.25" unit="%" duration="99999" number="1" show_indicators=false %}
+{% include carousel.html id="bit_depth_slider"
+  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMaterials/gallery_main.png?raw=true"
+  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMaterials/gallery_iridescent.png?raw=true"
+  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMaterials/gallery_pearlescent.png?raw=true"
+  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMaterials/gallery_liquid.png?raw=true"
+  img5="https://github.com/Bailey3D-Website/2021/blob/main/packages/IridescentMaterials/gallery_metal.png?raw=true"
+%}
 
 Highly customizable Iridescent Materials pack - 100% ready to use out of the box.
 

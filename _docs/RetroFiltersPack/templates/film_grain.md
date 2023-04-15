@@ -3,10 +3,6 @@ title: Retro Filters Pack
 subtitle: Templates > Film Grain
 description: ""
 
-carousels:
-  - images: 
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Schematic_Trove.jpeg?raw=true
-
 layout: page
 image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/banner.jpeg?raw=true
 menubar: menu_retro_filters_pack

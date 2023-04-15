@@ -7,20 +7,18 @@ image: https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/
 store_name: mesh_splitter
 tags: [3DS Max, Tools]
 
-carousels:
-  - images: 
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/gallery_main.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/gallery_elements.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/gallery_facecol.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/gallery_sg.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/gallery_matid.jpg?raw=true
-
 ---
 ### **Overview:**
 
 These are a series of scripts used to split meshes in various different ways. Useful for processing meshes ready for importing to other packages, or simply splitting them up into individual parts.
 
-{% include carousel.html height="56.25" unit="%" duration="99999" number="1" show_indicators=false %}
+{% include carousel.html id="bit_depth_slider"
+  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/gallery_main.jpg?raw=true"
+  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/gallery_elements.jpg?raw=true"
+  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/gallery_facecol.jpg?raw=true"
+  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/gallery_sg.jpg?raw=true"
+  img5="https://github.com/Bailey3D-Website/2021/blob/main/packages/MeshSplitter/gallery_matid.jpg?raw=true"
+%}
 
 - <i><b>Split To Elements:</b></i> This splits all sub-elements in the users selection to unique meshes.
 - <i><b>Split by Face Colour:</b></i> This script splits all selected meshes depending on the colours of the faces.

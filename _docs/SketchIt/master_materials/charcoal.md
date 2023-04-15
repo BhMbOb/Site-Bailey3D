@@ -2,12 +2,6 @@
 title: Sketch-It
 subtitle: Charcoal (Master Material)
 description: ..
-carousels:
-  - images: 
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Charcoal_Rift.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Charcoal_Trove.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Pastel_Trove.jpeg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Pastel_Vice.jpeg?raw=true
 
 layout: page
 image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/banner.png?raw=true
@@ -16,7 +10,12 @@ menubar: sketchit_menu
 store_name: sketch_it
 
 ---
-{% include carousel.html height="50" unit="%" duration="99999" number="1" %}
+{% include carousel.html id="bit_depth_slider"
+  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Charcoal_Rift.jpeg?raw=true"
+  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Charcoal_Trove.jpeg?raw=true"
+  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Pastel_Trove.jpeg?raw=true"
+  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Pastel_Vice.jpeg?raw=true"
+%}
 
 |<b>Category</b>|<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|:---|

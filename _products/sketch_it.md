@@ -12,26 +12,25 @@ features:
     - label: 12x Hand Drawn Presets
       #icon: fa-location-arrow
 tags: [Unreal, Shaders]
-carousels:
-  - images: 
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_vintage.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_schematic.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_pencil.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_ink_pen.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_charcoal.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_chalk_drawing.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_notepad.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_chalkboard.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_gel_pen.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_byro.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_pastel.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_graph_paper.jpg?raw=true
 ---
 Sketch-It is a powerful set of post-processing effects for Unreal Engine, that enable you to add a unique, hand-drawn look to any project.
 
 With a wide range of presets to choose from, you can easily find a perfect style for any situation.
 
-{% include carousel.html height="56.25" unit="%" duration="99999" number="1" show_indicators=false %}
+{% include carousel.html id="bit_depth_slider"
+  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_vintage.jpg?raw=true"
+  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_schematic.jpg?raw=true"
+  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_pencil.jpg?raw=true"
+  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_ink_pen.jpg?raw=true"
+  img5="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_charcoal.jpg?raw=true"
+  img6="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_chalk_drawing.jpg?raw=true"
+  img7="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_notepad.jpg?raw=true"
+  img8="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_chalkboard.jpg?raw=true"
+  img9="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_gel_pen.jpg?raw=true"
+  img10="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_byro.jpg?raw=true"
+  img11="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_pastel.jpg?raw=true"
+  img12="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_graph_paper.jpg?raw=true"
+%}
 
 ---
 

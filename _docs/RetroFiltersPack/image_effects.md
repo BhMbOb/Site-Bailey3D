@@ -10,6 +10,12 @@ menubar: menu_retro_filters_pack
 store_name: retro_filters_pack
 ---
 
+{% include carousel.html id="bit_depth_slider"
+  img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/3bit.jpeg"
+  img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/4bit.jpeg"
+  img4="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/4bit.jpeg"
+%}
+
 ## **Overview:**
 <section id="overview"/>
 

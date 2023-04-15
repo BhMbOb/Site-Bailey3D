@@ -14,12 +14,6 @@ features:
       icon: fa-fighter-jet
 tags: [3DS Max, Tools]
 
-carousels:
-  - images: 
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/MergeSelection/gallery_main.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/MergeSelection/gallery_objects.jpg?raw=true
-    - image: https://github.com/Bailey3D-Website/2021/blob/main/packages/MergeSelection/gallery_shapes.jpg?raw=true
-
 ---
 ### **Overview:**
 
@@ -31,7 +25,11 @@ This can save a tonne of time when working with many selections.
 
 The tool currently works on Geometry and Splines.
 
-{% include carousel.html height="56.25" unit="%" duration="99999" number="1" show_indicators=false %}
+{% include carousel.html id="bit_depth_slider"
+  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/MergeSelection/gallery_main.jpg?raw=true"
+  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/MergeSelection/gallery_objects.jpg?raw=true"
+  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/MergeSelection/gallery_shapes.jpg?raw=true"
+%}
 
 
 ### **Installing:**
