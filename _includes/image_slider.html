@@ -1,4 +1,10 @@
-<!--TODO! Text-->
+
+{% if include.percent != nil %}
+  {% assign percent = include.percent %}
+{% else %}
+{% assign percent = 0.5 %}
+{% endif %}
+
 <div id="{{ include.id }}" class="twentytwenty-container">
     <!-- The before image is first -->
     <img src="{{ include.img1 }}" />
@@ -11,6 +17,8 @@
     //`$(function(){` - but if the connection is not quick enough and we finish loading the page
     // before they are all downloading then they will not be visible until the next refresh.
     $(window).on("load", function(){
-      $("#{{include.id}}").twentytwenty();
+      $("#{{include.id}}").twentytwenty({
+        default_offset_pct: {{ percent }}
+      });
     });
 </script>

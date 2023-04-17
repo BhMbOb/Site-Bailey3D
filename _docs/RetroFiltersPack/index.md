@@ -17,33 +17,51 @@ sliders:
 
 ---
 
-## **Overview:**
-<section id="overview"/>
+## **Getting Started:**
+<section id="getting_started"/>
 
-The Retro Filters Pack is a comprehensive collection of image effects designed to help you recreate the distinct visual styles of retro games and vintage hardware. Inspired by the aesthetics of the past, these effects allow you to evoke nostalgia or create a unique, artistic look in your projects. With a wide range of customizable effects, the Retro Filters Pack provides endless possibilities for achieving various retro-inspired visual styles.
+Getting started is as easy as adding one of the pre-existing material templates to a post-processing volume in your map.
 
-Whether you're developing a game that pays homage to the classics or creating a visual project with a nostalgic vibe, the Retro Filters Pack offers a versatile and powerful toolkit to help you achieve your desired look. From pixelation and bit depth reduction to CRT distortion and screen glitches, these filters can be applied individually or combined in any way you see fit, giving you full control over the appearance of your scenes.
+If you're new to Unreal, take a look at the documentation by Epic on how to set up a post processing volume in your scene, and apply a material.<br>
+- [Epic Games - Post Process Materials](https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/PostProcessEffects/PostProcessMaterials/)
 
-{% include carousel.html id="bit_depth_slider"
-  img1="/assets/images/temp/retro_arcade_machine.jpeg"
-  img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/glitch.webp"
-  img3="/assets/images/temp/crt_monitor.jpeg"
-  img4="/assets/images/temp/templates/vintage.webp"
-  img5="/assets/images/temp/vhs_tape.jpeg"
-  img6="/assets/images/temp/pixelate.jpeg"
-  img7="/assets/images/temp/retro_console_green.jpeg"
-  img8="/assets/images/temp/retro_console_monochrome.jpeg"
-  img9="/assets/images/temp/monochrome_crt_monitor.jpeg"
-  img10="/assets/images/temp/monochrome_crt_monitor_interlaced.jpeg"
-%}
+<!--{% include carousel.html id="bit_depth_slider"
+  img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/vhs/vhs_on.webp"
+  img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/vintage_film/vintage_film_on.webp"
+  img3="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/vintage_film/negative_film_on.webp"
+  img4="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/vintage_film/negative_film_on_monochrome.webp"
+  img5="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/arcade_machine.webp"
+  img6="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/retro_console_green.webp"
+  img7="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/retro_console_monochrome.webp"
+  img8="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/pixelate/pixelate_on.jpeg"
+  img9="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/pixelate/pixelate_on_large.jpeg"
+  img10="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/film_grain/film_grain_on_monochrome.webp"
+  img11="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/film_grain/film_grain_on.webp"
+  img12="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on.webp"
+  img13="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_bleed.webp"
+  img14="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_static.webp"
+  img15="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_monochrome.webp"
+  img16="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_monochrome_static.webp"
+  img17="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_interlacing.webp"
+  img18="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_broken.jpeg"
+%}-->
 
-## **Key Features:**
-<section id="key_features"/>
 
-- A wide selection of image effects inspired by retro games and hardware
-- A collection of easy to use image based effect filters
-- A wide range of advanced screen effect filters
-- Fully customizable parameters for fine-tuning the appearance of each effect
-- Effects can be applied individually or combined to create unique visual styles
-- Easy-to-use, drag-and-drop functionality for quick implementation
-- Comprehensive documentation and support to help you make the most of the pack
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/vhs/vhs_on.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/vintage_film/vintage_film_on.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/vintage_film/negative_film_on.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/vintage_film/negative_film_on_monochrome.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/arcade_machine.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/retro_console_green.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/retro_console_monochrome.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/pixelate/pixelate_on.jpeg)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/pixelate/pixelate_on_large.jpeg)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/film_grain/film_grain_on_monochrome.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/film_grain/film_grain_on.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_bleed.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_static.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_monochrome.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_monochrome_static.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_interlacing.webp)
+![Image](https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/crt/crt_on_broken.jpeg)

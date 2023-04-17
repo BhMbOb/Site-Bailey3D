@@ -9,13 +9,49 @@ menubar: menu_retro_filters_pack
 
 store_name: retro_filters_pack
 ---
+## **Retro Console:**
+<section id="retro_console"/>
+
 These presets evoke the nostalgia of early console gaming systems, offering a unique and stylized look for projects that require a retro gaming aesthetic.
 
-## **Arcade Machine (MI_RetroFiltersPack_RetroConsole_ArcadeMachine)**
-![Image](/assets/images/temp/retro_arcade_machine.png){: .center-image}
+### **Arcade Machine:**
 
-## **Green Retro Console (MI_RetroFiltersPack_RetroConsole_Green_)**
-![Image](/assets/images/temp/retro_console_green.png){: .center-image}
+{% include retro_filters_pack/material_template_details.html
+    before="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/retro_console_off.jpeg"
+    after="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/arcade_machine.webp"
+    asset_name="MI_RetroFiltersPack_RetroConsole_ArcadeMachine"
+    category="Retro Console"
+    bit_depth=true
+    pixelate=true
+    saturation=true
+    crt_distortion=true
+    led_pixels=true
+    interlacing=true
+%}
 
-## **Monochrome Retro Console (MI_RetroFiltersPack_RetroConsole_Monochrome)**
-![Image](/assets/images/temp/retro_console_monochrome.png){: .center-image}
+### **Green Retro Console:**
+
+{% include retro_filters_pack/material_template_details.html
+    before="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/retro_console_off.jpeg"
+    after="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/retro_console_green.webp"
+    asset_name="MI_RetroFiltersPack_RetroConsole_Green"
+    category="Retro Console"
+    bit_depth=true
+    gradient_mapping=true
+    pixelate=true
+    led_pixels=true
+%}
+
+### **Monochrome Retro Console:**
+
+{% include retro_filters_pack/material_template_details.html
+    before="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/retro_console_off.jpeg"
+    after="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/Renders/retro_console/retro_console_monochrome.webp"
+    asset_name="MI_RetroFiltersPack_RetroConsole_Monochrome"
+    category="Retro Console"
+    bit_depth=true
+    gradient_mapping=true
+    pixelate=true
+    saturation=true
+    led_pixels=true
+%}

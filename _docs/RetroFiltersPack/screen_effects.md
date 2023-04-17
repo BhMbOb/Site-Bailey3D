@@ -9,8 +9,8 @@ menubar: menu_retro_filters_pack
 
 store_name: retro_filters_pack
 ---
-## **Overview:**
 <section id="overview"/>
+## **Overview:**
 
 This page provides a detailed overview of the various screen effects included in the Retro Filters Pack. These effects are designed to help you recreate the visual characteristics of classic displays and retro hardware, such as CRT monitors and LED screens. By applying these effects, you can achieve an authentic retro look in your projects or create an artistic aesthetic inspired by vintage hardware.
 
@@ -20,12 +20,12 @@ Remember that these effects can be applied individually or combined with the ima
 
 ---
 
-## **CRT Distortion:**
 <section id="crt_distortion"/>
+## **CRT Distortion:**
 
 CRT Distortion emulates the curvature and distortion found on classic CRT monitors. This effect helps to create a more authentic retro look, as it mimics the way images were displayed on older screens.
 
-{% include image_slider.html id="crt_distortion_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/crt_distort_medium.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/default.jpeg" %}
+{% include image_slider.html id="crt_distortion_slider" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/crt_distort_medium.jpeg" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/default.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -34,12 +34,12 @@ CRT Distortion emulates the curvature and distortion found on classic CRT monito
 
 ---
 
-## **LED Pixels:**
 <section id="led_pixels"/>
+## **LED Pixels:**
 
 LED Pixels simulates the appearance of individual pixels on an LED screen, including color bleed and brightness. This effect can be used to recreate the look of retro displays or to create a stylized pixel art aesthetic.
 
-{% include image_slider.html id="led_pixels_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/led_bleed.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/default.jpeg" %}
+{% include image_slider.html id="led_pixels_slider" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/led_bleed.jpeg" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/default.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -51,14 +51,14 @@ LED Pixels simulates the appearance of individual pixels on an LED screen, inclu
 
 ---
 
-## **Interlacing:**
 <section id="interlacing"/>
+## **Interlacing:**
 
 Interlacing simulates the appearance of horizontal scanlines commonly found on older CRT and analog displays. This effect adds a sense of motion and flicker, which can make the visuals feel more dynamic and engaging.
 
 Please note that interlacing is a subtle effect and has been increased for the example below.
 
-{% include image_slider.html id="interlacing_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/interlacing.webp" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/default.jpeg" %}
+{% include image_slider.html id="interlacing_slider" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/interlacing.webp" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/default.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -67,12 +67,12 @@ Please note that interlacing is a subtle effect and has been increased for the e
 
 ---
 
-## **Glitch:**
 <section id="glitch"/>
+## **Glitch:**
 
 The Glitch effect simulates the visual distortions typically observed on old VHS players. This effect offers a range of customizable parameters for greater control and flexibility.
 
-{% include image_slider.html id="glitch_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/glitch.webp" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
+{% include image_slider.html id="glitch_slider" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/glitch.webp" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -84,15 +84,15 @@ The Glitch effect simulates the visual distortions typically observed on old VHS
 
 ---
 
-## **Vignette:**
 <section id="vignette"/>
+## **Vignette:**
 
 The Vignette effect enhances your screen by adding a subtle, darkened border around the edges, drawing attention to the center of the image.
 
 If used along with other screen effects (such as the CRT curvature) then this effect will map directly to the altered screen (as opposed to the entire screen)
 
 <!--Note: Make sure the aspect ratio is set in `height` else we'll mess up the presentation of the crt effect-->
-{% include image_slider.html id="vignette_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/vignette_high.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/vignette_off.jpeg" %}
+{% include image_slider.html id="vignette_slider" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/vignette_high.jpeg" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ScreenEffects/vignette_off.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|

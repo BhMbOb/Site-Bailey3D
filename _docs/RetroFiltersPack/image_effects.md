@@ -16,8 +16,8 @@ store_name: retro_filters_pack
   img4="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/4bit.jpeg"
 %}
 
-## **Overview:**
 <section id="overview"/>
+## **Overview:**
 
 This page provides a comprehensive guide to the various image effects included in the Retro Filters Pack. These effects are designed to help you recreate the visual style of classic games and retro or vintage hardware, enabling you to evoke nostalgia or create an artistic aesthetic in your projects. The image effects can be applied individually or combined in any way you see fit, giving you full control over the look of your scenes.
 
@@ -27,8 +27,8 @@ Remember that these effects can be applied in combined in various ways to create
 
 ---
 
-## **Bit Depth:**
 <section id="bit_depth"/>
+## **Bit Depth:**
 
 Bit Depth redices the number of colors used in the final image, creating a simpler, more stylized look reminiscent of older games and graphics hardware.
 
@@ -36,7 +36,7 @@ Use this effect to evoke nostalgia or create an artistic aesthetic.
 
 In the images below you can see the same scene rendered with 3 bits, 4 bits, and 8 bits respectively.
 
-{% include image_slider.html id="bit_depth_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/3bit.jpeg"  img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
+{% include image_slider.html id="bit_depth_slider" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/3bit.jpeg"  img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -44,8 +44,8 @@ In the images below you can see the same scene rendered with 3 bits, 4 bits, and
 
 ---
 
-## **Gradient Mapping:**
 <section id="gradient_mapping"/>
+## **Gradient Mapping:**
 
 Gradient Mapping replaces all of the colors in the image with colors from the provided gradient map texture.
 
@@ -55,7 +55,7 @@ The provided color palette uses the colors of the original GameBoy color, which 
 
 Take a look at the image below for an example of what the gradient mapping looks like when enabled and disabled.
 
-{% include image_slider.html id="gradient_mapping_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/gradient_map_on.jpeg"  img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/gradient_map_off.jpeg" %}
+{% include image_slider.html id="gradient_mapping_slider" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/gradient_map_on.jpeg"  img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/gradient_map_off.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -63,14 +63,14 @@ Take a look at the image below for an example of what the gradient mapping looks
 
 ---
 
-## **Pixelate:**
 <section id="pixelate"/>
+## **Pixelate:**
 
 Pixelate simplifies the image by reducing its resolution, creating a blocky, pixelated appearance.
 
 This effect is useful for emulating the low-resolution graphics of retro games or creating a stylized, digital look.
 
-{% include image_slider.html id="pixelate_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/pixelate.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
+{% include image_slider.html id="pixelate_slider" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/pixelate.jpeg" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -78,8 +78,8 @@ This effect is useful for emulating the low-resolution graphics of retro games o
 
 ---
 
-## **Saturation:**
 <section id="saturation"/>
+## **Saturation:**
 
 Saturation adjusts the intensity of colors in the image.
 
@@ -89,7 +89,7 @@ This effect is useful for creating a specific mood or matching the color intensi
 
 Hint: Set the saturation to `0.0` for a grayscale / monochrome effect.
 
-{% include image_slider.html id="saturation_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/saturation_0.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
+{% include image_slider.html id="saturation_slider" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/saturation_0.jpeg" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
@@ -97,8 +97,8 @@ Hint: Set the saturation to `0.0` for a grayscale / monochrome effect.
 
 ---
 
-## **Static:**
 <section id="static"/>
+## **Static:**
 
 Static adds a layer of random animated noise to the image, simulating the appearance of an old analog TV signal or a noisy video connection. Use this effect to create an atmosphere of nostalgia or to add visual interest to your project.
 
@@ -106,7 +106,7 @@ Hint: The saturation of the static is also tied to the saturation of the scene, 
 
 Check out the images below for examples of a varying level of static settings.
 
-{% include image_slider.html id="static_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/static_rgb.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
+{% include image_slider.html id="static_slider" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/static_rgb.jpeg" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/RetroFiltersPack/Images/ImageEffects/default.jpeg" %}
 
 
 |<b>Parameter Name</b>|<b>Parameter Description</b>|

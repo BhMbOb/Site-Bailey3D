@@ -1,26 +1,24 @@
 - label: Documentation
   items:
-    - name: Overview
-      link: /docs/RetroFiltersPack/index/#overview
-    - name: Key Features
-      link: /docs/RetroFiltersPack/index/#key_features
-    - name: Gallery
-      link: /docs/RetroFiltersPack/index/#gallery
+    - name: Getting Started
+      link: /docs/RetroFiltersPack/index/#getting_started
+    - name: Provided Presets
+      link: /docs/RetroFiltersPack/index/#presets
 
 - label: Templates
   items:
     - name: CRT Monitor
-      link: /docs/RetroFiltersPack/templates/#crt_monitor
+      link: /docs/RetroFiltersPack/templates/crt_monitor
     - name: Retro Console
-      link: /docs/RetroFiltersPack/templates/#retro_console
+      link: /docs/RetroFiltersPack/templates/retro_console
     - name: Pixelate
-      link: /docs/RetroFiltersPack/templates/#pixelate
+      link: /docs/RetroFiltersPack/templates/pixelate
     - name: VHS
-      link: /docs/RetroFiltersPack/templates/#vhs
-    - name: Vintage
-      link: /docs/RetroFiltersPack/templates/#vintage
+      link: /docs/RetroFiltersPack/templates/vhs
+    - name: Vintage Film
+      link: /docs/RetroFiltersPack/templates/vintage_film
     - name: Film Grain
-      link: /docs/RetroFiltersPack/templates/#film_grain
+      link: /docs/RetroFiltersPack/templates/film_grain
 
 
 - label: Screen Effects

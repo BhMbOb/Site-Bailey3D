@@ -1,0 +1,56 @@
+{% assign screen_effects_text = "" %}
+
+{% if include.crt_distortion != nil %}
+    {% assign screen_effects_text = screen_effects_text | append: "[CRT Distortion](/docs/RetroFiltersPack/screen_effects/#crt_distortion)<br>" %}
+{% endif %}
+{% if include.led_pixels != nil %}
+    {% assign screen_effects_text = screen_effects_text | append: "[LED Pixels](/docs/RetroFiltersPack/screen_effects/#led_pixels)<br>" %}
+{% endif %}
+{% if include.interlacing != nil %}
+    {% assign screen_effects_text = screen_effects_text | append: "[Interlacing](/docs/RetroFiltersPack/screen_effects/#interlacing)<br>" %}
+{% endif %}
+{% if include.glitch != nil %}
+    {% assign screen_effects_text = screen_effects_text | append: "[Glitch](/docs/RetroFiltersPack/screen_effects/#glitch)<br>" %}
+{% endif %}
+{% if include.vignette != nil %}
+    {% assign screen_effects_text = screen_effects_text | append: "Vignette](/docs/RetroFiltersPack/screen_effects/#vignette)<br>" %}
+{% endif %}
+
+{% assign image_effects_text = "" %}
+{% if include.bit_depth != nil %}
+    {% assign image_effects_text = image_effects_text | append: "[Bit Depth](/docs/RetroFiltersPack/image_effects/#bit_depth)<br>" %}
+{% endif %}
+{% if include.pixelate != nil %}
+    {% assign image_effects_text = image_effects_text | append: "[Pixelate](/docs/RetroFiltersPack/image_effects/#pixelate)<br>" %}
+{% endif %}
+{% if include.gradient_mapping != nil %}
+    {% assign image_effects_text = image_effects_text | append: "[Gradient Mapping](/docs/RetroFiltersPack/image_effects/#gradient_mapping)<br>" %}
+{% endif %}
+{% if include.saturation != nil %}
+    {% assign image_effects_text = image_effects_text | append: "[Saturation](/docs/RetroFiltersPack/image_effects/#saturation)<br>" %}
+{% endif %}
+{% if include.static != nil %}
+    {% assign image_effects_text = image_effects_text | append: "[Static](/docs/RetroFiltersPack/image_effects/#static)<br>" %}
+{% endif %}
+
+
+{% if include.before != nil and include.after != nil %}
+
+    {% include image_slider.html 
+        id=include.asset_name 
+        img1=include.before
+        img2=include.after
+        percent=0.25
+    %}
+
+{% else %}
+![Image]({{ include.after }}){: .center-image}
+{% endif %}
+
+
+|..|..|
+|:---|:---|
+|<b>Asset Name:</b>|{{ include.asset_name }}|
+|<b>Template Category:</b>|{{ include.category }}|
+|<b>Screen Effects:</b>|{{ screen_effects_text }}|
+|<b>Image Effects:</b>|{{ image_effects_text }}|
