@@ -19,18 +19,19 @@ If you're new to Unreal, take a look at the documentation by Epic on how to set 
 - [Epic Games - Post Process Materials](https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/PostProcessEffects/PostProcessMaterials/)
 
 {% include carousel.html id="bit_depth_slider"
-  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Schematic_Trove.jpeg?raw=true"
-  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Vintage_Trove.jpeg?raw=true"
-  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/Chalkboard_Trove.jpeg?raw=true"
-  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Pencil_Vice.jpeg?raw=true"
-  img5="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Charcoal_Rift.jpeg?raw=true"
-  img6="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Graph_Rift.jpeg?raw=true"
-  img7="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Notepad_Trove.jpeg?raw=true"
-  img8="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkDrawing_Trove.jpeg?raw=true"
-  img9="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/ByroPen_Trove.jpeg?raw=true"
-  img10="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/InkPen_Trove.jpeg?raw=true"
-  img11="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Charcoal/Pastel_Trove.jpeg?raw=true"
-  img12="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/GelPen_Vice.jpeg?raw=true"
+  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/featured.jpg?raw=true"
+  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_vintage.jpg?raw=true"
+  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_schematic.jpg?raw=true"
+  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_pencil.jpg?raw=true"
+  img5="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_ink_pen.jpg?raw=true"
+  img6="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_charcoal.jpg?raw=true"
+  img7="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_chalk_drawing.jpg?raw=true"
+  img8="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_notepad.jpg?raw=true"
+  img9="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_chalkboard.jpg?raw=true"
+  img10="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_gel_pen.jpg?raw=true"
+  img11="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_byro.jpg?raw=true"
+  img12="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_pastel.jpg?raw=true"
+  img13="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/gallery_graph_paper.jpg?raw=true"
 %}
 
 ## Variants
