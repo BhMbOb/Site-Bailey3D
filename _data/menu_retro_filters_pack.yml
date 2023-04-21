@@ -2,8 +2,8 @@
   items:
     - name: Getting Started
       link: /docs/RetroFiltersPack/index/#getting_started
-    - name: Provided Presets
-      link: /docs/RetroFiltersPack/index/#presets
+    - name: GIF Examples
+      link: /docs/RetroFiltersPack/index/#gifs
 
 - label: Templates
   items:
