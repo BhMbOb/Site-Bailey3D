@@ -110,14 +110,15 @@ collections:
 # - The order of the list determines the order of the products in the store page and in store sidebars
 # - The name must be added to a given blog post via a key (e.g. `store_name: iridescent_materials`)
 store:
+  retro_filters_pack:
+    price: $39.99
+    docs_link: /docs/RetroFiltersPack/index
+    buy_now_link: https://www.unrealengine.com/marketplace/en-US/product/iridescent-pearlescent-materials-pack
+
   iridescent_materials:
     price: $24.99
     buy_now_link: https://www.unrealengine.com/marketplace/en-US/product/iridescent-pearlescent-materials-pack
     rating: 5
-
-  retro_filters_pack:
-    price: $34.99
-    buy_now_link: https://www.unrealengine.com/marketplace/en-US/product/iridescent-pearlescent-materials-pack
 
   sketch_it:
     price: $23.99

@@ -5,6 +5,7 @@ description: ""
 
 layout: page
 image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/banner.png?raw=true
+hero_image: https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_retro_game_console.jpg?raw=true
 menubar: menu_retro_filters_pack
 
 store_name: retro_filters_pack
@@ -105,3 +106,8 @@ Check out the images below for examples of a varying level of static settings.
 |<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|
 |Strength|Adjusts the overall strength of the noise displayed on the screen. This typically only needs to be very low for subtle values (a value such as 0.1 usually suffices)|
+
+
+## **See Also:**
+
+{% include retro_filters_pack/template_thumbs.html %}

@@ -5,6 +5,7 @@ description: ""
 
 layout: page
 image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/banner.png?raw=true
+hero_image: https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_retro_game_console.jpg?raw=true
 menubar: menu_retro_filters_pack
 
 store_name: retro_filters_pack
@@ -29,3 +30,7 @@ This effect offers a simple and versatile way to create pixel art or low-resolut
     category="Pixelate"
     pixelate=true
 %}
+
+## **See Also:**
+
+{% include retro_filters_pack/template_thumbs.html %}

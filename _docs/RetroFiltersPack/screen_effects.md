@@ -99,3 +99,7 @@ If used along with other screen effects (such as the CRT curvature) then this ef
 |Size|Adjusts the size of the vignette relative to the screen, with 1.0 being equal to the screen size. Higher values expand the vignette beyond the screen edges.|
 |Softness|CModifies the smoothness of the vignette mask, allowing for a more gradual or abrupt transition at the border.|
 |Strength|Determines the overall intensity of the vignette effect, controlling its prominence on the screen.|
+
+## **See Also:**
+
+{% include retro_filters_pack/template_thumbs.html %}
