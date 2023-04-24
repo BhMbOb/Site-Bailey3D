@@ -113,7 +113,7 @@ store:
   retro_filters_pack:
     price: $39.99
     docs_link: /docs/RetroFiltersPack/index
-    buy_now_link: https://www.unrealengine.com/marketplace/en-US/product/iridescent-pearlescent-materials-pack
+    buy_now_link: https://www.unrealengine.com/marketplace/en-US/product/retro-filters-post-process-materials-pack
 
   iridescent_materials:
     price: $24.99
