@@ -58,7 +58,8 @@ sass:
   style: compressed
   source_dir: _sass
 
-#google_analytics: UA-code-here
+google_analytics: UA-112083096-1
+google-analytics: UA-112083096-1
 
 defaults:
   -
