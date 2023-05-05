@@ -35,6 +35,12 @@ With a wide range of presets to choose from, you can easily find a perfect style
 
 ---
 
+## **Documentation & More:**
+
+{% include sketchit/template_thumbs.html %}
+
+---
+
 ## **Technical Details:**
 
 ### **Features:**
