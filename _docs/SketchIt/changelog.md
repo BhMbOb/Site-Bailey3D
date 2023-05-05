@@ -30,3 +30,7 @@ store_name: sketch_it
 - <b>New</b>: Added the <b>Schematic</b> variant.
 - <b>New</b>: Added the <b>Vintage</b> variant.
 - <b>New</b>: Added 5x Master Materials
+
+## See Also
+
+{% include sketchit/template_thumbs.html %}

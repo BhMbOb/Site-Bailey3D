@@ -4,21 +4,37 @@ subtitle: Hand Drawn (Master Material)
 description: ..
 
 layout: page
-image: https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/banner.png?raw=true
+image: https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/banner.png?raw=true
 menubar: sketchit_menu
 
 store_name: sketch_it
 
 ---
-{% include carousel.html id="bit_depth_slider"
-  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Vintage_Trove.jpeg?raw=true"
-  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Notepad_Trove.jpeg?raw=true"
-  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Notepad_Vice.jpeg?raw=true"
-  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Pencil_Rift.jpeg?raw=true"
-  img5="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Pencil_Trove.jpeg?raw=true"
-  img6="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Pencil_Vice.jpeg?raw=true"
-  img7="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pencil/Vintage_Vice.jpeg?raw=true"
-%}
+## **Hand Drawn:**
+
+<img src="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Gifs/pencil.webp">
+
+---
+
+### **Template: Pencil:**
+<section id="pencil"/>
+
+{% include image_slider.html id="pencil_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pencil/off.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pencil/pencil.jpeg" percent=0.25 %}
+
+### **Template: Vintage:**
+<section id="vintage"/>
+
+{% include image_slider.html id="vintage_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pencil/off.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pencil/vintage.jpeg" percent=0.25 %}
+
+
+### **Template: Notepad:**
+<section id="notepad"/>
+
+{% include image_slider.html id="notepad_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pencil/off.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pencil/notepad.jpeg" percent=0.25 %}
+
+---
+
+## **Parameters:**
 
 |<b>Category</b>|<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|:---|
@@ -46,3 +62,19 @@ store_name: sketch_it
 ||Detail Sketch - Maximum Thickness|Controls the maximum thickness range for the detail sketch.|
 ||Sketch - Maximum Thickness|Controls the maximum thickness range for the main sketch, lower will result in thinner line cutoffs.|
 ||Sketch - Minimum Thickness|Controls the minimum thickness range for the main sketch, higher will result in higher frequency detail being removed.|
+
+---
+
+<!--{% include carousel.html id="bit_depth_slider"
+  img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Pencil/Vintage_Trove.jpeg?raw=true"
+  img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Pencil/Notepad_Trove.jpeg?raw=true"
+  img3="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Pencil/Notepad_Vice.jpeg?raw=true"
+  img4="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Pencil/Pencil_Rift.jpeg?raw=true"
+  img5="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Pencil/Pencil_Trove.jpeg?raw=true"
+  img6="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Pencil/Pencil_Vice.jpeg?raw=true"
+  img7="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Pencil/Vintage_Vice.jpeg?raw=true"
+%}-->
+
+## See Also
+
+{% include sketchit/template_thumbs.html %}

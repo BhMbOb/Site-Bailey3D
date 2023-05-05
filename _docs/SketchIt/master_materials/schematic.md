@@ -10,12 +10,26 @@ menubar: sketchit_menu
 store_name: sketch_it
 
 ---
-{% include carousel.html id="bit_depth_slider"
-  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Schematic_Trove.jpeg?raw=true"
-  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Graph_Rift.jpeg?raw=true"
-  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Graph_Vice.jpeg?raw=true"
-  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Schematic_Rift.jpeg?raw=true"
-%}
+## **Schematic:**
+
+<img src="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Gifs/schematic.webp">
+
+---
+
+### **Template: Schematic:**
+<section id="schematic"/>
+
+{% include image_slider.html id="chalkboard_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/schematic/off.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/schematic/schematic.jpeg" percent=0.25 %}
+
+### **Template: Graph Paper:**
+<section id="graph_paper"/>
+
+{% include image_slider.html id="chalk_drawing_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/schematic/off.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/schematic/graph.jpeg" percent=0.25 %}
+
+---
+
+
+## **Parameters:**
 
 |<b>Category</b>|<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|:---|
@@ -59,3 +73,16 @@ store_name: sketch_it
 ||Grid - Render Distance|Used to fade out the grid at a given distance. This is useful to avoid ailiasing when rendering the grid from very far away.|
 ||Sketch - Maximum Thickness|Controls the maximum thickness fraction of the sketch effect. Higher vaules will result in thicker lines rendering.|
 ||Sketch - Minimum Thickness|Controls the minimum thickness fraction of the sketch effect. Lower values will result in higher frequency detail being ignored.|
+
+---
+
+<!--{% include carousel.html id="bit_depth_slider"
+  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Schematic_Trove.jpeg?raw=true"
+  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Graph_Rift.jpeg?raw=true"
+  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Graph_Vice.jpeg?raw=true"
+  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Schematic/Schematic_Rift.jpeg?raw=true"
+%}-->
+
+## See Also
+
+{% include sketchit/template_thumbs.html %}

@@ -10,12 +10,25 @@ menubar: sketchit_menu
 store_name: sketch_it
 
 ---
-{% include carousel.html id="bit_depth_slider"
-  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/Chalkboard_Trove.jpeg?raw=true"
-  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkboardVice.jpeg?raw=true"
-  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkDrawing_Trove.jpeg?raw=true"
-  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkDrawing_Vice.jpeg?raw=true"
-%}
+## **Chalk Board:**
+
+<img src="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Gifs/chalkboard.webp">
+
+---
+
+### **Template: Chalkboard:**
+<section id="chalk_board"/>
+
+{% include image_slider.html id="chalkboard_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/chalk/off.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/chalk/chalkboard.jpeg" percent=0.25 %}
+
+### **Template: Chalk Drawing:**
+<section id="chalk_drawing"/>
+
+{% include image_slider.html id="chalk_drawing_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/chalk/off.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/chalk/chalkdrawing.jpeg" percent=0.25 %}
+
+---
+
+## **Parameters:**
 
 |<b>Category</b>|<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|:---|
@@ -36,3 +49,16 @@ store_name: sketch_it
 ||Maximum Thickness|Controls the maximum thickness fraction on the base chalk.|
 ||Minimum Thickness|Controls the minimum thickness fraction on the base chalk. Increasing this will result in thinner areas being removed.|
 ||Cutoff (Detail Lighting)|Cutoff value applied to the detail lighting. This can be used to give softer/harder edges to the detail lighting.|
+
+<!-----
+
+{% include carousel.html id="bit_depth_slider"
+  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/Chalkboard_Trove.jpeg?raw=true"
+  img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkboardVice.jpeg?raw=true"
+  img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkDrawing_Trove.jpeg?raw=true"
+  img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Chalk/ChalkDrawing_Vice.jpeg?raw=true"
+%}-->
+
+## See Also
+
+{% include sketchit/template_thumbs.html %}

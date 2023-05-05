@@ -10,7 +10,32 @@ menubar: sketchit_menu
 store_name: sketch_it
 
 ---
-{% include carousel.html id="bit_depth_slider"
+## **Ink Pen:**
+
+<img src="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Gifs/pen.webp">
+
+---
+
+### **Template: Byro:**
+<section id="byro"/>
+
+{% include image_slider.html id="byro_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pen/off.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pen/byro.jpeg" percent=0.25 %}
+
+### **Template: Ink Pen:**
+<section id="ink"/>
+
+{% include image_slider.html id="ink_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pen/off.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pen/ink.jpeg" percent=0.25 %}
+
+### **Template: Gel Pen:**
+<section id="gel"/>
+
+{% include image_slider.html id="gel_slider" img1="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pen/off.jpeg" img2="https://raw.githubusercontent.com/Bailey3D-Website/2021/main/packages/SketchIt/renders/Comparisons/pen/gel.jpeg" percent=0.25 %}
+
+---
+
+## **Parameters:**
+
+<!--{% include carousel.html id="bit_depth_slider"
   img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/InkPen_Trove.jpeg?raw=true"
   img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/ByroPen_Trove.jpeg?raw=true"
   img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/ByroPen_Vice.jpeg?raw=true"
@@ -18,7 +43,7 @@ store_name: sketch_it
   img5="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/GelPen_Vice.jpeg?raw=true"
   img6="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/InkPen_Rift.jpeg?raw=true"
   img7="https://github.com/Bailey3D-Website/2021/blob/main/packages/SketchIt/renders/Pen/InkPen_Vice.jpeg?raw=true"
-%}
+%}-->
 
 |<b>Category</b>|<b>Parameter Name</b>|<b>Parameter Description</b>|
 |:---|:---|:---|
@@ -37,3 +62,7 @@ store_name: sketch_it
 ||Light Pen - Maximum Thickness|Controls the maximum fraction for the light pen effect.|
 ||Sketch - Maximum Thickness|Controls the maximum thickness fraction for the main pen effect, higher values will result in thicker a pen effect.|
 ||Sketch - Minimum Thickness|Controls the minimum thickness fraction for the main pen effect, lower values will result in higher frequency detail being ignored.|
+
+## See Also
+
+{% include sketchit/template_thumbs.html %}
