@@ -12,24 +12,13 @@ tags: [Unreal, Shaders]
 ---
 
 {% include carousel.html id="gallery"
-  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_main.jpg?raw=true"
+  img1="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_main_first.jpg?raw=true"
   img2="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_vhs.jpg?raw=true"
   img3="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_arcade_machine.jpg?raw=true"
   img4="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_crt.jpg?raw=true"
   img5="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_retro_game_console.jpg?raw=true"
   img6="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_vintage.jpg?raw=true"
-  img7="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_crt_bleed.jpg?raw=true"
-  img8="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_pixelate.jpg?raw=true"
-  img9="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_crt_static.jpg?raw=true"
-  img10="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_retro_console_monochrome.jpg?raw=true"
-  img11="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_negative.jpg?raw=true"
-  img12="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_crt_bnw.jpg?raw=true"
-  img13="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_crt_damaged.jpg?raw=true"
-  img14="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_crt_interlacing.jpg?raw=true"
-  img15="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_film_grain.jpg?raw=true"
-  img16="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_crt_monochrome_static.jpg?raw=true"
-  img17="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_negative_bnw.jpg?raw=true"
-  img18="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_film_grain_bnw.jpg?raw=true"
+  img7="https://github.com/Bailey3D-Website/2021/blob/main/packages/RetroFiltersPack/Images/Gallery/gallery_more.jpg?raw=true"
 %}
 
 ---
