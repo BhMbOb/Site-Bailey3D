@@ -114,17 +114,17 @@ store:
   retro_filters_pack:
     price: $39.99
     docs_link: /docs/RetroFiltersPack/index
-    buy_now_link: https://www.unrealengine.com/marketplace/en-US/product/retro-filters-post-process-materials-pack
+    buy_now_link: https://www.fab.com/listings/38e34c0b-e2b2-42df-9477-d27608dd21ff
 
   iridescent_materials:
     price: $24.99
-    buy_now_link: https://www.unrealengine.com/marketplace/en-US/product/iridescent-pearlescent-materials-pack
+    buy_now_link: https://www.fab.com/listings/4e908bd7-2fae-4d5e-a913-12a014fad980
     rating: 5
 
   sketch_it:
     price: $23.99
     docs_link: /docs/SketchIt/index
-    buy_now_link: https://www.unrealengine.com/marketplace/en-US/product/sketchit-post-process-pack
+    buy_now_link: https://www.fab.com/listings/2e9d7e0b-a487-488e-b677-87666549d06e
     rating: 5
 
   mesh_splitter:
