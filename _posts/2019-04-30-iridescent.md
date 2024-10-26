@@ -16,7 +16,7 @@ The material is built up from a base material function, which can be easily plug
 
 The effect is ready to use out of the box. It contains one texture which can be swapped out as desired to give different effects.
 
-This pack is for sale [here on the Unreal marketplace](https://www.unrealengine.com/marketplace/en-US/product/8e02316d70ea4ec0ba4b332980cfa5ce).
+This pack is for sale [here on the Unreal marketplace](https://www.fab.com/listings/4e908bd7-2fae-4d5e-a913-12a014fad980).
 
 ![Image](https://github.com/Bailey3D-Website/2021/blob/main/projects/Iridescent/thumb.png?raw=true){: .center-image}
 
